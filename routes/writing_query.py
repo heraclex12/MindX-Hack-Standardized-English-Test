@@ -4,6 +4,7 @@ from models.database import EnglishMongoDB
 from flask_restful import Resource, reqparse
 import json
 
+
 class WritingPage(Resource):
     def get(self, question_id):
         mongo_instance = EnglishMongoDB().get_instance()
@@ -14,6 +15,7 @@ class WritingPage(Resource):
             q = {}
             q['id'] = question['_id']
             q['question'] = question['question']
-            return json.dumps(q), 200
+            return q, 200
         else:
             return {'status': 'NOT FOUND'}, 404
+
