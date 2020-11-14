@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import SignUp from './pages/SignUp';
+import Login from './pages/Login';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,10 +22,15 @@ function App() {
             <SignUp />
           </Route>
 
+          <Route path='/login'>
+            <Login />
+          </Route>
+
           <Route path='/'>
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

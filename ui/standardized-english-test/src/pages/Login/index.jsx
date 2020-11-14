@@ -16,7 +16,7 @@ const tailLayout = {
 
 const onGenderChange = () => {};
 
-const SignUp = (props) => {
+const Login = (props) => {
   const [form] = Form.useForm();
 
   const onFinish = async (values) => {
@@ -29,12 +29,12 @@ const SignUp = (props) => {
       email,
       gender
     };
-    const url = 'https://35.208.221.249:27019/register_user';
+    const url = '';
     const response = await fetch(url, {
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
+      // mode: 'cors', // no-cors, *cors, same-origin
+      // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      // credentials: 'same-origin', // include, *same-origin, omit
       headers: {
         'Content-Type': 'application/json'
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -46,33 +46,19 @@ const SignUp = (props) => {
   };
 
   return (
-    <div className='sign-up-container'>
-      <div className='sign-up-wrapper'>
-        <h1>Sign Up</h1>
+    <div className='login-container'>
+      <div className='login-wrapper'>
+        <h1>Login</h1>
 
         <Form
           form={form}
           {...layout}
           initialValues={{
-            fullName: '',
             email: '',
-            phone: '',
-            gender: 0,
-            password: '',
-            confirm: ''
+            password: ''
           }}
           onFinish={onFinish}
         >
-          <Item
-            name='fullName'
-            label='Full name'
-            rules={[
-              { required: true, message: 'Please input your full name!' }
-            ]}
-          >
-            <Input placeholder='Enter your full name' />
-          </Item>
-
           <Item
             name='email'
             label='Email'
@@ -87,17 +73,6 @@ const SignUp = (props) => {
             <Input placeholder='Enter your email' />
           </Item>
 
-          <Item name='phone' label='Phone number'>
-            <Input placeholder='Enter your phone number' />
-          </Item>
-
-          <Item name='gender' label='Gender'>
-            <Radio.Group onChange={onGenderChange} initialValues='male'>
-              <Radio value={0}>Male</Radio>
-              <Radio value={1}>Female</Radio>
-            </Radio.Group>
-          </Item>
-
           <Item
             label='Password'
             name='password'
@@ -105,30 +80,6 @@ const SignUp = (props) => {
             placeholder='Enter your password'
             hasFeedback
             rules={[{ required: true, message: 'Please input your password!' }]}
-          >
-            <Input.Password />
-          </Item>
-
-          <Item
-            label='Confirm password'
-            name='confirm'
-            dependencies={['password']}
-            hasFeedback
-            placeholder='Enter your password'
-            rules={[
-              { required: true, message: 'Please confirm your password!' },
-              ({ getFieldValue }) => ({
-                validator(rule, value) {
-                  if (!value || getFieldValue('password') === value) {
-                    console.log(getFieldValue('password'));
-                    return Promise.resolve();
-                  }
-                  return Promise.reject(
-                    'The two passwords that you entered do not match!'
-                  );
-                }
-              })
-            ]}
           >
             <Input.Password />
           </Item>
@@ -144,4 +95,4 @@ const SignUp = (props) => {
   );
 };
 
-export default SignUp;
+export default Login;
