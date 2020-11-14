@@ -21,7 +21,7 @@ from writing.fupugecscore.bert.extract_features import model_fn_builder, convert
 from bert_serving.client import BertClient
 
 # 加载打分系统配置， 主要是系列模型文件的路径
-with open(os.path.join(os.getcwd(), "fupugecscore/config/sys_conf.yaml"), encoding="utf-8") as conf_reader:
+with open(os.path.join(os.getcwd(), "writing/fupugecscore/config/sys_conf.yaml"), encoding="utf-8") as conf_reader:
     sys_conf = yaml.load(conf_reader.read())
 
 # do_train: Whether to run training.
@@ -37,10 +37,10 @@ with open(os.path.join(os.getcwd(), "fupugecscore/config/sys_conf.yaml"), encodi
 # iterations_per_loop: How many steps to make in each estimator call.
 # prompt_id: the id of the prompt
 # train_set_prob: the Proportion examples from dataset chosen to be the train set
-with open(os.path.join(os.getcwd(), "fupugecscore/config/train_conf.json"), "r") as cr:
+with open(os.path.join(os.getcwd(), "writing/fupugecscore/config/train_conf.json"), "r") as cr:
     train_conf = json.load(cr)
 
-with open(os.path.join(os.getcwd(), "fupugecscore/config/doc_conf.json"), "r") as cr:
+with open(os.path.join(os.getcwd(), "writing/fupugecscore/config/doc_conf.json"), "r") as cr:
     doc_conf = json.load(cr)
 
 spacynlp = spacy.load("en_core_web_sm")
