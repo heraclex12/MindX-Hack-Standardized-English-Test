@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Footer from './components/Footer';
+import DashBoard from './pages/DashBoard'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/dashboard'>
-            <div>dashboard</div>
+            <DashBoard />
           </Route>
 
           <Route path='/sign-up'>
