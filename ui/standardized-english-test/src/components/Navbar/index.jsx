@@ -4,11 +4,7 @@ import { withRouter } from 'react-router';
 import './index.css';
 
 const Navbar = (props) => {
-  // const {
-  //   history: {
-  //     location: { pathname }
-  //   }
-  // } = props;
+  const { history } = props;
 
   const valid = localStorage.getItem('logged-in');
   console.log(valid);
@@ -16,7 +12,8 @@ const Navbar = (props) => {
     <div className='navbar'>
       <header>
         <nav>
-          <h1>Hackeng</h1>
+          <h1 onClick={() => history.push('./')}>Hackeng</h1>
+
           <ul>
             <Link to='/'>
               <li>home</li>

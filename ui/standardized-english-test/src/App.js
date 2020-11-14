@@ -25,13 +25,14 @@ function App() {
       <div className='App'>
         <Navbar />
         <Switch>
-        {/* <Route path="/dashboard/reading/:id" children={<ReadingPage />} /> */}
+          {/* <Route path="/dashboard/reading/:id" children={<ReadingPage />} /> */}
 
           <Route path='/dashboard'>
             <DashBoard />
+            <Footer />
           </Route>
-          <Route path="/dashboard/reading">
-            <Reading/>
+          <Route path='/dashboard/reading'>
+            <Reading />
           </Route>
 
           <Route path='/sign-up'>
@@ -44,13 +45,14 @@ function App() {
 
           <Route path='/user-profile'>
             <Profile />
+            <Footer />
           </Route>
 
           <Route path='/'>
             <Home />
+            <Footer />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

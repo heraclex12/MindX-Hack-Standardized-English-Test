@@ -1,18 +1,59 @@
 #components-layout-demo-top-side .logo {
-    float: left;
-    width: 120px;
-    height: 31px;
-    margin: 16px 24px 16px 0;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .ant-row-rtl #components-layout-demo-top-side .logo {
-    float: right;
-    margin: 16px 0 16px 24px;
-  }
-  
-  .site-layout-background {
-    background: #fff;
-  }
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
 
-  
+.ant-row-rtl #components-layout-demo-top-side .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.ant-layout {
+  min-height: 100vh !important;
+}
+
+.ant-menu-item a {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.big-card .card-body {
+  padding: 0 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.big-card .card {
+  width: 100%;
+  height: 100%;
+}
+
+.reading-container .question {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.reading-container .badge {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.reading-container .badge h5 {
+  font-size: 1.1rem;
+}
+
+.reading-container .badge-danger {
+  background-color: rgb(223, 17, 17);
+}
+
+.reading-container .badge-success {
+  background-color: rgb(2, 185, 2);
+}
