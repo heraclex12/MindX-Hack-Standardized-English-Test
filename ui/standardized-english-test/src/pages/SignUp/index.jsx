@@ -18,6 +18,33 @@ const onGenderChange = () => {};
 
 const SignUp = (props) => {
   const [form] = Form.useForm();
+
+  const onFinish = async (values) => {
+    console.log(values);
+    const { fullName, password, phone, email, gender } = values;
+    const data = {
+      fullName,
+      password,
+      phone,
+      email,
+      gender
+    };
+    const url = '';
+    const response = await fetch(url, {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      // mode: 'cors', // no-cors, *cors, same-origin
+      // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+      // credentials: 'same-origin', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      // redirect: 'follow', // manual, *follow, error
+      // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+  };
+
   return (
     <div className='sign-up-container'>
       <div className='sign-up-wrapper'>
@@ -29,16 +56,22 @@ const SignUp = (props) => {
           initialValues={{
             fullName: '',
             email: '',
-            address: '',
+            phone: '',
+            gender: 0,
             password: '',
             confirm: ''
           }}
+          onFinish={onFinish}
         >
           <Item
             name='fullName'
             label='Full name'
             rules={[
-              { required: true, message: 'Please input your full name!' }
+              { required: true, message: 'Please input your full name!' },
+              {
+                type: 'email',
+                message: 'The input is not valid E-mail!'
+              }
             ]}
           >
             <Input placeholder='Enter your full name' />
@@ -52,21 +85,23 @@ const SignUp = (props) => {
             <Input placeholder='Enter your email' />
           </Item>
 
-          <Item name='address' label='Phone number'>
+          <Item name='phone' label='Phone number'>
             <Input placeholder='Enter your phone number' />
           </Item>
 
           <Item name='gender' label='Gender'>
             <Radio.Group onChange={onGenderChange} defaultValue='male'>
-              <Radio value={'male'}>Male</Radio>
-              <Radio value={'femail'}>Female</Radio>
+              <Radio value={0}>Male</Radio>
+              <Radio value={1}>Female</Radio>
             </Radio.Group>
           </Item>
 
           <Item
             label='Password'
             name='password'
+            min={6}
             placeholder='Enter your password'
+            hasFeedback
             rules={[{ required: true, message: 'Please input your password!' }]}
           >
             <Input.Password />
@@ -75,9 +110,22 @@ const SignUp = (props) => {
           <Item
             label='Confirm password'
             name='confirm'
+            dependencies={['password']}
+            hasFeedback
             placeholder='Enter your password'
             rules={[
-              { required: true, message: 'Please confirm your password!' }
+              { required: true, message: 'Please confirm your password!' },
+              ({ getFieldValue }) => ({
+                validator(rule, value) {
+                  if (!value || getFieldValue('password') === value) {
+                    console.log(getFieldValue('password'));
+                    return Promise.resolve();
+                  }
+                  return Promise.reject(
+                    'The two passwords that you entered do not match!'
+                  );
+                }
+              })
             ]}
           >
             <Input.Password />
