@@ -22,10 +22,6 @@ function App() {
       <div className='App'>
         <Navbar />
         <Switch>
-          <Route path='/dashboard'>
-            <DashBoard />
-          </Route>
-
           <Route path='/sign-up'>
             <SignUp />
           </Route>
@@ -36,6 +32,10 @@ function App() {
 
           <Route path='/user-profile'>
             <Profile />
+          </Route>
+
+          <Route path='/dashboard'>
+            <DashBoard />
           </Route>
 
           <Route path='/'>
