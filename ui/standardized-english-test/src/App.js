@@ -45,7 +45,6 @@ function App() {
             <Profile />
           </Route>
 
-
           <Route path='/'>
             <Home />
           </Route>

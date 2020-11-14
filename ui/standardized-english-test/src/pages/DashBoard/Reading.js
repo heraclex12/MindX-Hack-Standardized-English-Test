@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { CBadge,
+import {
+    CBadge,
     CCard,
     CCardBody,
     CCardFooter,
@@ -35,6 +36,11 @@ class Reading extends Component {
             ['https://cdn.flipboard.com/uploads/avatar/bddccc74d057039494111628ac6e7c1d43543c2f.png', 
             'REUTERS', 'Global news service feed.', 'reuters'], 
 
+            ['https://cdn.flipboard.com/uploads/avatar/df16bbdc485527cbd8a1d4c3414b721e4df6dfc7.png',
+                'BBC NEWS', 'International news from the BBC.'],
+            ['https://cdn.flipboard.com/uploads/avatar/bddccc74d057039494111628ac6e7c1d43543c2f.png',
+                'REUTERS', 'Global news service feed.'],
+
             ['https://cdn.flipboard.com/uploads/avatar/c3e5f8e4ab07ada9d3b2bc7c91b706b12665572c.jpg',
             'LOS ANGELES TIMES', 'The Pulitzer Prize-winning Los Angeles Times has been covering Southern California for more than 138 years.', 'nytimes'],
 
@@ -44,7 +50,7 @@ class Reading extends Component {
 
 
         this.state = {
-            news_info, 
+            news_info,
             selectedIndex: undefined,
             hosting: '35.208.221.249',
             port: '5000',
@@ -81,11 +87,11 @@ class Reading extends Component {
     
 
     news_card() {
-        const {news_info, selectedIndex} = this.state
-        return <CRow> {news_info.map((n, index) =>  <CCol xs="12" sm="6" md="4">
-        <CCard>
-          <CCardHeader>
-          <img className='transfermarkt_profile_pic' src={n[0]}/>
+        const { news_info, selectedIndex } = this.state
+        return <CRow> {news_info.map((n, index) => <CCol xs="12" sm="6" md="4">
+            <CCard>
+                <CCardHeader>
+                    <img className='transfermarkt_profile_pic' src={n[0]} />
 
               <b>{n[1]}</b>
               <CIcon
@@ -112,10 +118,10 @@ class Reading extends Component {
                   
                   </Button> 
 
-              </CRow>
-          </CCardFooter>
-        </CCard>
-      </CCol>)} </CRow>
+                    </CRow>
+                </CCardFooter>
+            </CCard>
+        </CCol>)} </CRow>
     }
 
     render() {
@@ -177,6 +183,7 @@ class Reading extends Component {
             }
 
     
+
 
             </div>
         )

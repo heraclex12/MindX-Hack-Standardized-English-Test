@@ -10,11 +10,10 @@ import argparse
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-import xgboost as xgb
 
-from bert import optimization
-from qwk import *
-from util import *
+from writing.fupugecscore.bert import optimization
+from writing.fupugecscore.qwk import *
+from writing.fupugecscore.util import *
 
 Logger = logging.getLogger(__name__)
 logging.basicConfig(format="%(asctime)s %(name)s %(levelname)s %(message)s", level=logging.INFO)
@@ -926,218 +925,6 @@ class PromptRelevantScore:
             print("id:{}, predict:{}, handmark:{}".format(key, value, temp_hs))
 
 
-class OverallScorePredictor:
-    """ 融合deep semantic的特征和handcrafted的特征，所得到的最终的分数
-
-    Attributes:
-        __bsp_estimator: basic score 模型的estimator对象
-        __csp_estimator: coherence score 模型的estimator对象
-        __psp_estimator: prompt relevant score 模型的estimator对象
-
-    """
-
-    def __init__(self,
-                 bsp_estimator: tf.estimator.Estimator,
-                 csp_estimator: tf.estimator.Estimator,
-                 psp_estimator: tf.estimator.Estimator):
-        self.__bsp_estimator = bsp_estimator
-        self.__csp_estimator = csp_estimator
-        self.__psp_estimator = psp_estimator
-
-    def generate_asap_train_and_test_set(self,
-                                         ps_generate_type="shuffle_all",
-                                         ns_generate_type="no_negative"):
-        """ 生成asap的训练数据集合
-
-        Args:
-            ns_generate_type: 以何种方式产生训练集和测试集的负样本，
-                           no_negative: 表示没有负样本，此情况只适用于只考虑basic score 不考虑负样本的情况
-                           prompt_irrelevant: 表示只产生与话题无关的负样本的id,
-                           permuted: 表示只生产permuted essay 作为负样本，
-                           both: 表示生产数量相等的prompt_irrelevant和permuted essay 作为负样本训练
-            ps_generate_type: 以何种方式产生训练集和测试集中的正样本，
-                           shuffle_prompt: 表示从某个prompt下，选取一定的数据训练，
-                           shuffle_all: 表示shuffle所有的样本，然后抽样，为缺省方式
-
-        Returns:
-            articles_id: 文章的id
-            articles_set: 文章的所属的prompt的id集合
-            handmark_scores: 手工标注的分数
-            correspond_train_id_set: 分割的训练集id
-            correspond_test_id_set: 分割的测试集id
-        """
-        articles_id, articles_set, set_ids, handmark_scores = read_asap_dataset()
-        np.random.seed(train_conf["random_seed"])
-        self.__ns_from_other_prompt_train = []
-        self.__ns_from_other_prompt_test = []
-        self.__ns_from_permuted_train = []
-        self.__ns_from_permuted_test = []
-
-        if ps_generate_type == "shuffle_all":
-            # 将所有set的数据混合打散，取80%进行训练，剩下测试
-            permutation_ids = np.random.permutation(articles_id)
-            correspond_test_id_set = permutation_ids[int(len(articles_id) * train_conf["train_set_prob"]):]
-            correspond_train_id_set = permutation_ids[:int(len(articles_id) * train_conf["train_set_prob"])]
-        elif ps_generate_type == "shuffle_prompt":
-            permutation_ids = np.random.permutation(set_ids[train_conf["prompt_id"]])
-            correspond_train_id_set = permutation_ids[
-                                      0:int(len(permutation_ids) * train_conf["train_set_prob"])]
-            correspond_test_id_set = permutation_ids[
-                                     int(len(permutation_ids) * train_conf["train_set_prob"]):]
-        else:
-            raise ValueError("generate_type must be choose in ('shuffle_prompt', 'shuffle_all')")
-
-        correspond_train_id_set = list(correspond_train_id_set)
-        correspond_test_id_set = list(correspond_test_id_set)
-
-        other_ids = []
-        for i in range(1, 9):
-            if i == train_conf["prompt_id"]:
-                continue
-            else:
-                other_ids.extend(set_ids[i])
-        self.__ns_from_permuted_train = [item + 100000 for item in correspond_train_id_set]
-        self.__ns_from_permuted_test = [item + 100000 for item in correspond_test_id_set]
-
-        negative_samples_from_other_prompt = random.sample(other_ids, len(set_ids[train_conf["prompt_id"]]))
-        self.__ns_from_other_prompt_train = negative_samples_from_other_prompt[
-                                            0:int(len(negative_samples_from_other_prompt) * train_conf["train_set_prob"])]
-        self.__ns_from_other_prompt_test = negative_samples_from_other_prompt[
-                                           int(len(negative_samples_from_other_prompt) * train_conf["train_set_prob"]):]
-        if ns_generate_type == "permuted":
-            # 在每个set内80%用来训练，20%用来测试
-            correspond_train_id_set.extend(self.__ns_from_permuted_train)
-            correspond_test_id_set.extend(self.__ns_from_permuted_test)
-            articles_id.extend(self.__ns_from_permuted_train)
-            articles_id.extend(self.__ns_from_permuted_test)
-        elif ns_generate_type == "prompt_irrelevant":
-            correspond_train_id_set.extend(self.__ns_from_other_prompt_train)
-            correspond_test_id_set.extend(self.__ns_from_other_prompt_test)
-        elif ns_generate_type == "both":
-            correspond_train_id_set.extend(self.__ns_from_permuted_train)
-            correspond_train_id_set.extend(self.__ns_from_other_prompt_train)
-            correspond_test_id_set.extend(self.__ns_from_permuted_test[0:int(len(self.__ns_from_permuted_test) / 2)])
-            correspond_test_id_set.extend(
-                self.__ns_from_other_prompt_test[0:int(len(self.__ns_from_other_prompt_test) / 2)])
-            articles_id.extend(self.__ns_from_permuted_train)
-            articles_id.extend(self.__ns_from_permuted_test)
-        elif ns_generate_type == "no_negative":
-            pass
-        else:
-            raise ValueError("generate_type must be choose in ('shuffle_prompt','other_prompt','shuffle_all')")
-
-        return articles_id, articles_set, handmark_scores, correspond_train_id_set, correspond_test_id_set
-
-    def train(self,
-              articles_id,
-              correspond_train_id_set,
-              correspond_test_id_set,
-              tfrecord_file_path,
-              xgboost_train_file_path,
-              saved_model_dir):
-        input_fn = input_fn_from_tfrecord(tfrecord_path=tfrecord_file_path,
-                                          batch_size=train_conf["predict_batch_size"],
-                                          is_training=False,
-                                          element_ids=articles_id)
-        bsp_result = self.__bsp_estimator.predict(input_fn)
-        psp_result = self.__psp_estimator.predict(input_fn)
-        csp_result = self.__csp_estimator.predict(input_fn)
-
-        # normalized_scores
-        basic_scores = {}
-        for item in bsp_result:
-            basic_scores[item["batch_doc_id"]] = item["batch_scores"]
-
-        promp_scores = {}
-        for item in psp_result:
-            promp_scores[item["batch_doc_id"]] = item["batch_scores"]
-
-        coher_scores = {}
-        for item in csp_result:
-            coher_scores[item["batch_doc_id"]] = item["batch_scores"]
-
-        features = np.load(xgboost_train_file_path)["features"][()]
-
-        train_features = []
-        train_handmark_normalized_scores = []
-        for i in correspond_train_id_set:
-            if (i in features or (
-                    i - 100000) in features) and i in basic_scores and i in promp_scores and i in coher_scores:
-                temp_i = i
-                if temp_i > 100000:
-                    temp_i -= 100000
-                temp_features = features[temp_i][:-2]
-                temp_features.append(basic_scores[i])
-                #temp_features.append(coher_scores[i])
-                #temp_features.append(promp_scores[i])
-                temp_features.append(1.0)
-                temp_features.append(1.0)
-                train_features.append(temp_features)
-                if i in self.__ns_from_other_prompt_train or i in self.__ns_from_permuted_train:
-                    train_handmark_normalized_scores.append(0)
-                else:
-                    train_handmark_normalized_scores.append(features[i][-1])
-
-        test_features = []
-        test_handmark_normalized_scores = []
-        for i in correspond_test_id_set:
-            if (i in features or (
-                    i - 100000) in features) and i in basic_scores and i in promp_scores and i in coher_scores:
-                temp_i = i
-                if temp_i > 100000:
-                    temp_i -= 100000
-                temp_features = features[temp_i][:-2]
-                temp_features.append(basic_scores[i])
-                #temp_features.append(coher_scores[i])
-                #temp_features.append(promp_scores[i])
-                temp_features.append(1.0)
-                temp_features.append(1.0)
-                test_features.append(temp_features)
-                if i in self.__ns_from_other_prompt_train or i in self.__ns_from_permuted_train:
-                    test_handmark_normalized_scores.append(0)
-                else:
-                    test_handmark_normalized_scores.append(features[i][-1])
-
-        xgb_rg = xgb.XGBRegressor(n_estimators=5000, learning_rate=0.001, max_depth=6, gamma=0.05,
-                                  objective="reg:logistic")
-        xgb_rg.fit(train_features,
-                   train_handmark_normalized_scores,
-                   eval_set=[(test_features, test_handmark_normalized_scores)],
-                   early_stopping_rounds=100,
-                   verbose=True)
-        xgb_rg.save_model(os.path.join(saved_model_dir, "osp.xgboost"))
-
-        pred_scores = xgb_rg.predict(test_features)
-        test_predict_scores = []
-        test_handmark_scores = [round(item * 10) for item in test_handmark_normalized_scores]
-        for i in range(len(correspond_test_id_set)):
-            min_value = 0
-            max_value = 10
-            overall_score = round(pred_scores[i] * (max_value - min_value) + min_value)
-            test_predict_scores.append(overall_score)
-            print("id:{}, basic:{}, coher:{}, prompt:{}, predict:{}, handmark:{}".format(correspond_test_id_set[i],
-                                                                                         basic_scores[
-                                                                                             correspond_test_id_set[
-                                                                                                 i]] * 10,
-                                                                                         coher_scores[
-                                                                                             correspond_test_id_set[
-                                                                                                 i]] * 10,
-                                                                                         promp_scores[
-                                                                                             correspond_test_id_set[
-                                                                                                 i]] * 10,
-                                                                                         overall_score,
-                                                                                         test_handmark_scores[i]))
-
-        test_handmark_scores = np.asarray(test_handmark_scores, dtype=np.int32)
-        test_predict_scores = np.asarray(test_predict_scores, dtype=np.int32)
-
-        qwk = quadratic_weighted_kappa(test_predict_scores, test_handmark_scores)
-        print("##############qwk value is {}".format(qwk))
-
-    def eval_metric(self, result, handmark_scores, articles_set, articles_id):
-        pass
-
-
 def train(estm, train_file_path, correspond_train_id_set, saved_model_dir):
     train_set_length = len(correspond_train_id_set)
     num_train_steps = int((train_set_length * train_conf["num_train_epochs"]) / train_conf["train_batch_size"])
@@ -1193,49 +980,28 @@ def main():
     elif args.model == "psp":
         model_dir = sys_conf["psp_output_dir"]
         sp = PromptRelevantScore()
-    elif args.model == "osp":
-        bsp = BasicScorePredictor()
-        bsp_model_dir = sys_conf["bsp_output_dir"]
-        bsp_estimator = generate_tf_estimator(bsp_model_dir, bsp)
-        csp = CoherenceScore()
-        csp_model_dir = sys_conf["csp_output_dir"]
-        csp_estimator = generate_tf_estimator(csp_model_dir, csp)
-        psp = PromptRelevantScore()
-        psp_model_dir = sys_conf["psp_output_dir"]
-        psp_estimator = generate_tf_estimator(psp_model_dir, psp)
-        osp = OverallScorePredictor(bsp_estimator, csp_estimator, psp_estimator)
     else:
         raise ValueError("model need to be chosen from bsp, csp, psp and osp")
 
-    if args.model == "osp":
-        print("USE OSP")
-        model_dir = sys_conf["osp_output_dir"]
-        tfrecord_file_path = os.path.join(sys_conf["data_dir"], "asap_dataset.tfrecord")
-        xgboost_train_file_path = os.path.join(sys_conf["data_dir"], "asap_xgboost.npz")
-        if not (os.path.exists(tfrecord_file_path) or os.path.exists(xgboost_train_file_path)):
-            raise ValueError("tfrecord file path or xgboost train file path is invalid.")
-        articles_id, articles_set, handmark_scores, correspond_train_id_set, correspond_test_id_set = \
-            osp.generate_asap_train_and_test_set()
-        osp.train(articles_id, correspond_train_id_set, correspond_test_id_set, tfrecord_file_path, xgboost_train_file_path, model_dir)
-    else:
-        saved_model_dir = os.path.join(model_dir, "SavedModel")
-        articles_id, articles_set, handmark_scores, correspond_train_id_set, correspond_test_id_set = sp.generate_asap_train_and_test_set()
-        train_set_length = len(correspond_train_id_set)
-        num_train_steps = int((train_set_length * train_conf["num_train_epochs"]) / train_conf["train_batch_size"])
-        num_warmup_steps = int(num_train_steps * train_conf["warmup_proportion"])
-        estimator = generate_tf_estimator(model_dir, sp, num_train_steps=num_train_steps, num_warmup_steps=num_warmup_steps)
 
-        if train_conf["do_train"]:
-            train_file_path = os.path.join(sys_conf["data_dir"], "asap_dataset.tfrecord")
-            if not os.path.exists(train_file_path):
-                raise ValueError("train_file_path is invalid.")
-            train(estimator, train_file_path, correspond_train_id_set, saved_model_dir)
+    saved_model_dir = os.path.join(model_dir, "SavedModel")
+    articles_id, articles_set, handmark_scores, correspond_train_id_set, correspond_test_id_set = sp.generate_asap_train_and_test_set()
+    train_set_length = len(correspond_train_id_set)
+    num_train_steps = int((train_set_length * train_conf["num_train_epochs"]) / train_conf["train_batch_size"])
+    num_warmup_steps = int(num_train_steps * train_conf["warmup_proportion"])
+    estimator = generate_tf_estimator(model_dir, sp, num_train_steps=num_train_steps, num_warmup_steps=num_warmup_steps)
 
-        if train_conf["do_predict"]:
-            test_file_path = os.path.join(sys_conf["data_dir"], "asap_dataset.tfrecord")
-            if not os.path.exists(train_file_path):
-                raise ValueError("train_file_path is invalid.")
-            test(estimator, test_file_path, correspond_test_id_set, handmark_scores, articles_set, articles_id, sp)
+    if train_conf["do_train"]:
+        train_file_path = os.path.join(sys_conf["data_dir"], "asap_dataset.tfrecord")
+        if not os.path.exists(train_file_path):
+            raise ValueError("train_file_path is invalid.")
+        train(estimator, train_file_path, correspond_train_id_set, saved_model_dir)
+
+    if train_conf["do_predict"]:
+        test_file_path = os.path.join(sys_conf["data_dir"], "asap_dataset.tfrecord")
+        if not os.path.exists(train_file_path):
+            raise ValueError("train_file_path is invalid.")
+        test(estimator, test_file_path, correspond_test_id_set, handmark_scores, articles_set, articles_id, sp)
 
 
 if __name__ == "__main__":
