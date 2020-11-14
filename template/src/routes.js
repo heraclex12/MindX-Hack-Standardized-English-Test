@@ -29,6 +29,8 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'));
 const Football = React.lazy(() => import('./views/dashboard/Football'));
 const Wikidata = React.lazy(() => import('./views/dashboard/Wikidata'));
 const Reading = React.lazy(() => import('./views/dashboard/Reading'));
+const Writing = React.lazy(() => import('./views/dashboard/Writing'));
+
 // const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'));
 // const Flags = React.lazy(() => import('./views/icons/flags/Flags'));
 // const Brands = React.lazy(() => import('./views/icons/brands/Brands'));
@@ -47,6 +49,7 @@ const routes = [
   { path: '/football', name: 'Football', component: Football}, 
   { path: '/wikidata', name: 'Wikidata', component: Wikidata}, 
   { path: '/reading', name: 'Reading', component: Reading},
+  { path: '/writing', name: 'Writing', component: Writing},
   // { path: '/theme', name: 'Theme', component: Colors, exact: true },
   // { path: '/theme/colors', name: 'Colors', component: Colors },
   // { path: '/theme/typography', name: 'Typography', component: Typography },

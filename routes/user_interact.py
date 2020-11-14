@@ -26,11 +26,14 @@ class UserLogin(Resource):
         json_data = request.get_json(force=True)
         mongo_instance = EnglishMongoDB().get_instance()
         db = mongo_instance.user
-        user = db.find_one({'email' : json_data['email']})
+        try:
+            user = db.find_one({'email' : json_data['email']})
+        except:
+            return {"status": "FAILED"}, 400
         if user and app.flask_bcrypt.check_password_hash(user['password'], json_data['password']):
             return {"status" : "SUCCESS"}, 200
         else:
-            return {"status" : "FAILED"}, 200
+            return {"status" : "FAILED"}, 401
 
 
 class UserInfo(Resource):

@@ -1,8 +1,10 @@
 from flask import Flask
 from flask_bcrypt import Bcrypt
+from flask_cors import CORS
 from router import api_bp
 app = Flask(__name__)
 
+CORS(app)
 flask_bcrypt = Bcrypt(app)
 
 
