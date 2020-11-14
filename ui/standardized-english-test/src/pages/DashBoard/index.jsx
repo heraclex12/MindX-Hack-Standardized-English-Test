@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import { Layout, Menu, Breadcrumb } from 'antd';
-import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import {
+  UserOutlined,
+  LaptopOutlined,
+  NotificationOutlined
+} from '@ant-design/icons';
 import Reading from './Reading';
 import Writing from './Writing';
 import './index.css';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import { BrowserRouter as Router, Switch, Route, useRouteMatch} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useRouteMatch
+} from 'react-router-dom';
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -16,17 +25,20 @@ const DashBoard = (props) => {
   return (
     <Layout>
       <Content style={{ padding: '0 50px', margin: '20px' }}>
-        <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
-          <Sider className="site-layout-background" width={200}>
+        <Layout
+          className='site-layout-background'
+          style={{ padding: '24px 0' }}
+        >
+          <Sider className='site-layout-background' width={200}>
             <Menu
-              mode="inline"
+              mode='inline'
               defaultOpenKeys={['sub1']}
               style={{ height: '100%' }}
             >
-              <Menu.Item key="1">
+              <Menu.Item key='1'>
                 <Link to={`${url}/reading`}>Reading</Link>
               </Menu.Item>
-              <Menu.Item key="2">
+              <Menu.Item key='2'>
                 <Link to={`${url}/writing`}>Writing</Link>
               </Menu.Item>
             </Menu>
@@ -42,7 +54,6 @@ const DashBoard = (props) => {
                   <Route path={`${path}/writing`}>
                     <Writing />
                   </Route>
-
                 </Switch>
                 <Footer />
               </div>
@@ -50,9 +61,8 @@ const DashBoard = (props) => {
           </Content>
         </Layout>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
-  )
-}
+  );
+};
 
 export default DashBoard;
