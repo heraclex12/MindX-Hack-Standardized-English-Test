@@ -80,9 +80,9 @@ class BertEmbedding(object):
 
 
 
-vocab_file = os.path.join(os.getcwd(), 'fupugecscore/data/uncased_L-12_H-768_A-12/vocab.txt')
-config_file =  os.path.join(os.getcwd(), 'fupugecscore/data/uncased_L-12_H-768_A-12/bert_config.json')
-ckpt_file =  os.path.join(os.getcwd(), 'fupugecscore/data/uncased_L-12_H-768_A-12/bert_model.ckpt')
+vocab_file = os.path.join(os.getcwd(), 'writing/fupugecscore/data/uncased_L-12_H-768_A-12/vocab.txt')
+config_file =  os.path.join(os.getcwd(), 'writing/fupugecscore/data/uncased_L-12_H-768_A-12/bert_config.json')
+ckpt_file =  os.path.join(os.getcwd(), 'writing/fupugecscore/data/uncased_L-12_H-768_A-12/bert_model.ckpt')
 
 pooling_layer = [-2]
 pooling_strategy = PoolingStrategy.REDUCE_MEAN
