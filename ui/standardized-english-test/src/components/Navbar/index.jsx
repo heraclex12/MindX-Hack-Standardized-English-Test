@@ -14,7 +14,7 @@ const Navbar = (props) => {
     <div className='navbar'>
       <header>
         <nav>
-          <h1>AppName</h1>
+          <h1>Hackeng</h1>
           <ul>
             <Link to='/'>
               <li>home</li>
