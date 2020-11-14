@@ -1,0 +1,31 @@
+.card-number {
+  padding: 20px;
+  max-width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+
+.card-number > * {
+  text-align: center;
+  color: white;
+}
+
+.card-number h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-number p {
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card-number:hover {
+  transform: translateY(-5%);
+}
