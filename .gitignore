@@ -127,4 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+<<<<<<< HEAD
 node_modules/
+=======
+
+resources/
+.idea/
+reading/data/
+>>>>>>> 16910a28758df36a23d4849808c7a43023efbe1f

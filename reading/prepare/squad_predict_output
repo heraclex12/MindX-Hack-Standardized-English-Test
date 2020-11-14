@@ -1,0 +1,1204 @@
+questions: who were the people who gave their name to Normandy in the 10th and 11th centuries?|who did the Normans swear 
+questions: the Norman dynasty had a profound influence on what area?|what were the Normans famous for?|what language did
+questions: what is the origin of the name Normans?|what is the french word for "Normans"?|which language is the word "
+questions: when did the incursions of Norse war bands into the rivers of France evolve into more permanent encampments?|what did
+questions: before Rollo's arrival, the populations of north carolina did not differ from which other populations?|what were Picardy and
+questions: who would create a unique "Norman" culture in the north of France?|the Norman language was forged by the adoption of what
+questions: to what did the Normans adapt the feudal doctrines of the rest of France?|in what year were the Normans exporting
+questions: soon after the Normans entered Italy, what did they enter?|what were the Normans fighting against?|where did the Normans fight
+questions: who was one of the first Norman mercenaries to serve as a byzantine general?|in the 1050s,
+questions: some Normans joined the Turkish forces to help in the destruction of what two Armenian vassal states?|another Norman led 
+questions: a number of families from byzantine Greece were of what origin?|who were the Raoulii descended from?|the
+questions: Robert Guiscard drove the byzantines out of southern Italy?|when did Robert Guiscard allign himself with the cities of
+questions: in what year did the Normans besieged Dyrrachium?|who led the Normans to Valona?|in what
+questions: what year did the Normans attack dysrrachium?|what led to the third attack by the byzantines on diadoch
+questions: who was the sister of Duke Richard II of Normandy?|who forced ethelred to Normandy?|in what
+questions: how did Edward the Confessor prepare his fathers refuge in 1041?|who did Edward make Ralph the Timid earl of Here
+questions: who was the Duke of Normandy?|what year did Duke William II of Normandy take over England?|who did the Norman
+questions: Norman aristocracy identified themselves as what?|what language was distinct from the Latin language?|what language was absorbed into
+questions: who invaded Bannow Bay in 1169?|in what area did the Normans settle?|what were the Normans' two names
+questions: who was the claimant of the english throne opposing William the Conqueror?|when did William the Conquer
+questions: who was the first king to marry philip?|who introduced Norman culture to the people of scotland?|what
+questions: when did the Normans come into contact with Wales?|who did Edward the Confessor set up as earl of Hereford?|
+questions: who was in control of the Marches after the Conquest?|where was Bernard de neufmarché from?|where was Hug
+questions: from what lands did de tosny travel to create a state?|who led the papal army at the battle of barb
+questions: what year were the Crusaders joining the group from Amalfi?|who was the leader of the crusade
+questions: what event led to the conquering of Cyprus?|what country would be under western european control for the next 380 years?|what was
+questions: when did Richard the Lion-hearted leave Messina with a large fleet to reach Acre?|when did Richard the Lion-hearted
+questions: who was the leader of the team that attacked the island?|name another leader who arrived at the island?|who was the leader of the
+questions: what year did the expedition that took control of the canarian islands of Lanzarote, Fuerteventura and El Hierro take
+questions: who did Bethencourt serve as vassal to?|who did Bethencourt sell the rights to the canary islands to?
+questions: when was the customary law of Normandy developed?|where does the customary law of Normandy survive today?|when was
+questions: which two countries did Norman architecture spread a unique romanesque idiom to?|what fundamentally altered the military landscape of north french style
+questions: which period followed the Anglo-Saxon in architecture?|what was the predecessor to the Norman period?|in what country did the Normans
+questions: in what arts did the Normans fail?|when did the dukes begin to reform the church?|what did the duke encourage in
+questions: what years were the french Wars of Religion?|what happened in the 18th century?|what did the french Wars of Religion cause?|
+questions: what is the most famous piece of Norman art?|who commissioned the Bayeux Tapestry?|who was Odo?|what
+questions: which art style is most prominent in the palace in england?|in what region of england does the royal regalia
+questions: Normandy hosted many important developments in the history of classical music in what century?|what were the centres of musical production and education?|
+questions: where did the choir achieve fame?|who was the Norman abbot?|where did the monks of saint-evroul fle
+questions: what is the study of computational complexity theory?|what is the study of computational complexity theory?|what is understood to be a task that
+questions: a problem is regarded as difficult if its solution requires what?|what are two resources that are needed to solve the problem?|
+questions: which two fields of study in theoretical computer science are closely related to analysis of algorithms and computability theory? |what is the first step
+questions: how many instances can a computational problem be viewed as?|what is the input string for a computational problem referred to as?
+questions: is the trip around all of germanys 15 largest cities in kilometers?|what is a possible solution to a complicated problem?|
+questions: what is a problem instance of?|what is the binary alphabet?|what are the strings in a computer? answer: a
+questions: in what theory are decision problems a central part of the study of complexity?|what is the term for a special type of computational problem
+questions: what is the input of a decision problem?|what is the formal language of a decision problem?|how are graphs encoded
+questions: computational problems where a single output is expected for every input are called what?|what is a function problem?|the output of 
+questions: what concept are function problems sometimes considered richer than?|what type of problem can function problems be recast as?|what is 
+questions: what may be used to measure the difficulty of solving a computational problem?|how is the running time of a computer determined?|what
+questions: what size is n?|what time can be expressed as a function of n?|what is the worst-case time complexity
+questions: what is a Turing machine?|what does a Turing machine manipulate?|what is a Turing machine not intended for
+questions: what is the most basic Turing machine?|what does a deterministic Turing machine use to determine its future actions?|what
+questions: what are some examples of classes that are created by Turing machines?|what are some of the classes that are created by Turing machines?
+questions: what is a model that can be modified without increasing the computational power? answer: random access machines
+questions: a computer model that is allowed to branch out to check many different possibilities at once is called what?|the non-deterministic Turing
+questions: what is the computer model that uses time and space to solve a problem?|what is the total number of state transitions, or steps
+questions: what can be made to fit into space requirements?|time and space are the most well-known complexity resources.|what are most complexity
+questions: answer:
+questions: what does quicksort solve the problem of sorting?|what is the worst-case scenario?|what is the average time for sorting
+questions: how many computations are there in total, in math?|what type of algorithm is created in math?|what does an algorithm need to
+questions: what notation hides constant factors and small terms?|upper and lower bounds are usually stated using?|what does the big O not
+questions: some complexity classes have what that do not fit into the framework?|what is a typical definition of a complexity class? answer: complicated
+questions: if we allow polynomial variations in running time, what thesis states that "the time complexities in any two reasonable and general models
+questions: many important complexity classes can be defined by bounding what?|what are some important complexity classes of decision problems defined in this manner? answer:
+questions: what are some other important complexity classes?|what are classes like AC and NC defined with?|what is an important complexity class of counting problems
+questions: how many classes are there in a given time?|what term describes the process by which a class of classes must be summed
+questions: what are the basis for most separation results of complexity classes?|time hierarchy theorem tells us that P is strictly contained in what
+questions: many complexity classes are defined using what concept?|what is a reduction?|what captures the informal notion of a problem being at
+questions: what is the most commonly used reduction?|what does polynomial-time reduction mean?|what is squaring not more
+questions: how does a complex class define "hard" problems?|what type of reduction is used to solve a problem in "C"?
+questions: what is the hardest problem in C?|what type of problems contains the most difficult ones in NP?|why is finding the problem P
+questions: the complexity class P is often seen as a mathematical abstraction modeling computational tasks that admit what?|what is the complexity class NP?|
+questions: what is one of the most important open questions in theoretical computer science?|if the answer is yes, many important problems can be shown to have
+questions: what are NP intermediate problems?|what are some NP problems that are thought to be NP-intermediate?|what is
+questions: what is the graph isomorphism problem?|what is the graph isomorphism problem determining?|what happens 
+questions: what is the computational problem of determining prime factorization of a given integer?|what is the decision problem?|what is the problem
+questions: what are many known complexity classes suspected to be?|what has not been proved?|what is P  ⁇  NP  ⁇  PP
+questions: what is the class containing the complement problems?|what type of problems does co-NP contain?|NP is believed to not be equal
+questions: what is L?|what type of classes are NL and NC?|if they are distinct or equal classes, what is not known?
+questions: an example of a theory problem is what?|what is an example of a problem that in practice takes too long to solve in theory
+questions: what is open to debate?|what does not mean that all large cases of the problem are hard?|what has been shown not to be
+questions: who created the definition of Turing machines?|when did Alan Turing create the definition of Turing machines? answer: Alan Turing|
+questions: what paper led to systematic studies in computational complexity?|who wrote "On the Computational Complexity of Algorithms"?
+questions: what did John Myhill write about?|what did Raymond Smullyan study?|when was myhills definition of linear b
+questions: what proof of complexity-theoretic theorems often assume a concrete choice of input encoding?|what does one
+questions: what did manuel Blum develop?|who wrote "Reduceability Among Combinatorial Problems"?|what did schwarzen
+questions: what is Southern California often abbreviated as?|what is the region traditionally described as?|which counties are in southern California? answer
+questions: how many megaregions are there in the us?|what is the southern California megaregion's area? answer: 11|the Las
+questions: what is the southern California metropolitan area consisting of Los Angeles and Orange counties?|what is the southern California metro area consisting of San Bernard
+questions: what is to the east of the country?|what is at the border with Arizona?|what is at the border with Nevada? answer:
+questions: what are the two major cities located in southern California?|how many people live in Los Angeles?|what is the second most populous city
+questions: Los Angeles, Orange, San Diego, San Bernardino, and Riverside are the five most populous counties in the state?|all of
+questions: what area of the country is home to the motion picture, television, and music industry?|what is the Hollywood district named after?|what
+questions: what type of culture does southern California boast?|Volcom, Quiksilver, No Fear, RVCA, and Body Glove
+questions: what city is popular for its resort feel?|what types of tours attract a large number of visitors to the southern California coast?|what
+questions: what is southern California's latitude?|how many miles is south of San Jose?|what 2 areas are southern California?
+questions: when did Mexico rule in southern California? |what was the boundary of southern California before the division of the federal government? |what is the name
+questions: what were the last three attempts to seperate southern California from northern California?|what was the name of the last attempt to seperate
+questions: what was the Los Angeles Times' southern California county name in 1900?|what county did the times add in 1999?|which county is listed
+questions: how do the two AAA Auto Clubs of the state, the California State Automobile Association and the Automobile Club of Southern California, would split
+questions: what is the third most populated megalopolis in the us?|what is the top five largest urban areas in the us?|
+questions: which city is the main gap to continued urbanization?|what interstate is it about the San Diego metropolitan area that Temecula and
+questions: what type of climate does southern California have?|what are the summers like?|what is the winter weather like?|in the southwest
+questions: which region contains some of the most diverse geological, topographic, and natural ecosystem landscapes in all of California?|what is the region
+questions: how many earthquakes occur in the southern California area each year?|what magnitude of the 1994 northridge earthquake was it?|how much property
+questions: what is the magnitude of the San Andreas Fault?|what can produce a magnitude 8.0 earthquake?|what has the usGS
+questions: how is southern California divided?|what is an example of a city that is the hub of economic activity for its respective region?|what
+questions: what was southern Californias population in 2010?|what was the average growth rate of southern California in the 2000s?|why did the economy
+questions areas areas of southern California rank one Combined Statistical Area?|how many metropolitan areas does the region rank two extended metropolitan areas that exceed five million
+questions: what is the population of Los Angeles?|what is the population of San Diego?|how many cities are in southern California? answer: 
+questions: on what resource is southern California's economy based?|what industry is important in southern California?|which region was a leader in
+questions: what are three major industries in the united states since the 1920s?|what were the major industries in the united states prior to the 1920s
+questions: what are the main business districts of southern California?|what are the major business districts of southern California?|which city is the center of business
+questions: what are the business districts of Los Angeles?|what is the downtown business district of Los Angeles?|what are some of the smaller businesses in
+questions: what areas of the city are in the area?|what is the business district named after?|what is the neighborhood of downtown? answer:
+questions: what are the three business centers in Orange County?|what are the two residential areas in west Irvine?|which district is home to the Irvine
+questions: what is the business district of San Diego?|what are some of the business districts of San Diego?|where are most of the districts located
+questions: what is the second busiest airport in the us by passenger volume?|what is the third busiest airport in the world by international
+questions: how many lines of the commuter rail system are out of Downtown los angeles?|what is the other line of the Metrolink system
+questions: what is the busiest commercial port in the us?|what is the second busiest container port in the us?|in what
+questions: how many University of California campuses are in the tech coast?|how many California State University campuses are in the tech coast?|how many of
+questions: what is the nickname of the los angeles-based team?|what is the nickname of the los angeles-based team?
+questions: what were the two major league soccer teams in los angeles from 2005 to 2014?|where did the LA Galaxy and Chivas USA play
+questions: what sport are popular in southern California?|what NCAA Division 1 team is fielded by the UCLA Bruins?|what NCAA Division 1
+questions: what region of the country is seeing an increase in the popularity of rugby?|what are the schools that add rugby as an official school sport in
+questions: when was BSkyB formed?|what was the combined entity that created BSkyB?|what was the largest digital subscription television
+questions: who ended BSkyB's monopoly at the end of the 2007-08 season?|in what year did scot
+questions: what was the name of the free-to-air replacement for freeview?|what was the name of the 3 BSkyB channels
+questions: what was the initial cost for using the sky+ PVR with bskyb?|when did bskyb change the
+questions: what system does BSkyB use?|who owns the videoGuard system?|who has design authority over all digital satellite receiver
+questions: in 2007, what companies were involved in a dispute over the carriage of Sky channels on cable television?|who took the basic channels from the network
+questions: in what year did the english high court of justice find that Microsoft’s use of the term skyDrive infringed on sky’
+questions: when did the analogue service end?|when was the analogue service discontinued?|which was the first station to become free-
+questions: what was Sky's previous name?|which country does Sky service?|what is the biggest pay-TV broadcaster in the world?
+questions: what were the three Sky Q set top boxes?|what were the Sky Q mini and Sky Q nano?|what feature does the Sky Q
+questions: where are the majority of HD material available on sydney?|what do some channels provide for recent films?|what is the
+questions: when was sky digital launched?|what satellite was used to revolutionize the digital service of sky digital?|what service was based on the
+questions: what was the name of the HDTV service that was launched by BSkyb on 22 may 2006?|how many people initially registered to
+questions: how many subscription channels did BSkyB propose to replace their 3 free-to-air digital terrestrial channels?|when did BSky
+questions: most digital receivers will receive what?|what is an example of a free-to-air broadcast?|what is an example of
+questions: in 1991, what were talks held for the broadcast rights for premier league?|how long was the premier league broadcast for?|who were the
+questions: what is the name of the tv network owned by BSkyB?|what is the fee for access to the bs
+questions: in what year was BSkyB's digital service officially launched?|what was the original name of BSkyB's digital
+questions: which Virgin media channel was only available from 30 November 2006 until 30 July 2009?|what was the name of the linear HD channel from 30 November
+questions: how many homes did bskybs direct-to-home satellite service reach in 2010?|what was the first pay-TV
+questions: what were some of the negative things that a snooze subscription to show the damage to?|which independent minister heard about the damaging
+questions: what is the fixed annual cost for the carriage of bsc channels?|if the channels meet performance-related targets, what else can
+questions: what service sectors make up the bulk of Victoria's economy?|which country does Victoria rank 2nd in in GSP?|why is
+questions: where did the majority of the Chinese miners work?|what area is home to the majority of the gold miners in the world?|
+questions: in what year were the Victorian Legislative Council elections held?|how many electorates did the State of Victoria have?|how
+questions: what are Victorias main political parties?|Labor is strongest in Melbourne's working class western and northern suburbs, and the regional cities
+questions: what percentage of Victorians identify as Christian?|what is the largest non-Christian religion in the state?|how many Muslims are there in
+questions: what does Victoria stand for?|which city is australias second largest?|what is the capital of Victoria?|where is the largest city
+questions: what were the Aboriginal peoples that lived in the area before settlement called?|when did Great Britain claim the whole Australian continent east of the 1
+questions: how much of the Victorian farmland is sown for grain?|how much of the Victorian farmland is sown for
+questions: when was the written constitution for Victoria enacted?|based on what document is the constitution based on?|who can amend the Victorian
+questions: which areas in Victoria are warmest?|how much lower are the average temperatures in the summer?|how much lower are the average temperatures in
+questions: how many government selective schools does Victoria have?|how many government selective schools does Victoria have?|which school is named after a founding father
+questions: in what year did Toyota announce their closure of their plant in Victoria?|when did Ford announce their closure of their plant in Victoria?|in
+questions: how high does Mount Bogong peak?|which direction is tuscon from?|which river is the most notable in Victoria?|
+questions: what are the coldest part of Victoria?|what are the Alps part of?|what are the average temperatures in the winter?
+questions: what is the name of the railway that runs an extensive electrified system through Melbourne and suburbs?|which government-owned line runs V
+questions: how many seats does Victoria have in the Australian house of representatives?|how many seats does Victoria have in the Australian Senate?|who is the
+questions: on what date was gold discovered on the island of Ballarat?|what did the gold rushes of 1851 cause?|how
+questions: how many public schools are there in Victoria?|how many Catholic schools are there in Victoria?|how many private schools are there in Victoria?
+questions: how many dairy cattle does Victoria have?|how many beef cattle does Victoria have?|by what percentage of the australian population does Victoria produce
+questions: what gauge do Victorian lines mostly use?|what has the interstate trunk routes been converted to?|how many tourist railways operate over 
+questions: in what year did the colony of new south Wales establish?|in what year did the first european settlement in the area known as Victoria establish
+questions: what year was there an armed rebellion against the government of Victoria?|miners protesting against mining taxes were called what?|what was
+questions: what is the leader of the political party or coalition with the most seats in the Legislative Assembly?|who is the current Premier of
+questions: by what percentage did the gross value of Victorian agricultural production increase during 2003-2004?|how many farms occupied 136,000 square kilometers of Victorian
+questions: which two tourism sectors are the most important to Victoria?|which regional events are held at Phillip Island?|what major event at geelong
+questions: in 1562, how many Huguenots were there?|in 1562, how many Huguenots were there?|in
+questions: what was the origins of the term Huguenot?|what politician was the nickname for Huguenot? |what did the politician be
+questions: in what language was the bible able to spread?|what was the problem with the papacy in france prior to the arrival of
+questions: in what year did the royal army seize control of paris?|who took over the university in 1622?|when was the 
+questions: individual Huguenots settled at the Cape of Good Hope from as early as what year?|the first Huguenot to arrive at the
+questions: when did the Huguenots sail to north america?|after settling in north america, where did the Huguenots
+questions: in what area of Huguenots settled in Charleston, south Carolina? |what was one of the first Huguenots to settle in
+questions: who was the strongest opponent to king Louis XIV?|what did the french attack in 1672?|who formed the League of
+questions: what caused the political and military privileges of the Huguenots to be abolished?|what did the Huguenots retain
+questions: what group did the catholic church in france oppose?|in what year was the saint bartholomew's day massacre
+questions: when did the Huguenot rebellions break out?|in what part of France did the Huguenot rebellions break out?|what
+questions: in the modern year how many Protestants make up the 2% of frances population?|in what region of france do most of
+questions: how many societies or congregations did the Huguenot immigrants form?|name the second society or congregation in the city of new york.|
+questions: how many Huguenot refugees came to the Netherlands after the revocation of the Edict of Nantes?|around 1700, it is
+questions: what was the name of the gate of King Hugo?|what did the popular fancy think that haunted huguon?|what
+questions: what did the Huguenots spend most of their time on?|where is the site of a weaving school?|when was the
+questions: what was the name of the french church in portarlington?|when was the first Huguenot church in portarlington?
+questions: the exodus of what group from France created a brain drain?|what had the Huguenots done for society during the ex
+questions: what year was the warfare final cut off?|who issued the Edict of Nantes?|what did the Henry IV of Navarre proclaim
+questions: what did the english welcome as a result of the ensuing conflict between france and germany?|what did the english require in
+questions: why did the first Huguenots leave France?|after leaving France, what did the Huguenots seek freedom from?|what
+questions many farms in the Western Cape in South Africa still bear french names? Many families today in the Cape in SA SA SA SA SA SAgargargar
+questions: who was descended from Huguenot refugees?|who signed the Articles of Confederation for south Carolina?|where does the last
+questions: what famous lace-making district did some Huguenots settle in |what did 19th century sources state some of the refugees were |
+questions: what were the names of the two new neighborhoods the Huguenots created in Berlin?|by 1700, what percent of the city'
+questions: how many Huguenots lived in the area from 200,000 to 1,000,000?|after leaving the country, where did the Huguenot
+questions: what year was Fort Caroline established?|who ran the colony Fort Caroline?|what was the name of the french colony at St.
+questions: who tried to establish a haven in north America?|when was the outpost of Charlesfort founded?|what prevented a
+questions: what year did a hundred french Huguenots migrate from England to Virginia?|the english Crown had promised the Huguenots land
+questions: when was the Dutch Revolt?|which country became a destination for Huguenot exiles?|who was the murdered Hugue
+questions: when did the foreign Protestants naturalization act pass?|what was the estimated number of Protestant Walloons and Huguenots who
+questions: many Huguenots settled in Ireland | |in Ireland | | | |fought for William of Orange | | |fought for William of Orange
+questions: who did prince louis de condé arrange for a Huguenot community in Saarland?|what Huguenot community did the
+questions: where did most Huguenot émigrés migrate to?|what is one area in which the majority of Huguenot émigré
+questions: what does the "Hugues hypothesis" argue the name huguenote was derived by?|if the name huguenote were
+questions: when was Jacques lefevre born?|when did lefevre publish his translation of the new Testament?|when did le
+questions: what was the St. bartholomew's Day Massacre?|in what year was the massacre?|how many Protestant
+questions: in what year did louis xii gain the throne?|who did louis xIV want the Hugue
+questions: what city was the location of the Huguenots in New York?|what was the coastline of Davenports Neck known as?
+questions: where did the Huguenots adapt quickly?|from where did the Huguenots get their name?|what did the french merchant
+questions: who is one of the most prominent Huguenot refugees in the Netherlands?|what did Pierre Bayle finish writing and publishing?|what was
+questions: what is the current name of the french Protestant church of London?|when was the french Protestant church of London founded?|where is the french
+questions: when did Huguenot refugees find a safe haven in Lutheran and Reformed states in Germany and Scandinavia?|where were 20,000
+questions: in what year did prince albert of new york city announce the incorporation of the Huguenots?|in what year did former 
+questions: what are external combustion engines called?|what is the ideal thermodynamic cycle used to analyze steam in a boiler?|what is done when
+questions: what was the first successful true engine that could be used for both power and transmission?|who invented the atmospheric engine?|in what year was
+questions: who built the first fully functioning railway steam locomotive?|when was the first railway journey?|what was the name of the first steam locomotive that
+questions: in what year did injectors become popular?|what is the most practical steam engine?|what do water pumps do to recycle or top
+questions: what is the name of the engine that uses three or four expansion stages?|what is the purpose of the multiple expansion engine?|why do
+questions: in the 1840s and 50s, how were attempts to solve the problem of hydraulic valve gears with a variable cutoff expansion valve
+questions: what type of fusible plugs are found in the crown of a boilers firebox?|what happens to the lead fus
+questions: what did James Watt promise in 1781?|whose engine did a stationary steam engine help do?|in 1883 the engines could provide
+questions: how far back does the history of the steam engine go back?|what was the first steam engine described?|who described the ae
+questions: what type of engines came into widespread use near the end of the 19th century?|compound engines exhausted steam in to successive larger cylinder
+questions: what type of engines are more efficient than steam turbines?|when did steam turbines replace reciprocating engines?|in the u.
+questions: what is the space where the combustion chamber is located?|a nuclear reactor is a heat source in some cases?|what is a
+questions: what is the most useful instrument for analyzing the performance of steam engines?|when were early versions of the steam engine indicator in use?|
+questions: in what work were the pistons connected to the cranks?|how are the pistons balanced when creating a 4-cylinder compound?|
+questions: what is one piston stroke in a reciprocating piston engine?|in addition to the exhaust and intake, what else comprises the cycle?|
+questions: what engine finds a solution to the exhaust exhaust exhaust exhaust exhaust exhaust exhaust exhaust exhaust steam cooling problems?|by providing an additional port, what
+questions: what is an oscillating cylinder steam engine variant of?|what does an oscillating cylinder steam engine not require?|what
+questions: what is the working fluid in a Rankine cycle?|what is the working fluid in a mercury vapor turbine?|what
+questions: what can greatly limit the efficiency of a Rankine cycle?|what is the typical turbine entry temperature for steam turbines?|what
+questions: what was the main driving force behind the industrial revolution?|what did steam engines power in the industrial revolution?|where did their use in agriculture
+questions: what was the name of the locomotives Trevithick used?|when did the locomotive Salamanca come to be?|who built
+questions: who developed a method to reduce the magnitude of heat loss?|in what year was the low pressure compound engine invented?|what was the
+questions: what is the main use of steam turbines for electricity generation?|what percentage of the worlds electric production was by use of steam turbines
+questions: what is the fundamental thermodynamic underpinning of the steam engine?|what is the Rankine cycle?|the Rankine cycle
+questions: what was the historical measure of a steam engine's energy efficiency called?|who first introduced the concept of duty?|what is the
+questions: what was the dominant source of power until the early 20th century?|what replaced reciprocating piston type engines in commercial usage?|what is
+questions: who developed the first steam powered water pump?|in what year was the first steam powered water pump invented?|what was an attractive feature of
+questions: who created engines that used high-pressure steam?|when did Trevithick patent his high-pressure engine?|besides improved manufacturing techniques
+questions: what is the efficiency of Energiprojekts steam engine compared to high pressure engines?|how many passengers does the Energiprojekt steam engine
+questions: in areas where CHP is not used, what do steam turbines use surface condensers as a cold sink?|how are
+questions: who adopted the centrifugal governor?|for what purpose was the centrifugal governor adopted by James Watt?|the governor was
+questions: what was a common use for compounding engines after 1880?|compounding was not universally popular in what industry?|particularly
+questions: what cause the exhaust and compression periods to be a short cut off?|what is a common valve gear?|how does a
+questions: how long ago did boiling water used to make motion?|who patented the first steam engine?|in what year did savery patent
+questions: what is a stator?|what propeller-like arrangement are in the rotors?|what is the purpose of 
+questions: what factor, in turn, lowers the power-to-weight ratio of a steam plant than for internal combustion engines?|for what
+questions: what would be a mechanism based on pistonless rotary engines in place of the cylinders and valve gear of a conventional reciproc
+questions: what did newcomens engine have that besides a condenser did?|how much more coal did queen eliz
+questions: how many independent mechanisms do steam engines have?|one of the mechanisms is adjustable by whom?|the second mechanism is typically designed as what?
+questions: what year was the corliss steam engine patented?|how many valves did the corliss steam engine have?|
+questions: on what theory did the steam engine have a large positive impact?|what were the steam engine's applications different from?|what was
+questions: what is a benefit of condensing the fluid to a higher efficiency?|what is a common compressor type?|gas
+questions: what is an injector used for?|what is a condenser used for?|how is the firebox moved?|
+questions: why was feed water readily available?|what engine dominated marine applications?|what engine dominated marine applications?|when was the first war
+questions: how many nuclear power plants produce electricity?|what is the steam driving system of nuclear powered ships and submarines called?|in what type of
+questions: the Rankine cycle is sometimes referred to as what?|the TS diagram begins to resemble what?|what are iso
+questions: how much of the earths atmosphere is made up of diatomic oxygen gas?|what is the main cause of the downward trend in atmospheric oxygen
+questions: what light does the ozone layer absorb?|what does the ozone layer protect?|where is the ozone layer near
+questions: who proved that air is necessary for combustion?|when was Robert Boyle able to prove that air is necessary for combustion?|who showed
+questions: which gas did Joseph Priestley discover?|what type of atmosphere was liberated by the experiment performed by priestley?|on what date did
+questions: what writer from byzantium conducted one of the first known studies on the relationship between combustion and air?|in what work did Philo
+questions: what promotes rapid combustion?|what are fire and explosion hazards?|what is the oxidant?|what is the source of most
+questions: where is the lp positioned?|what is the lp positioned to be used for?|what pressure is used in
+questions: along with calcium carbonate, what is found in limestone?|what other element makes up the rest of the earths crust?|what is
+questions: whos original atomic hypothesis assumed that all elements were monatomic?|according to dalton, how many times hydrogens mass was in
+questions: which material with little residue is said to be a phlogiston?|what was a noncombustible substance
+questions: how are the oxygen atoms in dioxygen chemically bonded to each other?|what does the double bond result from?|
+questions: what year was the first discovered by the team of two scientists?|along with joseph priestley, who discovered the first known
+questions: what is the molecule that is called triplet oxygen?|what kind of electrons does triplet oxygen have?|what does triplet
+questions: what did lavoisier observe in one experiment?|what did he notice when he opened the container?|lavoisier
+questions: what is the primary component of the hydrogen that makes it useful in rocket fuel?|when was a metallic phase discovered?|at what temperature
+questions: answer:
+questions: what method of metal fabrication became more common?|what was the tolerance limit for welding and cutting metal? answer: welding and cutting metal.
+questions: how many times more oxygen in water dissolves at 0 °C than at 20 °C?|how many milliliters
+questions: what is the only form of radiation that surrounds the planets? answer: ultraviolet radiation
+questions: who discovered the liquid oxygen element?|what liquid did Pictet use to liquefy carbon dioxide?|what french phy
+questions: the sun has a higher proportion of oxygen-16 than which other planet?|the Genesis spacecraft recovered a wafer from the suns
+questions: what is molecular oxygen per se more reactive towards?|singlet oxygen is formed from water during what?|what is active
+questions: what do paleoclimatologists measure in the shells and skeletons of marine organisms?|to determine what the climate was like
+questions: what is the wavelength range of the spectrophotometric absorption bands?|in the bands, what can be detected to characterize
+questions: at what point can a bridge of liquid oxygen be supported against its own weight be used in labs? answer: 2 molecules
+questions: when did the zn2 particle begin to accumulate in the atmosphere?|when did the zn2 particle begin to accumulate in the
+questions: how does liquid nitrogen become liquid?|liquid nitrogen is naturally produced by what? answer: liquid nitrogen|liquid nitrogen
+questions: what is the minimum amount of h+ needed to get back to normal concentration? answer: 2
+questions: when did photosynthetic archaea and bacteria evolve?|when did free oxygen gas become prevalent in the atmosphere of the earth?
+questions: what is the reason for the unusual high concentration of oxygen gas on earth?|what is the main driving force of the oxygen cycle?|what
+questions: what is the process called whereby gas is pumped through a pipeline?|how is gaseous oxygen obtained by non-cry
+questions: how many gallons of natural gas are in a tank?|how many people in a tank of natural gas have to deal with
+questions: what is not known when two compounds are mixed during exercise?|when are the mixtures of h2 and h2 needed? answer
+questions: answer:
+questions: what is the essential purpose of respiration?|what type of oxygen is used in medicine?|what does treatment increase in the patient's
+questions: what is the name of the h+o2+o2+o2+o2+o2+o2+o2
+questions: what does cabin pressure loss activate above each seat?|what causes the oxygen masks to drop?|what does pressing the masks "to
+questions: what is the name of the gaseous oxygen equivalent to 840 liters of oxygen?|where are containers for liquid oxygen transported?
+questions: what is the name of the oxygen-rich ether?|how are ethers formed?|what is the main feature of ether
+questions: what is the most important energy-carrying molecules?|what is not present in the backbone?|what is absent in the bones
+questions: where is the bus station located?|how many people can be in the bus station?|what time of day is the bus station closed?
+questions: answer:
+questions: what is the volume of mastic?|how much pressure is needed for mastic? answer: 30 kPa|standard
+questions: when did the oil embargo begin?|what caused the price of oil to go up?|what was the price of oil equivalent to
+questions: the crisis caused a rift within NATO and what other organization?|what did the Nixon administration do to avoid being targeted by the boycott?
+questions: on what date did the us pull out of the Bretton Woods Accord?|what did the us abandon?|what happened to the
+questions: what was the "oil shock"?|who was slow to readjust prices?|how much had the dollar price of oil increased per
+questions: when did the attack on jewish people begin?|what was the price of oil going to rise as a result of the increase in
+questions: what was the posted price of oil in october 1973?|who raised the price of oil in october 1973
+questions: what did some of the money from Saudi Arabia go to?|what did the money go to?|what was the arab world war i
+questions: what do scholars believe about a negotiated settlement between the us and the ussr?|what was more important to the us than oil
+questions: what did the embargo cause in the us economy?|what were the consequences of the price increases on international level?|what type of
+questions: how many members of the EEC were faced with complete embargo?|who had the UK traditionally been an ally of?|
+questions: what did the coal miners and railroad workers strike in the winter of 1973-1974?|what did the strikers ask the British to
+questions: what created a scarcity in the oil market?|what did the price controls encourage in the oil market?|what caused the oil to
+questions: who was the first Administrator of the federal energy office?|who was the first Administrator of the federal energy office?|how much domestic oil did
+questions: what was the national maximum speed limit in 1974?|what act was the national maximum speed limit imposed in 1974?|when was the strategic
+questions: what did the energy crisis cause?|what has been criticized as the energy policy?|what has the presidents and congresses been
+questions: what did declassified documents show the us was distraught over?|what was the us's first plan to use force?|who
+questions: what was the most important import for japan?|where did 71% of japans import oil come from?|when did the 
+questions: how much more significantly did Saudi arms purchases from the us exceed Israels by 1979?|in what year did the us spend more than five times
+questions: what did the crisis reduce the demand for?|what were the four cylinder engines of the Toyota Corona?|what were the common front-
+questions: what companies introduced new large cars called the Toyota and Nissan? what name did Toyota and Nissan introduce in the 1980s?|what companies opened new
+questions: what were the two first compact trucks introduced?|what was the Mazda Truck sold as?|what did Mitsubishi rename its Forte as
+questions: which companies introduced fuel-efficient cars for domestic sales?|by 1985, how much miles per gallon did the average american vehicle move?|
+questions: what was the NHTSA's safety bumper standard 215?|by what year had many "full-size" american cars started
+questions: in what year did OPEC's production surpass that of other countries?|what was the world price at $40 per barrel in 1979?
+questions: what is the body of treaties and legislation known as?|what has direct effect or indirect effect on the laws of the european Union member states
+questions: who interprets european Union law?|what is the highest court that can interpret european Union law?|what is the name of the judicial
+questions: what does the european union lack?|what does the european union like every political body?|what are the EU's primary constitutional sources?
+questions: what does the primary law of the EU consist of?|what are the core treaties of the primary law of the EU?|what does
+questions: what did the principal Treaties that form the european union began with?|what was the second principle treaty that formed the european union?|
+questions: what is the Lisbon Treaty?|what was the Lisbon Treaty supposed to do?|how was the Lisbon Treaty implemented? answer:
+questions: what is the main executive body of the european union?|what article states that the Commission should promote the general interest of the Union?|what
+questions: why did the Santer Commission resign in 1999?|was a commissioner allowed to pay a dentist a job, based
+questions: what is the second main legislative body?|who creates the "European Council"?|how often does the "European Council"
+questions: which article in TFEU defines the "ordinary legislative procedure" that applies for most EU acts?|what is the first reading of a
+questions: what is the main judicial body of the european union?|what is the ECJ also abbreviated as?|what is
+questions: what is the Court of Justice's view?|what happened in the first major case?|in what year was Costa v ENEL
+questions: in the united kingdom, what is the right of a member state to determine whether it wishes to act against EU law?|which member state
+questions: what is the term that refers to the specific rules and procedures by the european union?|according to the european unions constitution, what
+questions: what is the court case that held that EU laws are not effective even if they are:|what is the court case that held that EU
+questions: Directives do not generally give citizens standing to sue other citizens?|what article in TFEU says Directives are addressed to the member
+questions: what is it called when a directive cannot enforce conflicting laws because of a late deadline?|what case was fought in 1963?
+questions: who has a duty to interpret domestic law?|textbooks called domestic law what?|what did the Court of Justice hold that a
+questions: what is the basis for the principles of European Union law?|the courts have drawn on what to develop the principles of european union law?|
+questions: what is a fundamental principle of european union law?|according to the principle of proportionality, what must not be disproportionate to the
+questions: which concept is recognised as one of the general principles of european union law by the european court of justice since the 1960s?|is this 
+questions: when were fundamental rights first recognised by the european court of justice?|in what decade are fundamental rights regarded as integral part of the general principles
+questions: what did none of the treaties establishing the european union mention? |what was not envisaged for european Union measures to be subject to human
+questions did the 2007 Lisbon Treaty explicitly recognise fundamental rights?|which document did the 2007 Lisbon Treaty set out fundamental rights?|what has become an
+questions: of what treaty is the Social Chapter a chapter?|in what year was the Social Chapter covered by the treaty?|in what
+questions: how many states adopted the Social Charter in 1989?|what happened to the UK when it refused to sign the Social Charter?|what was added
+questions: what did the UK subscribe to after the election in 1997?|what happened to the UKs main legislation after the 1997 Treaty of Amsterdam?
+questions: competition law began in what agreement?|what did the ECSC agreement do?|who were the originators of competition law?|when
+questions: what does article 101(1) prohibit?|what is automatically void? |what does article 101(3) prohibit? |what does article 102 prohibit
+questions: when was the concept of a "social market economy" introduced into EU law?|what concept is credited with being central to european development
+questions: what does the EU manage? |what is included in article 34 of the treaty on the Functioning of the european union?|what is
+questions: what may have a greater practical effect on imports than domestic products?|what is written about in article 36?|what is written about
+questions: what did the court of justice consider "selling arrangements" to be in accordance to TFEU article 34?|what was the main reasoning
+questions: what did the treaties hope to enable people to do?|what was the focus of the european community at the time of free movement?|
+questions: the free movement of workers Regulation articles 1 to 7 set out the main provisions on equal treatment of who?|articles 1 to 4 generally require
+questions: which country has become a fundamental status for member state nationals?|what has increased the number of social services that people can access where they
+questions: what does the treaty on the Functioning of the European Union protect?|what does the treaty on the Functioning of the european union
+questions: in 2006 what country was soiled due to a toxic waste spill?|who said that toxic waste should never have left the european union
+questions: what is the "freedom to provide services" under TFEU article 56?|the "freedom to provide services" under TF
+questions: what did the court of justice hold in R (daily mail and general trust plc) v HM Treasury?|what was
+questions: what is the Amazon rainforest?|what does the amazon rainforest cover?|how large is the Amazon jungle?|how large is the Amazon jungle
+questions: what did the extinction of dinosaurs and wetter climate allow the tropical rainforest to do?|from 66–34 Mya,
+questions: during what period is it believed that the drainage basin of the Amazon was split along the middle of the continent by the Purus Arch?|what
+questions: what have been significant changes in the last 21,000 years to the vegetation in Amazon rainforest?|what is the debate about the reduction of rainfall in
+questions: what has measured the amount of dust transported by wind from the Sahara to the Amazon?|what is the average amount of dust that is wind
+questions: what did the soil on which the amazon rainforest was believed to be insufficient to support a large population?|who was the archeologist
+questions: who was the first european to travel across the Amazon river?|when did Francisco de Orellana travel across the Amazon river?|what
+questions: what does the word "black earth" mean?|what is the english word for the "black earth"?|who found the remains of
+questions: how many insect species live in the Amazon region?|how many plants and animals live in the amazon region?|how many reptiles have
+questions: in 2001, how many tree species were found to live in the Amazon rainforest?|how many acres of Amazon rainforest could the plant life of the
+questions: the rainforest contains many species that can pose a hazard.|which sea creatures are some of the largest predatory creatures?|which
+questions: what is the conversion of forested areas to non-forested areas?|what are the two main sources of deforestation
+questions: how much area of the Amazon did the amount of forests lost between 1991 and 2000?|what do most of the lost forests become?|how
+questions: what is the name of the first two highways in the amazon?|what did the first two highways open up?|the mean annual
+questions: what are environmentalists concerned about?|carbon contained in vegetation can accelerate what?|how much of the planets terrestrial primary productivity do ever
+questions: what model predicts the future of the amazon rainforest?|what could the reduced rainfall and increased temperatures cause in the Amazon?|when could the
+questions: what is the name of the area in the peruvian Amazon where indigenous peoples' rainforest communities are disappearing?|what is the
+questions: what has been used by indigenous tribes to protect their lands from commercial interests?|what tool did the tribes use to map their ancestral
+questions: what is crucial to accurately map the Amazon's biomass and carbon related emissions?|how many categories did Tatiana Kuplich organize the trees
+questions: in what year did the Amazon basin experience the worst drought for one hundred years?|what year could have seen a second successive drought?|
+questions: what percentage of the Amazon rainforest is savanna?|in 2005, how much of the Amazon was savanna?
+questions: what sea creature lives in the sea?|what does the word ctenophora mean?|what is the scientific name for 
+questions: ctenophores can eat how much of their own weight in a day?|predator and prey interactions that improve
+questions: what is the name for a single animal that can produce both eggs and sperm?|what is the other name for herma
+questions: what plant is known for its habit of diving into the sea?|which bird has accidentally been introduced into the black sea?|what does 
+questions: how long ago were fossils thought to represent ctenophores found in lagerstätten?|fossils thought to
+questions Ctenophores form an animal phylum that is more complex than sponges, about as complex as sponges and ctenophores
+questions: ctenophores are similar to sponges and what other animal?|ctenophores and cnidarians have
+questions: what do ctenophores use to move?|how long are ctenophores?|what is the average length of 
+questions: what type of plans do ctenophores have?|what kinds of sea creatures need to be tough enough to resist waves and swirling
+questions: what is a pharynx also known as?|what is the pharynx also known as?|the 
+questions: what are swimming-plates used for?|what are the comb rows on the outer surface of a pool?|what are the
+questions: how do ctenophores control their buoyancy?|what do ciliary rosettes do if ctenophores enter
+questions: what is the largest sensory feature?|what is the aboral organ?|what is it's main component?|what are balancer
+questions: what type of ctenophores are common?|whats the common name for the sea gooseberry?|with the mouth at the
+questions: what are "little tentacles"?|what are colloblasts?|what are specialized mushroom-shaped cells in the
+questions: what is the name of the combs?|what is the metachronal rhythm of the combs?|to what does
+questions: Lobata have lobes that project beyond what mouth?|lobes of the Lobata are muscular, cuplike extensions
+questions: how many comb-rows do Lobates have?|what are the comb-rows in a lobate?|
+questions: what part of the beroida is another name for Nuda?|what does the beroida have that other non-fooding
+questions: what are the Cestida species called?|what part of the animal is an annelid?|what are cestid
+questions: how do most Platyctenida have bodies?|how do Platyctenida cling to
+questions: what is the common name for hermaphrodites?|which two species of genus Ocryopsis remain single single
+questions: which group of birds develops its own body forms?|which group of birds behaves like true larvae?|development of what is direct
+questions: when species are disturbed, what do they produce?|what is the term for the secretions produced by species?|how much more brightly
+questions: ctenophores are predators?|what species prey on zooplankton?|what are plankt
+questions: what was ctenophores thought to be in the marine food chains?|why were they regarded as dead ends in marine food chains
+questions: what caused sharp drops in fish catches?|what did Mnemiopsis leidyi consume to feed the adult fish?|
+questions: how many specimens were known to have survived the mid-1990s?|what evidence suggested that some ctenophores were extremely rare
+questions how long ago have existed fossil Stromatoveris dated to 515 million years ago? dated to 515 million years ago? dated
+questions: the relationship of ctenophores to the rest of Metazoa is important to understanding what?|what years has multicellularity been
+questions: all modern ctenophores except for beroids have what type of larvae?|what did their last common ancestor also
+questions: what was Fresnos population in 2015?|what is Fresno's ranking among cities in the usa?|
+questions: in which year did the central Pacific Railroad establish a station near Easterbys?|what was the store that grew the town of Fre
+questions: when did Fresno have several ethnic neighborhoods?|what was the percentage of black in Fresno in 1940?|what was
+questions: what was the name of the product introduced by bank of america in 1958?|where did the creation of bankAmericard occur?|
+questions: what was the name of the song written by Bill Aken?|who recorded "Walking Into Fresno"?|what
+questions how many large public parks in downtown Fresno? which has two large public parks in the city limits of Fresno? which park
+questions: when was the original Fresno County Courthouse demolished?|when was the old Fresno County Courthouse used as
+questions: what was the main financial and commercial district of downtown Fresno until 1964?|what was the area transformed into a pedestrian mall in
+questions: what is the neighborhood of Sunnyside |what is the community of Sunnyside |what does the Sunnyside Country Club host |who designed the Sunny
+questions: what historic theater is in the tower district?|the tower theatre is on the National List of Historic Places?|when was the tower theater
+questions: when did the area of great manhattans begin to decline?|in what period did the area of great manhattan begin to
+questions: what is the center of Fresno's gay and hipster communities?|what is the tower district also known as?|the
+questions: what century were many of the early homes in the tower district constructed?|what type of architecture does the tower district resemble?|what is
+questions: the Alta Vista Tract was officially platted in what year?|who mapped the Alta Vista Tract?|in what
+questions: what is another name for the "West Side" of Fresno?|which part of Fresno is the "West Side
+questions: which nickname is Kearney Boulevard given?|which family was the founder of Kearney Boulevard?|on which street does Kearney
+questions: which group has built single-family homes for low-income working families?|what type of shopping center is on the corner of fred
+questions: in what part of Fresno is Woodward Park located?|what part of the San Joaquin River is Woodward Park
+questions: when was Sierra Sky Park Airport founded?|who was the developer of the first planned aviation community?|what type of agreement allowed personal aircraft and
+questions: what is Fresno's climate classification?|what are the average temperatures for winter in Fresno?|what month is
+questions: what is the official record high temperature for Fresno?|what is the official record low temperature for Fresno?|what
+questions: according to the 2010 united states census, what was Fresnos population?|according to the 2010 united states census, what was
+questions: how many households were there in atlantic city during the 2010 united states census?|what percentage of households in atlantic city had children under the
+questions: how many families lived in atlantic city during the 2000 census?|as of 2000, how many people lived in atlantic city?|
+questions: to avoid interference with Fresno Fresno Fresno did the Federal Communications Commission decide Fresno would only have
+questions which main north/south freeway connects to which which main north/east freeway connects the major population centers of the California Central
+questions: what is Fresno is the largest us city not linked to an Interstate highway highway?when was the Interstate Highway System created in the 1950
+questions: what rail service does Amtrak provide?|what is the name of the main passenger rail station in downtown Fresno?|what
+questions: what caused Paul baran to develop the concept of distributed admbs?|what company funded the research program that Baran developed
+questions: what is circuit switching?|what is characterized by a fee per unit of connection time?|what is circuit switching in contrast to?
+questions: what is one type of communication that may be implemented with or without intermediate forwarding nodes?|what are normally forwarded by intermediate network no
+questions: what concept did baran develop during his research at the RAND Corporation?|what was the first document baran presented to the air force in
+questions: when did Donald Davies develop the same message routing methodology as Baran?|what did Davies call his new method?|what was Baran'
+questions: what does each packet include in connectionless mode?|what is one issue with using connectionless mode?|what is a single packet route
+questions: what requires a setup phase in each involved node before any packet is transferred to establish the parameters of communication?|what is included in the
+questions: what do X.25 and Frame Relay provide?|what does X.25 require?|where does X.25 operate
+questions: when did ARPANET and SITA HLN become operational?|when was X.25 introduced?|what is an example of
+questions: when was appleTalk released?|for which computers was appleTalk developed?|what was the primary protocol used by Apple devices through the 1980s
+questions: who directed the CYCLADES packet switching network?|when was the CYCLADES packet switching network demonstrated?|what was
+questions: what company created the DECnet?|when was the DECnet originally released?|what was the purpose for the DECnet?
+questions: in what year did Warner sinback begin his job to turn the GE business around?|how many sales and service centers were GE'
+questions: why was Merit Network, Inc. created?|when was the merger network, Inc. created?|what was the purpose of the merger
+questions: what was the first FCC-licensed public data network in the us?|who founded Telenet?|what was the host interface of
+questions: where was Tymnet headquartered?|what type of connection did Tymnet use?|what was the purpose of the ty
+questions: how many kinds of X.25 networks were there?| some newer networks included what?|who developed DATAPAC?|who
+questions: what kind of network was AUSTPAC? |who operated AUSTPAC?|when did Telecom Australia begin operation on AUSTPAC?
+questions: what was the name of the public switched data network operated by the Dutch PTT Telecom?|what was the original name of the data network
+questions: who funded the computer science network?|when did the computer science network begin operation?|what was the purpose of the computer science network?|
+questions: what is the name of the first Internet2 Network?|who was a prime investor in the nLR project?|when did internet
+questions: what was the NSFNET?|projects that supported the NSFNET were called what?|what was the NSFNET originally intended
+questions: when did the vBNS come on line?|who engineered and operated the vBNS?|in 1995, what was
+questions: where did the black death originate?|where did the black death travel to?|where did the black death end?|when did the black
+questions: what is the common name for the plague disease?|what type of disease is caused by Yersinia pestis?|what
+questions: what was reported to have been introduced to the continent via Genoese traders?|where was the port city of Kaffa in the
+questions: when did the plague hit northern europe?|what was the first year that the disease hit northern europe?|when did the plague hit
+questions: what plague plague plagued several countries in the middle east?|when did the plague reach Alexandria in Egypt?|through what trade did the plague
+questions: which year did the name atra mors first appear in modern times?|who wrote a book on Danish history describing the origin
+questions: what was the most authoritative account of the mid-evil period?|to whom did the most authoritative report of the Middle Ages come from
+questions what pathogen caused the black Death is the dominant explanation black Death Black Death? Black Death is the dominant explanation for the Black Death Black Death Black Death
+questions: what historian wrote about the 'Great Pestilence' in 1893?|what did Gasquet think the 'great pestil
+questions: what is the mortality rate of the modern bubonic plague?|what is the symptom of the bubonic plague?|what is
+questions: what type of pestis were the researchers studying in the black Death?|what did they study?|what did they use to determine the role
+questions: what clades of the y. pestis genome were associated with medieval mass graves?|how many waves did the plague enter Europe
+questions: what was the final result of the haensch study?|what did Schuenemann and others conclude from genetic evidence?|what year
+questions: what scientist challenged the bubonic plague theory?|in what year did J. F. D. Shrewsbury challenge the plague theory
+questions: what is a major barrier to research on the spread of the plague?|what part of the population has been hampered by the lack
+questions: what does the bubonic plague theory argue about the rat population?|what does sceptics of the bubonic plague
+questions: what organism did Twigg think the y. pestis caused?|what did Norman cantor think the y. pestis cause
+questions: what percentage of Egypt was killed in the Black Death?|how many people in Paris died in the Black Death?|what population of Florence was
+questions biraben believes the plague was infest around the time between 1346 to 1671? According to Biraben, the plague was infest
+questions: what year did the black death subsided in england?|what year did more outbreaks of the black Death occur in eng
+questions in what year was the Black Death 40,000 people died of the plague in Paris?? 40 years was the Black Death 40,000 people died of the
+questions: what percentage of the population was impacted by the plague in 1656?|what was the estimated population of Seville during the plague of 16
+questions: what ravaged much of the Islamic world?|plague was present in at least one location in the Islamic world virtually every year between 1500
+questions: along with igneous and sedimentary, what is the other major type of rock?|what is an important concept in geology that illustrate
+questions: what is the most important of the discoveries that showed that the Earths lithosphere is separated into tectonic plates? |what
+questions: what did plate tectonics provide a physical basis for?|what were plate boundaries?|what were divergent boundaries explained as
+questions: what method do seismologists use to image the interior of the earth?|what did early advances in the field show the existence of?
+questions: which timelines are further expanded in the third scale?|which timeline shows the entire time from the formation of the earth to the present?|
+questions: what is the foundation of cross-cutting relationships?|what are younger than the rocks that fail?|what may help determine if 
+questions: in what formation does it matter how old the inclusions or clasts are in the formation?|which formation contains gravel from an older
+questions: what is the principle of faunal succession based on?|what did the principles of succession were developed independently of?|when were the principles
+questions: what helped geologists in the 20th century in getting accurate absolute dates to geological events?|what methods did geologists use to date sections
+questions: what methods are used in geochronological and thermochronological studies?|along with uranium-lead dating
+questions: under what compression do rock units shorten and become thicker?|how do rock units shorten and become thicker?|what is one
+questions: what causes the rock units as a whole to become longer and thinner?|what are two ways that are for rock units to become shorter and
+questions: what is one of the deformational events that occurs during the addition of rock units?|what does deformation lead to? |what formation
+questions: what does the Hawaiian islands consist almost entirely of?|separate sequences of what are in the southwestern united states?|
+questions: what do geologists study?|what is the study of rocks called?|what is the study of sedimentary layers called?|what are
+questions: what do petrologists identify in the lab?|what two methods identify rocks in the lab?|what are the two primary methods of 
+questions: what data can be used by Petrologists to understand the properties of mineral phases?|what type of processes can be studied through physical experiments?|
+questions: what do structural geologists use to observe the fabric within rocks?|what gives information about the structure of rock?|what do structural geologists
+questions: what are the zones in which mountains are built along tectonic plate boundaries called?|what layers of sand are pull along 
+questions: drill cores and geophysical data are examples of what stratigraphic section that stratigraphers analyze?|in what environment do strati
+questions: what do biostratigraphers analyze?|what do geochronologists do?|what do magnetic stratigraphers look for
+questions: some modern scholars think that the origin of geology can be traced to what country?|according to some scholars, what was the first
+questions: who was known as the first modern geologist?|what year did Hutton publish a paper entitled Theory of the Earth?|to whom
+questions: who made the first geological map of the us?|in what year did charles b. maclure create the first ge
+questions: what did Sir Charles Lyell publish in 1830?|what theory is based on the principles of geology?|what was the name
+questions: what is the original greek roots of the word pharmacy?|what did the pharma offer in addition to general medical advice?|where was
+questions: what profession do pharmacists focus on?|what do pharmacists help to ensure for their patients?|what are pharmacists also known as?
+questions: in the united kingdom, what is a pharmacy technician considered?|who does a pharmacy technician have to register as a professional on?
+questions: when was Diocles of Carystus in charge of medicinal properties of plants?|what famous Greek physician wrote a five
+questions: when was the asuka period (538–710)?|when was the early Nara period (510–794)?|where
+questions: what did the advances in botany and chemistry help do?|what did medieval Islam greatly develop?|what famous work of literature is of
+questions: what pharmacy is located in durban, Croatia?|when was the Franciscan monastery opened in durban?|when was the oldest
+questions: where are prescriptions subject to pharmacy legislation?|what do pharmacists spend more time doing?|what is the profession of pharmacy technicians? answer
+questions: many pharmacists working in hospitals gain more education and training after what?|what are clinical pharmacists called?|what do pharmacists specialize in
+questions: where can hospital pharmacies be found?|what do hospital pharmacies typically stock?|what is a unit-dose of most hospital medications
+questions: what do pharmacists provide that optimizes the use of medication?|what does a clinical pharmacist promote?|where did the clinical pharmacy movement
+questions: what type of pharmacist needs to create a comprehensive drug therapy plan?|what are some of the things the clinical pharmacist must examine before dispens
+questions: what are ambulatory care pharmacists given in the us federal health care system?|what are pharmacist clinicians given in some states?|
+questions: what is the main focus of consultant pharmacy practice?|where do consultant pharmacists most often work?|what are some of the large pharmacy management
+questions: when did a growing number of internet pharmacies begin to appear online?|what is the main difference between community pharmacies and internet pharmacies
+questions: what do some internet pharmacies sell that require a valid prescription?|what are some of the negatives of internet pharmacies?|what
+questions: what is the generic name of hydrocodone?|what is the name of an ip because it is easy to obtain controlled substances
+questions: what has been a push to legalize in the us?|why has there been a push to legalize importation of medications from
+questions: what is the combination of pharmacy practice science and applied information science?|where do pharmacy informatics work?|where do pharmacy informatics
+questions: what are some of the complications that specialty pharmacies treat?|what are some of the complications that specialty pharmacies provide?|what does 
+questions: in what country are pharmacists regulated independently of physicians?|what percentage of american physicians practices dispense drugs on their own?|in
+questions: what law requires a GP practice to be located in a rural area?|how far is the nearest pharmacy from the GPs
+questions: what is one reason the majority rule is enacted?|what does the physician have to do to sell more medications to the patient?|
+questions: in the coming decades, what are pharmacists expected to become?|what are pharmacists expected to be compensated for?|what does M
+questions: what do pharmacists in australia receive remuneration for doing?|what are pharmacists remunerated for doing?|
+questions: what is the symbol that is commonly associated with pharmacy in english-speaking countries?|when was the show globe first used?|what is an
+questions: who brought about one of its earliest massive implementations?|what is one of the many ways people have rebelled against unfair laws?|
+questions: in what play did sophocles depict civil disobedience?|who is the current King of thebes?|what
+questions: what was the political poem percy shelley wrote after the tragedy of 1819?|what did shelley think a new
+questions: what has the term "civil disobedience" always suffered from?|civil disobedience has, in modern
+questions: what did leGrande say was difficult or impossible to create a single, all-encompassing definition of the term?|what maze
+questions: what is civil disobedience?|what is it called when two public agencies, i.e. two equally sovereign branches of
+questions: what did Thoreau's political philosophy pitch?|the individual is the final judge of right and wrong.|when the government knocks on
+questions: what is one type of civil disobedience?|what is another type of civil disobedience?|brownle
+questions: what must lawbreaking be publicly announced for to constitute civil disobedience?|what did Stephen Eilmann argue should disobed
+questions: what must civil disobedience must be?|what does blacks law dictionary say cant be non-violent?|what
+questions: what is disobedience to laws on the grounds that they are judged "wrong" by an individual conscience?|what
+questions: in what historical period did the first recorded incidents of collective civil disobedience take place?|why did the unarmed Jews gather in
+questions: what is an example of an illegal act committed by a civil disobedient?| Bedau writes that these illegal acts are often what
+questions: what is a civil disobedience can consist of?|what court case upheld the rule that allowed for civil disobed
+questions: illegal boycotts and refusals to pay taxes are examples of what type of civil disobedience?|what is an example of co
+questions: what might a suspect need to decide regarding a civil disobedience case?|what is the general view of a suspect
+questions: some civil disobedients feel it is incumbent on them to accept what punishment?|why do some civil disobedients feel
+questions: what is an important decision for civil disobedients?|what options do some believe there is a civil disobedient'
+questions: in what year was the committee for non-violent action sponsored?|did the committee for non-violent action protest?|where was
+questions: Howard Zinn wrote, "there may be times when protesters choose to go to jail, as a way of continuing their protest, as
+questions: in what case was a plea bargain reached?|how much was the plea deal?|in what case was a blind plea entered?
+questions: who were the people that were violating the greater law?|what was the sentence in allocution of U.S. v
+questions: what is the term for a defense used in court that involves a political defense?|in defense, what is the term for civil dis
+questions: what is one theory that disobedience can be helpful?|what is another theory that says a lot of unconscientious
+questions: what type of civil disobedience involves violating a law that is not the object of protest?|what type of civil dis
+questions: what is a major goal of criminal punishment?|what does incapacitation and deterrence accomplish?|what is the off
+questions: what is the process of constructing a building or infrastructure?|how does construction differ from manufacturing?|what percentage of gross domestic product does
+questions: what does large-scale construction require?|who manages the job?|what is important for the successful execution of a project?|
+questions: what are the three sectors of construction?|building construction is usually divided into what two types?|what is heavy/highway?|what
+questions: what is Engineering News-Record?|what industry does Engineering News-Record cover?|when did ENR compile and report data
+questions: what is the newer system that uses the standard industrial classification?|what subsectors are there to recognize differences between different types of construction firms
+questions: what is the process of adding structure to real property?|what are the majority of building construction jobs?|what are minor renovations that are
+questions: what dictates the construction materials used?|what determines the cost of construction on a per square foot basis for houses?|what is
+questions: what advances in 3D printing technology have allowed for the study of new techniques in building construction?|how long can it take to build new structures
+questions: in the modern industrialized world, what does construction usually involve?|what is the formal design team used to plan?|who is the design
+questions: what is a word that can be used to describe a company that offers its clients "one-stop shopping" for a construction project
+questions: what can aid the owner of a project?|what are some of the ways that the owner of a project can integrate their services?
+questions: underbids occur when builders ask for too little money to complete a project?|what happens when builders ask for too little money to complete
+questions: what is the most obvious source of funding for a building project?|who acts to monitor the expected monetary flow for the project?|
+questions: does a project need to adhere to zoning or building code requirements?|what is an example of a bad project that the owner
+questions: what is a contract?|what is the time element in a construction project?|what can cause a delay in construction?|
+questions: what involves the contractor and other stakeholders within a construction project?|what does the focus on co-operation with the contractor address?|what
+questions: what is the most common method of construction procurement?|who acts as the project coordinator?|what are the architects or engineers role?|who
+questions: what does the owner produce and hires to complete the project?|what is one way a contractor can work on a project?|
+questions: what are utilities to be marked on before the foundation is dug?|who checks the electrical, water, sewer, and cable facilities before the
+questions: how much money in annual revenue does the construction industry in the us have?|what percentage of the industry is private?|what percentage of the
+questions: in what year did a salary survey reveal the differences in remuneration between different roles in the construction and built environment industry?|
+questions: what type of occupation is construction?|what year did the united states and europe have the highest fatality rate for construction workers?|what
+questions: what are private schools also known as?|who governs private schools?|what percentage of private schools are funded by taxation?|what
+questions: in the uk, what are the restrictions on the use of the term middle school in terms of educational levels?|in what year did the
+questions: what year do secondary schools offer?|what is the lower sixth term of the secondary level?|what is the upper sixth term of the secondary
+questions: what form a subcategory of private schools?|what do parochial schools stand for?|what other religious groups are
+questions: what is one reason that private schools are favoured in australia?|what is a reason that private schools are more favoured in
+questions: some of the best known independent schools belong to what large religious foundation?|what are some examples of large religious foundations?|what other term
+questions: what is the Grundgesetz?|where can the right to create private schools in germany be suspended?|what happened to the percentage of pupils
+questions: who runs the schools that are like public schools?|what do the teachers at Ersatzschulen have in common?|what does the Grundgesetz
+questions: what are secondary or post-secondary schools called in germany?|what is a primary source of income for an Ergänzungsschulen
+questions: in india, what are private schools called?|what does the government give to a private school?|what is an aided or
+questions: indian schools are only open to what group of people?|what is the term for a school license granted by the government?|cri
+questions: why are private schools unusual in Ireland?|what are the costs to employ extra teachers in private schools in Ireland?|what certificate must an institute
+questions: when did malaysia gain independence?|what did the government instruct schools to do after they surrendered their properties?|what were
+questions: what is an example of a private school in kashmir?|with the help of an administration school, what type of school is
+questions: how many private schools are there in new zealand as of April 2014?|what percentage of the student population does new zeal
+questions: what type of school is St. Andrews College in Christchurch?|what is an example of a private school in st. bar
+questions: what in the Philippines has the private sector been a major provider of educational services?|how much of primary enrollment does the private sector account for
+questions: what does the government provide for tuition and other school fees?|what is geared towards students enrolled in priority courses?|what is made
+questions: in what century were some of the first private schools in south africa established?|what two types of schools does the south African schools act recognise?
+questions: what term was given to white government schools in the final years of apartheid era?|what schools were able to convert to
+questions: how many private schools are in Sweden?|how are private schools paid in Sweden?|what country has the most private schools?|how many
+questions: what are private schools usually called?|what are some private schools also called?|what is the age of the majority of children in the 
+questions: what did the families organize after the 1954 decision?|what was the academic content of the academies usually? |when did the
+questions: how is the financial backing of private schools provided?|religious private schools could qualify for what type of funding?|what kind of funding
+questions: how long has private schooling been a matter for students in the u.s.?|in what year did the idea of private
+questions: how much was the typical annual cost of day schools in new york city?|how much was the typical annual cost of boarding schools in new
+questions: what is the original name of the college?|in what year was the college founded?|who was the first president of the university of 
+questions: how many individual libraries are part of the Harvard library?|with how many volumes is the Harvard library?|how many presidents has Harvard attended
+questions: how many academic units are at harvard?|how much is the financial endowment at harvard?|how many
+questions: in what year was the college of charlestons formed?|which ship carried the printing press that became known as the "john of London
+questions: what type of ministers did the college train in the early years?|the college was not affiliated with any particular denomination, but many of its
+questions: when did David Tappan die?|when did Joseph Willard die?|who succeeded David Tappan?|in what year did char
+questions: who was the natural history lecturer in 1846?|along with the campus at Harvard, where would the lectures of Louis Agassiz
+questions: what political party did Charles W. Eliot belong to?|when was Charles W. Eliot president of american universities?|what
+questions: what did James Bryant conant think higher education should be?|when was the resulting report published?|what was the significance of the
+questions: in what year did the merger of Harvard and Radcliffe admissions occur?|what gender of undergraduates was most common at Harvard?|
+questions: in what neighborhood does the main campus of washington university fit into?|how many residential houses do students living in during the summer months live in
+questions: how many acres is the Harvard business school in allston?|how many miles west of downtown Boston is the Harvard school of dental medicine?|
+questions: how much land does the university own in Allston compared with Cambridge?|what is a possible new addition to the allston campus that
+questions: how many undergrads are at Harvard?|what is the name of the daily paper at Harvard?|what is the color of cri
+questions: Harvard has the largest university endowment in the world.|in what year was it worth $32 billion?|what was the amount of
+questions: what did student activists build on the Harvard Yard?|who was the vice consul in south africa?|how much did the university reduce its
+questions: what percentage of applicants did Harvard accept for the class of 2019?|when did Harvard end its early admissions program?|for what reason was
+questions: which 4-year program is for undergraduates?|in addition to arts and sciences, what other focus is included in the 4-year program at notre
+questions: when is the first semester of the academic year in Harvard?|when is the final semester of the academic year in Harvard?|what percentage of
+questions: what was the total cost of attendance for the 2012-2013 school year?|in 2007 what did families with incomes below $60,000 pay for
+questions: where is the Harvard University Library System located?|how many libraries are in the Harvard university library system?|the largest academic library in the us
+questions: the art museum at the art institute of america is an example of what type of art?|the contemporary art museum at the art institute of
+questions has Harvard been highly ranked by many university rankings. since when has it consistently topped the Academic Ranking of World Universities since 2003?|since when
+questions: how many intercollegiate sports does the Harvard Crimson compete in?|what is the name of the intense athletic rivalry between Harvard and Yale
+questions: in which season does the annual football meeting between Harvard and Yale take place?|when was the first football meeting at Harvard Stadium?|in which
+questions: what is the name of the athletic center at Harvard?|what is the malkin athletic center also known as?|how many cardio rooms does
+questions: which sport team is a top-ranked team in the country in rowing?|which mens ice hockey team is a Harvard
+questions: U.N. Secretary general Ban Ki-moon;; Malaysian President Felipe Calderón; Colombian President Juan Manuel Manuel
+questions: what is film film Yo Yo Yo Ma; actresse Yo Yo Ma; comedian, television host and writer Conan O'Brien; actors
+questions: what is executive executive executive executive executive executive executive executive executive executive producer, bbb to tobb , Harvard's faculty:
+questions: what is the largest city by area in the contiguous united states?|what county is Jacksonville the center of?|when was the city
+questions: in what year was the site of the french colony of Fort Caroline?|who originally lived in the area that became Jacksonville?|in what
+questions: what is Jacksonville's 3rd largest seaport?|what are some important services in the local economy?|what is the nickname given
+questions: how long has the area of Jacksonville, in the present day city of Jacksonville been inhabited?|what island is part of the Timucu
+questions: who was the discoverer of the St. Johns River?|when did Ribault chart the St. Johns River?|what
+questions: in what year did Spain cede Florida to the British?|what road did the British build that connected st. Augustine to Georgia
+questions: in what war was Jacksonville a key supply point for cattle from Florida?|what year was the first Confederate victory in Florida?|
+questions: during what period was Jacksonville and St. Augustine popular winter resorts for the rich and famous?|by what means did people arrive in Jacksonville
+questions: what year was the first fire in downtown Jacksonville?|what spread quickly after the mattress factory fire in downtown Jacksonville?|how many people were killed
+questions: how many silent film studios were founded in Jacksonville in the 1910s?|what was the name of the movie studio that was converted into the
+questions: what did Jacksonville experience after world war 2?|what is one of the negative effects of urban sprawl in Jacksonville?|who wrote the Jacksonville Story
+questions: what was the problem with funding education, sanitation, and traffic control in Jacksonville?|what areas had trouble obtaining municipal services?|what was
+questions: when did corruption scandals begin to surface among city officials?|how were many of the city officials impacted by corruption scandals?|how
+questions: in what year did a consolidation referendum take place?|on what date did the governments merge to create the city of Jacksonville?|who was
+questions: what is the total area of Jacksonville?|what percentage of Jacksonville is water?|what is the name of the county that surrounds Jacksonville?
+questions: what is the tallest building on the downtown Jacksonville skyline?|when was the bank of America tower constructed?|how tall is the bank
+questions: what is the climate of Jacksonville?|in degrees fahrenheit, what is the city's temperature in winter?|in degrees fahren
+questions: what are the mean monthly temperatures in february?|what are the mean monthly temperatures in July?|what are the high temperatures average in
+questions: how many storms have hit Jacksonville?|what is the strongest storm that has affected Jacksonville?|since when has Jacksonville received fewer storms
+questions: how many people live in Jacksonville according to the 2010 census?|what is Jacksonville's largest Filipino American community?|how many Filipino americans
+questions: what percentage of vacant households were there in 2010?|what is the average household size in the city of ann arbor?|what is the
+questions: how much global assets did the richest 1% of adults own in 2000?|the combined wealth of the 10 million dollar millionaires increased to
+questions: according to PolitiFact, who has more wealth than half of all americans combined?|according to the new york times, what
+questions: what does neoclassical economics view inequalities in the distribution of income as arising from differences in value added by
+questions: the substitution of capital equipment for labor raises what?|what is the labor inputs used for?|was there a competition to reduce
+questions: wages are a function of what?|what causes wages to be driven by this price?|the price of skill is determined by a
+questions: what will result in a low wage for a job?|what drives down the wages?|what is an example of a job
+questions: what is driven by survival needs?|what is driven by achievement-oriented motivations?|the economic impact of the former type of entrepreneurialis
+questions: what is a progressive tax?|what will the level of the top tax rate often have a direct impact on? |what can more
+questions: what is an important factor in the creation of inequality?|what creates high wages for those with education?|what leads directly to lower income
+questions: what did the "winner" plan to address in order to slow the recovery of the united states from the 2008-2009 recession?|what
+questions: what caused the decrease in wages?|what is a stepping stone to obtain college and advanced degrees?|when did wages decrease?|
+questions: what did John Schmitt and Ben Zipperer argue for?|what did the CEPR argue for?|what did the CEPR
+questions: what does Jake Rosenfield think the decline of organized labor in the us has played a larger role than technological changes and globalization?|what
+questions: what can trade liberalization do to the economy?|what happens when rich countries trade with poor countries?|what can happen to low skilled workers
+questions: in many countries, what is the gender pay gap in favor of males in the labor market?|what can contribute to the gap
+questions: Simon Kuznets believed that levels of economic inequality are in large part the result of what?|what does a country acquire that leads
+questions: what did Kuznets study?|what did Kuznets predict income inequality would decrease with time?|when did income inequality fall
+questions: how can wealth concentration contribute to the persistence of inequality within society?|in what book did Thomas piketty argue that the key force for diver
+questions: what is the market force that should be used to brake concentration?|what is the market force that focuses on income and wealth?|what
+questions: answer:
+questions: what does high and persistent unemployment have a negative effect on?|who won the 2013 Economics Nobel prize?|what is the main problem with
+questions: answer:
+questions: in the united states, how many people over 65 lived on average in 2004?|in the united states, how many people lived on average in
+questions: which characteristic has been strongly linked to health in developed countries?|who created an index of "Health and Social Problems" from nine factors?
+questions: how many studies have shown tendencies for violence to be more common in societies where income differences are larger?|homicide rates in the united states
+questions: what is an example of reduced "distributive efficiency" within society?|if a house provides more utility to a millionaire
+questions: what is the argument that income inequality is not significant?|in what year was consumption inequality actually lower?|in what year was income inequality actually
+questions: who is Raghuram Rajan?|what does he believe has created deep financial 'fault lines' that make financial crises
+questions: inequality in wealth and income is negatively correlated with the duration of which economic growth spells?|high levels of inequality prevent what?|what
+questions: what harms economic growth?|what has an effect on economic growth?|what is the term for high and persistent unemployment?|what can
+questions: how did inequality and global inequality effect growth?|what did he believe inequality and global inequality do?|what did he think that improved
+questions: which two studies showed that the credit market imperfections effect human capital formation and economic development?|who found that the same effects of credit market imperfections do
+questions: what is Robert Barros profession?|what did Barro find about income inequality?|what does high levels of inequality do in poor countries
+questions: what does the Kuznets curve hypothesis state?|what does the Kuznets curve hypothesis claim does not account for the large increase
+questions: some theories claiming inequality had a positive effect on economic development were wrong. |what was the impact of income inequality on the economy according to
+questions: the effect of economic growth on poverty reduction is dependent on what?|what can play a large role in human development?|what can economic
+questions: where is much land and housing held outside of the formal or legal property ownership registration system?|how is much unregistered property held?
+questions: what is the research that says income inequality is the cause of the shortage of affordable housing?|what did David Rodda state that the number
+questions: what is a cost that is difficult to avoid and shared by everyone?|what is a cost that must be shared by everyone?|
+questions: what is the result of more environmental degradation?|what does the increase in carbon emissions do?|when is more waste and pollution created?|
+questions: what do socialists attribute the large disparities in wealth to?|what do socialists believe should be socially owned?|what is the
+questions: in what did Robert Nozick believe that government redistributes wealth by force?|according to nozick, what is 
+questions: what is another name for the capabilities approach?|what looks at income inequality and poverty as form of "capability deprivation"?
+questions: what can a person do with income when their capabilities are reduced?|who can earn more money when their earnings are reduced?|what causes
+questions: what is the name of the private research university in Chicago?|when was the university of chicago established?|how many professional schools does
+questions: under what bridge did the first self-sustaining nuclear reaction develop?|where was the first self-sustaining nuclear reaction developed?|with what does
+questions: in what year was the university of chicago founded?|who gave the university of chicago a donation?|in what year
+questions: in what year was the university of chicago created and incorporated?|who donated the land for the university of chicago in 18
+questions: what did the university of Chicago affiliate with several regional colleges in the 1890s?|in 1896, what college did the university of Chicago
+questions: in what year did notre dame's fifth president take office?|who was the notre dame's fifth president?|what did
+questions: in what year did student applications at washington university begin to decline?|what was the root cause of the decline in student applications at washington
+questions: in what year did students protest at notre dame over the university's off-campus rental policies?|what was responsible for the creation of
+questions: in what year did the university of chicago begin construction on a Milton Friedman institute?|how much did the Milton Friedman institute
+questions: who planned the first buildings for the university of chicago campus?|what are the main quadrangles of the university of chicago
+questions: when did the Gothic style on campus begin to give way to modern styles?|what was designed by Ludwig Mies van der Rohe for the
+questions: what is the name of the campus where the university of chicago holds undergraduate and graduate study programs?|when did the university of chica
+questions: by what entity is the university of chicago overseen?|who is on the board of trustees?|the president of the university
+questions: how many divisions of graduate research does the university of Chicago have?|how many professional schools does the university of chicago have?|
+questions: how many academic majors does the college of the university of chicago grant Bachelor of arts and Bachelor of science degrees?|how many minor
+questions: what is the core curriculum of the university of chicago known as?|how many students could be in the core classes at the university of
+questions: what is the name of the private day school in oklahoma city?|what is the name of the Orthogenic school in 
+questions: how many libraries are within the university of chicago library system?|how many volumes does the university of chicago library system contain?
+questions: how many research institutes does the university run?|how many research centers does the university run on campus?|what is the name of the
+questions: the school of economics at the university of chicago is named after whom?|what was the first sociology department at the university of
+questions: when was a doctorate in music composition at ku?|when was a master of fine arts degree at ku?|when
+questions: how many students were in the fall quarter of 2014 of the university of chicago?|how many students were in the fall quarter of 2014
+questions: what does the acronym UAA stand for?|what is the nickname of the houston athletics team?|in which season did
+questions: how many clubs and organizations does the university of chicago have?|what is one of the most famous extracurricular groups at the university of
+questions: what is the name of the student government at ku?|what is the amount of the student government at ku called?|what is
+questions: how many fraternities does the university of chicago have?|what is the name of the co-ed community service fratern
+questions: what is the name of the annual Scavenger Hunt held at the university of chicago?|when did the festival of the arts
+questions: famous alumni from high technology include:: famous alumni include:: famous alumni include:: famous alumni from famous alumni include: former former Governor of
+questions: what what is Saul Alinsky?? founded what modern modern community organizing Saul Alinsky?? what former former founder of modern
+questions: what Pulitzer Prize winning author has spent most of his life in the philadelphia casino?|what is theorized to be
+questions: who founded the video game series Alex Seropian?|who is a film critic for life itself?|what is the name of
+questions: what famous astronomer is a student at notre dame?|which college did notre dame attend?|which professor at notre dam
+questions: what role did Milton Friedman serve as advisor to?|what did George Stigler champion?|what award did Herbert A. Simon win
+questions: what is the nickname of a female hominid that was found in the Afar Triangle?|what is the name of the fossil that
+questions: who created the hydrogen bomb?|who was a noted physicist?|who graduated from ku?|what is the
+questions: what famous Nobel prize winning economist and classical liberalism defender Friedrich Hayek?, astronomer Gerard Kuiper, one of
+questions: current current faculty:: current governor of indias central bank, current governor of indias central bank, current governor of indias central bank board
+questions was the long before the Yuan dynasty was dynasty of China during during the time during the Mongol dyna
+questions: to what empire does the Yuan dynasty succeed?|to what entity does the Yuan dynasty refer?
+questions: in what year did Kublai Khan establish the Yuan dynasty?|who imposed the name Great Yuan?|
+questions: who was the third son of Genghis Khan?|who was the mongols destroyed in 1234?|in what year did the
+questions: who defected to the mongols?|who did the 2 Han Chinese leaders defect to?|who led armies against western 
+questions: what ethnicity was Shi Tianze?|in what dynasty did Shi Tianze live?|what ethnicity was
+questions: who defeated the Chinese Song dynasty?|when did the Mongols defeat the Chinese Song dynasty?|
+questions: what trouble troubled the early years of Kublai Khan's reign?|who refused to submit to Kublai?|what 
+questions: during what period did Kublai rule?|what did Kublai do in order to maintain order?|what did Kublai do
+questions: when did Kublai begin construction on the site of the former capital, now Beijing?|what was the name of the chinese
+questions: during what period did the mongols protect the postal system?|what did Kublai protect the mongol railway system?|what did
+questions: who was Kong Duanyou's brother? |where did the Duke Yansheng Kong Duanyou go?|when did the
+questions: when did Kublai broaden his control?|who did Kublai want to remove from power?|who did theqing 
+questions: in what year did the mongols begin to face financial difficulties?|which year did kublai first invade Japan?|which country
+questions: when did Dali become ruler again?|what position would the former ruling Duan dynasty take?|what was the official
+questions: who was the fourth Yuan emperor?|what did Buyantu Khan do?|who was a Confucian academic?
+questions: how long did Emperor Gegeen Khan rule?|who was Ayurbarwada's son and successor?|how
+questions: when did Yesün Temür die?|where did Temür die?|what year did he die?|what group
+questions: who was Tugh Temür's most concrete effort to promote?|what organization did the foundation of the Academy of the Pavilion of the
+questions: how old was toghun Temür?|who succeeded Kublai Khan?|who became so powerful an official after El Te
+questions: the last years of the Yuan dynasty were marked by struggle, famine, and what?|who's successor
+questions: when did people in the countryside suffer from natural disasters?|what caused the government to lose popular support?|in what year did the red
+questions: did the mongols promote trade between east and west?|what type of trade did the mongol world order encourage?|when did the
+questions: what musical instruments were introduced to enrich Chinese performing arts?|who converted the Chinese to Islam?|which religions enjoyed a period of to
+questions: the first recorded travels by europeans to china and back date from what time?|who was the most famous traveler of the period?
+questions: what did the Yuan plan to improve on the lunisolar calendar?|what could the famines prevent in the empire?|
+questions: what was the first time non-native Chinese people ruled all of china?|in the historiography of Mongolia, it is considered
+questions: the system of bureaucracy created by Kublai Khan reflected many cultures in what empire?|the Yuan bureaucracy
+questions: when were the six Ministries created?|what type of government did the six Ministries serve?|what were the two courts of justice for? answer
+questions: what script was created in 1269?|what script was preserved in the court until the end of the dynasty?|what
+questions: how did the average Mongol family spend their money?|what type of lifestyle did the average Mongol family live?|what did the Mon
+questions: name some important developments that occurred during the period of the mongols and china?|besides being famous today, what is one of the famous
+questions: did the established of the Yuan dynasty increase the number of Muslims in china?|did the Yuan dynast
+questions: who came up with the idea of polynomial algebra?|what did Shijie solve?|what did Shijie reduce the
+questions: who worked on astronomical calculations?|what material did gou derive for his calendar?|when was gou's calendar released
+questions: what type of physicians were otachi?|what were the traditional mongol shamans called?|what did the mongol
+questions did the medical tradition of the Yuan inherited from the Yuan inherited from the Yuan inherited from the Yuan inherited from the
+questions: who practiced western medicine in china?|what is another term for western medicine?|who founded the Office of Western Medicine?|in what
+questions: who patronized the Yuan printing industry?|who transferred Chinese printing technology to the Mongols?|when was earthenware mov
+questions: what was the paper money of the Yuan made from?|what did the chao originate from?|what year did the Yuan
+questions: what system of government did Kublai Khan create?|who was not given their share of power?|who created fake government?|who
+questions: what group of people were imported by the mongols to serve as administrators in china?|what areas did the mongols import Han Chinese
+questions: what practice did the Yuan Emperors restrict to the vegetarian?|what type of meat did the Yuan Emperors restrict?|which group
+questions: who wrote that the term "social classes" for the four-class system was misleading?|what did the term "degrees of privilege"
+questions: what was the date that placed people in a certain class?|what was the reason for the order of classes?|what was the earlier
+questions: who was ranked higher than the Korean King?|who surrendered to the Mongols first?|who surrendered to the
+questions: how many people can be found in the city of tiahua?|what is the current name for the government body in
+questions: what is the immune system responsible for?|what is one way that the immune system functions?|what are two ways that the human body is
+questions: what can cause cancer?|autoimmune diseases can also result from what?|autoimmune diseases can also result from what?|what is immunodefic
+questions: the study of the immune system is called what?|immunology studies the structure and function of what system?|when was the 
+questions: what is the foundational principle behind the immune system defenses?|insects have layers of defenses that increase their specificity and
+questions: what do innate and adaptive immunity depend on?|what are the components of an organism's body that can be distinguished from foreign substances by
+questions: what do microorganisms encounter in the innate immune system?|what is the innate immune system triggered by?|what
+questions: what are some barriers protect organisms from infection?|what are biological, chemical, and biological barriers are barriers to seal seals from infection?
+questions: what type of barriers help prevent infection?|what secretes antimicrobial peptides?|what is an antibacterial gene found
+questions: what pathogens will reach the right amount to cause illness?|what can happen if an antibiotic overgrowth of fungi?|
+questions what is what what does the immune system's response to infection?|what are the symptoms of infection? what are the symptoms of inflammation? what
+questions: what is an important feature of cellular innate immunity?|what type of cells are called phagocytes?|what do phag
+questions: what are phagocytes called that travel through the body in pursuit of invading pathogens?|where are Neutrophils
+questions: what are white blood cells called?|what are leukocytes second arm of?|what three areas of the innate immune system are
+questions: what cells are mainly located in the skin, nose, lungs, stomach, and intestines?|dendritic cells
+questions: what are NK cells?|what does NK cells destroy?|what is the main difference between NK and TN cells?|
+questions: how did the adaptive immune system evolve?|invovled by evolution, what system allows for a stronger immune response?|what is
+questions: what are the two major subtypes of T cells?|what are the two major subtypes of T cells?|what can kill
+questions: what type of T cells are called?|what are the cells called that kill cells?|how are T cells activated?|CD8
+questions: what type of T cells express T cell receptors?|what type of molecules are receptors?|what is an important signal
+questions: what does  ⁇  T cells possess?|what is another name for  ⁇  T cells?|what are  ⁇  T cells similar to?
+questions: what does a B cell identify?|what happens when antibodies on its surface bind to a specific foreign antigen?|what is
+questions: what are some of the long-lived memory cells?|what do these memory cells remember?|what does this adaptation prepare the immune system
+questions: what part of the body is protected from infection?|what specific type of antibody is produced during pregnancy?|what else can this protect against?
+questions: what can hormones do in the human body?|what specific hormone can be related to a boy's development?|which hormone regulate
+questions: what can trigger lower antibody production and lower immune response in someone suffering from sleep deprivation?|what is NFIL3 closely inter
+questions: what is a progressive decline in hormone levels with age believed to have caused?|what was a hormone regulated by the immune system during
+questions: what does the immune system destroy in tumors?|what type of cells helper T cells also help tumor cells?|what is different from
+questions: why does a plant produce a localized hypersensitive response?|what does the plant undergo when an infected part of a
+questions: what is the other end of immune dysfunction?|what does the immune system fail to distinguish between self and non-self?|in what part
+questions: what can cause immunodeficiency?|at what age does the ability of the immune system to respond to pathogens begin to decline
+questions: what does infection use to acquire long-term active memory?|how can active immunity be generated artificially?|what is another term for vaccination
+questions: what does the success of any pathogen depend on?|how did pathogens evolve several methods to infect a host?|how
+questions: what medical scientist first proposed the clonal selection theory of immunology?|what triggers destructive immune responses according to the CST?
+questions: what type of drugs are used to control the effects of inflammation?|what are the most powerful of glucocorticoids?|low
+questions: what are some of the effectsor cells peak during wake periods?|what type of molecules peak during awake active times?|when would an in
+questions: what does a vitamin D receptor do?|what is the active form of vitamin D?|what is the steroid hormone version of
+questions: what are proteins used by nearly all organisms to identify molecules associated with pathogens?|what is an evolutionarily conserved component of
+questions: the evolution of the adaptive immune system occurred in an ancestor of what?|many classical molecules of the adaptive immune system exist only in
+questions: what group of animal has an adaptive immune system?|invertebrates do not generate what type of immune response?|why do in
+questions: the routine practice of immunology can best be characterized as?|what are two opposing theories of early 20th century immunology?|
+questions: what is the process by which some tumors escape the immune system?|what type of molecules do tumor cells have on their surface?|what
+questions: what is the term for an immune response that damages the body's tissues?|insects are classified into how many classes?|
+questions: what is the strategy called that several pathogens use to avoid the innate immune system?|where does a pathogen spend most of
+questions: what is the simplest way to evade the adaptive immune system?|what is the name for concealing essential epitopes?
+questions another important role the immune immuno immuno immuno immuno immuno immunotherapy to identify and eliminate tumors is another term term immuno immunotherapy.tidentifie and eliminate
+questions: what can large drugs cause?|what is the typical size of larger peptides and proteins?|what may be co-ad
+questions: sleep and the circadian system have been shown to have strong regulatory effects on what?|sleep and the circadian system have been
+questions: what can evolve and adapt quickly?|what does the immune system avoid detection and neutralization of?|what has evolved to recognize and neutralize
+questions: what specific signal triggers a rapid killing response?|what is the speed of the response?|what do complement proteins do when they 
+questions: when was the Intergovernmental Panel on Climate Change established?|what are the two organizations that established the IPCC?|who can join the IP
+questions: who is the chair of the IPCC?|who did not serve as chair prior to being appointed chairman?|who did not serve as chair
+questions: who arrived at the 2003 meeting?|who attended the 2003 meeting?|when was the meeting held?|how many people attended the 2003 meeting
+questions: which fund does the IPCC receive funding from?|who establishes the IPCC Trust Fund?|who provides the cost of the secretary
+questions: what does the IPCC not conduct?|who is the only entity that monitors climate related data?|what method do the lead authors of
+questions: who is responsible for writing and editing the material in a chapter?|what is a chapter lacking ten to fifteen lead authors?|
+questions: what increase in greenhouse gases do the climate change scientists believe is being caused by human activities?|how much warming of the earths surface will CO
+questions: in 2001, how many national science academies issued a joint statement on climate change?|what did the joint statement on climate
+questions: which IPCC author has made a number of criticisms of the TAR?|what does Lindzen feel the SPM understates
+questions: what is the IPCC publishing that is not just about climate change?|what is one of the two special reports finalized by the IPCC
+questions: what is a major duty of the IPCC?|what are factors used to derive emissions estimates?|what is published? answer:
+questions: what did the IPCC say about the date of 2035?|what document did the IPCC use that was not included in the final summary
+questions: what former chair said "the IPCC needs to look at the trend in the errors and ask why it happened".|who said that the 
+questions: what did the third assessment report display?|who created the graph "Millennial Northern Hemisphere temperature reconstruction"?|when did the IP
+questions: who claimed the warming period is exceptional? |what temperature between 1000 and 1900 was the warming period comparable to?|whose opinion did the graph on
+questions: what group did sherwood boehlert chair?|who did the boehlerts request the u.s
+questions: how many proxy based temperature reconstructions did the IPCC Fourth Assessment Report feature? |how many reconstructions did the Medieval Warm Period
+questions: on what date was a study published that suggested temperatures and sea levels have been rising at or above the maximum rates proposed by the IPCC?
+questions: what did the researchers analyse to show that rising sea levels have been understated by the IPCC?|in 2100, what were the
+questions: which IPCC member conceded some limitations regarding the proposed 5th Assessment Report?|what did Michael Oppenheimer want to change the assessment
+questions: the IPCC process on climate change has been compared with other environmental challenges such as what?|what global regulation process has been successful in case
+questions: who compared global warming to ozone depletion?|according to ungar, which group had a better understanding of scientific
+questions: what is the IPCC's standard method of research?|what is the deadline for submissions prior to the release of an IPCC report
+questions: what did five climate scientists write in the spring of 2010?|what did the climate scientists propose in the spring of 2010?|what other recommendations
+questions: what is a natural number greater than 1 that does not have any positive divisors other than 1 and itself?|what is a
+questions: what is the property of being prime called?|what is a method of verifying the primality of a given number n?
+questions: what did Euclid demonstrate about infinitely many primes?|who demonstrated the existence of infinitely many primes?|what does the
+questions: what is goldbachs conjecture?|what is twin prime conjecture?|what are primes used for?|what is
+questions: what is prime?|what is not prime?|what is not prime?|all prime numbers greater than 5 end in which two divisions
+questions: how many mathematicians considered 1 the first prime number?|in what century did goldbach list 1 as the first prime?|what
+questions: what work would still be valid when calling 1 a prime?|what did Euclids fundamental theorem of arith
+questions: what did the ancient Egyptians have some knowledge of?|earliest records of the study of prime numbers where from the ancient Greeks?|what
+questions: who proved Fermats little theorem?|what number was composite?|what type of numbers were studied by the ancient greci
+questions: what is the most basic method of checking the primality of an integer named n?|what integer is greater than 1 and equal to the
+questions: what two classes are there in modern primality tests for general numbers n?|probabilistic and deterministic algorithms are which of
+questions: what does the Fermat primality test relies on?|what does the carmichael numbers stand for?|why is
+questions: what are prime numbers of this form known as?|what are prime numbers of this form known as?|what is particularly fast for numbers of
+questions: what is the following table for the largest known primes of the mentioned types?|a few of the primes that have been found using distributed
+questions: are primes for any natural number n?|what does the floor function do?|what requires the knowledge of infinitely many primes
+questions: what condition must be met for the progression to have infinitely many primes?|what color are primes in the picture below?|when
+questions: the zeta function is closely related to what?|what is the harmonic series that exceeds any given number?|the richness
+questions: what is the unproven Riemann hypothesis?|in 1859, what states that all zeroes of the  ⁇ -function
+questions: how long have conjectures about primes been under proof?|how many of Landau's problems from 1912 are still unsolv
+questions: how many twin primes are there?|within what concept is the concept of infinitely many pairs of primes with difference 2?|
+questions: what did number theory and the study of prime numbers in particular become to be?|what was the only area of study for number theory that was
+questions: what condition does Giuga say p has to be prime?|what is a recurring decimal?|in what base is 
+questions: 256-bit primes are frequently used for what?|1024-bit primes are typical for what?|what does RSA
+questions: the evolutionary strategy used by cicadas of the genus Magicicada make use of what?|where do the insects spend most
+questions: what concept is so important that it has been generalized in various ways in various branches of mathematics?|what does the word prime indicate?|
+questions: what concepts are applicable to elements of any commutative ring R?|what are prime elements and irreducible elements?|when
+questions: what is an example of a domain where the simple numbers are called Gaussian integers?|what are the prime elements of these Gau
+questions: in ring theory, what is replaced by the notion of number?|what are prime ideals?|what are the prime ideals of
+questions: what are prime ideals?|what concepts benefit from the notion of ring?|what is a basic problem of algebraic number theory
+questions: what happens to the normal absolute value? |what results from completing with respect to the absolute value?|how many ways to complete Q,
+questions: what classical composer used prime numbers to create ametrical music through "natural phenomena"?|what work by Olivier Messiaen
+questions: what river is the biggest city on the river Rhine?|how many people live in Cologne, germany?|what is the river
+questions: what is the origin of the name of the river Rhine in modern languages?|what is the name of the Gaulish name that was
+questions: how is the length of the Rhine conventionally measured?|what is the scale introduced in 1939 that runs from the Old Rhine Bridge
+questions: what river joins and form the Rhine? |where does the river make a distinctive turn to the north?|what is the length
+questions: what does the mouth of the Rhine form?|where does the river mouth of the Rhine meet lake constance?|what is the
+questions: what was the purpose of the dam on the Rhine?|how did the dam on the Rhine drain?|what is the expected outcome
+questions: answer:
+questions: what is the name of the water that begins to flow into the lake at Rheinbrech?|at what point does the flow of cold water
+questions: what is the major tributary of the Rhine?|what is the name of the tributary that joins the Rh
+questions: where does the "Rhine knee" begin?|what is the legal boundary between High and Upper Rhine?|when did the river
+questions: what caused the water level to fall in the Upper Rhine region?|when was the Rhine straightening program implemented?|what was
+questions: what is the longest river in germany?|what is the average discharge of the Rhine tributaries? |which region of fr
+questions: what is the name of the formation that flows between Bingen and Bonn?|what is the Rhine Gorge?|what castle
+questions: what was industry a major source of until the early 1980s?|what cities are along the Rhine?|where is the home of
+questions: what are the two dominant economic sectors in the middle Rhine area?|what is the Rhine Gorge between Rüdesheim am Rhein and
+questions: which region does the Rhine flow through?|which are the Rhine's banks usually heavily populated?|which large river port in
+questions: how much water flow volume of the Rhine flows westward?|where does the Beneden Merwede merge off?|where does
+questions: at what point does the Nederrijn change its name and become the lek?|where does the water from the canal end up in
+questions: what did the name Rijn be used for |small streams further to the north did the small stream to Rijn|what did the small stream
+questions: what is the most important natural region of the Netherlands?|where does the Rhine contribute most of the water?|what does the river delta
+questions: what is the name of the large river that begins as Waal?|what is the name of the 2nd main branch of the Rhine
+questions: what year was there a flood?|which river did the Meuse flow near to the north sea?|between what years did the sea
+questions: what is characterized by the delta's main arms, disconnected arms, and smaller rivers and streams?|what have many rivers been closed or
+questions: what does the delta have?|what could happen to large areas of land in the sea?|where does the tide act far inland?
+questions: at what time was the opening of the Tethys Ocean?|what was the time span of the Tethys Ocean?|
+questions: when did the Alpine orogeny cause a N-S rift system to develop in this zone?|what is the name of the
+questions: stream capture allowed the Rhine to extend southward?|through stream capture, the Rhine extended its watershed southward. |through stream
+questions: when did the geological period of the Ice Ages begin?|of what period have six major Ice Ages occurred?|when did the
+questions: during what period was the last glacial?|what was the last glacial's magnitude?|in northwest europe, what saw two
+questions: what was the last Ice Age during the Rhine's current course?|what source must have been a glacier?|where did
+questions: when did northwest european slowly begin to warm up?|by 9000 BP, what was fully forested?|what helped the english
+questions: since what time has a situation with tides and currents, very similar to what is it?|what has happened in the last 
+questions: when did the holocene era start?|when did the holocene era end?|what did the Rhine
+questions: what is human impact seen in the delta?|what is the result of increasing land clearance in the upland areas?|what led to
+questions: what direction do the branches Waal and Nederrijn-Lek discharge to?|which river flows to the north and enters the
+questions: when did the Rhine enter the historical period?|who was the Rhine not known to?|when did the Rhine enter the historical
+questions: when did augustus die?|what month did rome accept as her germanic frontier the Rhine and upper Danube?|what
+questions: how many legions did the romans keep in five bases along the Rhine?|when did the assignment of legions begin?|what
+questions: during what period did germanic tribes cross the Rhine?|when were the kingdoms of Francia and Burgundy established?|
+questions: in the 6th century, what were the borders of Francia?|in the 10th century, what were the borders of western Francia
+questions: what did the Rhine form a contentious border between?|who tried to annex lands west of the Rhine?|
+questions: what happened to the Rhineland area after world war 1?|what was the treaty of Versailles?|when did the allies
+questions: in what war was it understood that the Rhine would provide a barrier to the invasion of germany?|what bridge was the main focus
+questions: what was the generally accepted length of the Rhine?|in which year was the length of the Rhine incorrectly stated?|what book
+questions: when was the Scottish Parliament convened?|what gives the Scottish Parliament the right to make laws?|the Scottish Parliament has the right to
+questions: when did people begin to demand a devolved parliament in Scotland?|who was the incumbent Labour government of Harold Wilson?|for
+questions: what did the "it's Scotlands oil" campaign cause?|what did the party argue was not benefiting Scotland as much as they
+questions: what year was an elected assembly started in Edinburgh?|how many people were required to vote for an elected assembly in Edinburgh?|did the 1979
+questions: what political party controlled the uk government in the 1980s and 1990s?|what political group initiated a pressure group after the 1979 referendum
+questions: when did the Scottish Parliament become official home?|where is the new Scottish Parliament building located?|what was the Scottish Parliament building designed by?
+questions: where was the parliament relocated to in may 2000?|what building was the temporary home of the parliament?|the temporary home of the parliament
+questions: the majority of the buildings the parliament used were rented from whom?|what was the former administrative building of Lothian Regional Council used for?
+questions: who is the current speaker of the scotland parliament?|who are the two MSPs currently serve as deputies?
+questions: who is responsible for ensuring that the Scottish Parliament functions effectively?|what does the Presiding Officer set up in the parliamentary bureau?|
+questions: how many seats are there in the debating chamber of the Scottish Parliament?|how many seats are there in the debating chamber of
+questions: what is in front of the Presiding Officers desk?|what is the parliamentary mace made from?|the words there shall be
+questions time recesses are from early January to late December, with two-week recesses in April and October. Plenary meetings in the
+questions: what is the formal style of "Prayers"?|in what year did the church expect a time limit for prayer?|who
+questions: in what role does the Presiding Officer decide who speaks in chamber debates?|what is the amount of time an elected official has to speak
+questions: what does the Presiding Officer ask in Decision Time?|what is the Presiding officers job in Decision Time?|when does the pl
+questions: what do political parties typically instruct members how to vote?|what do political parties instruct members how to vote?|what MSPs are 
+questions: how long is the Member's Debate?|after decision time a "Members Debate" is held?|what is
+questions: where does most of the work of the Scottish Parliament take place?|why are committees stronger in the Scottish Parliament than in other parliamentary systems
+questions: what are the Mandatory Committees?|when are the Mandatory Committees set down?|which committees are the most current in the
+questions: when are Subject Committees established?|what does each committee reflect?|what are the four current Subject Committees in the fourth Session
+questions: what is a private bill committee normally set up to scrutinise?|what are private bills usually related to?|what are some examples
+questions: what Act 1998 governs the functions and role of the Scottish Parliament?|what queen gave royal assent on 19 November 1998?|what Act
+questions: answer:
+questions: answer:
+questions: who can introduce new laws or amendments to existing laws as a bill?|what are most draft laws?|who introduces the bill
+questions: what is the first stage of a bill?|who is in charge of the bill in Stage 1?|what does Stage 1 stand for
+questions: what is considered at the final stage of the bill?|how many parts does stage 3 contain?|what are the two parts of the final
+questions: after a bill has been passed, who submits it for royal assent?|what does the monarch announce after the bill has been
+questions: what form the Scottish Government?|what does Parliament elect at the beginning of each parliamentary term?|what is the leader of the largest party
+questions: under what Act are general elections held for the Scottish Parliament?|how often are elections held for the Scottish Parliament?|in the event of 
+questions: who can deliver statements to parliament?|who questions the First Minister after the statement has been delivered?|what are the parties who question the First
+questions: what time is set aside for discussion periods in the debating chamber?|who can direct questions to during the General Question Time?|what
+questions: how many of the 129 MSPs are elected to represent first past the post constituencies?|how many constituencies shared the same boundaries
+questions: how many seats are allocated to parties?|how is the total number of seats in the Parliament allocated to parties?|what is the number of
+questions: answer:
+questions: for the first time in the history of scotland, who had a majority in the parliament?|how many seats did the
+questions: what was the seat of former leader David McLetchie lost to the SNP?|how many seats did the Conservatives lose?|
+questions: who can vote on domestic legislation?|since the house of commons is a representation of the people, who can vote on laws?|
+questions: what is another term for political Islam?|what characterizes political Islam?|what does Islamism favor in society?|what are
+questions: which political group is mostly a socio-political Vanguard party?|what is one of the radical Islamist organizations?|who
+questions: who argues that sunni pan-islamism underwent a remarkable shift in the second half of the 20th century?|
+questions: what view does not believe Islam is apolitical?|which philosopher believed that the failure to distinguish between Islam and theislamic is
+questions: who has asked "if Islam is a way of life, how can we say that those who live by its principles are not Muslims, but
+questions: what groups did the west support in the 1970s?|what were these groups seen as being dangerous enemies by the west?|who did the
+questions: who was the leader of the muslim world in the 1940s?|what was an important mission of the muslim world in the
+questions: what was the strict conservative Saudi-based interpretation of Islam promoted by the funding of the al-qasd?|what was the strict
+questions: what is a popular religious movement?|what is a social justice movement commonly known for?|what governments seem to be neglecting social
+questions: what religion was Iqbal a member of when he returned to Lahore in 1908?|what were some of the
+questions: what did Iqbal fear would weaken the spiritual foundations of Islam and Muslim society?|what population would crowd out Muslim heritage, culture
+questions: what was Sayyid abul ala Maududi's profession?|what did Maududi choose to do as a
+questions: what did Maududi believe could not be Islamic without Sharia?|what did Maududi believe Islam needed the establishment of?|
+questions: when did the Muslim Brotherhood begin in Ismailiyah, Egypt?|who set up the Muslim Brotherhood?|what was the
+questions: when was al-Banna assassinated?|why was al-Banna assassinated?|when did the
+questions: the Brotherhood has become one of the most influential movements in which world?|what were the only opposition groups in Egypt able to field candidates
+questions: what was the decisive defeat of the arab troops during the Six-Day War?|on what level was the defeat of the arab troops blame
+questions: which person was the ideologue of the Iranian revolution?|who was the ideological father of the State of Pakistan?|with whom did
+questions: in which countries has the Islamic republic been assisted or assisted in Shia terrorist groups?|what is another name for the country in which the 
+questions: in what year did the soviet union send its 40th army into Afghanistan?|the 40th army were attempting to stop an Islamic
+questions: what helped to end Saddam Hussein's occupation of Kuwait?|when did the Gulf War bring many non-muslim military personnel
+questions: who was a prime example of an attack on bin Laden?|what did some feel helped some violent groups?|what did the arab world
+questions: when was taylor hicks executed?|what group did the group led by hasan al-Hudaybi
+questions: who took the path of violence and military struggle?|who was responsible for the assassination of Anwar Sadat?|when
+questions: what was the name of the militant group in swaziland?|what english group did the group 'al-G
+questions: the Muslim Brotherhood in Palestine took a quiescent stance towards what?|when was the first palestinian intifad
+questions: how many people were killed by Hamas between 2000 and 2007?|how many people were killed in the suicide bombings?|when
+questions: who ran the religion in Sudan?|what group was led by Hassan al-Turabi?|who invited members to serve in
+questions: when was al-Nimeiry overthrown?|who was overthrown in 1985?|who was tortured and mass imprisonment of the
+questions: what was the french movement called in 2009?|what leader led the french FIS in 1989?|who was the charismatic young preacher
+questions: in what year was the Islamic State of Afghanistan founded?|in 1996, what movement took over and gained power in Afghanistan?|the Taliban rose
+questions: what did the deobandi movement cause to become?|what were the madrasas that the deobandi movement created
+questions: who overthrew prime minister al-bhutto's regime in Pakistan?|what had been banned that did not happen before he
+questions: what was the previous name of the iss?|who is the group that is led by the sunni Arabs?|
+questions: what group did the group become known as in 1999?|which group did the group pledge allegiance to in 2004?|when did the
+questions: which group takes a different view on Muslim history than Muhammad qutb?|in what year does the HT believe that Islam's
+questions: what does HT not engage in?|what is an example of a democratic system?|what has the HT done other than work
+questions: what does the term undercover Mosque' refer to?|what event highlighted the presence of a vigilante group in the brit
+questions: when did the us begin trying to counter violent Islamism?|what is the name of the ideology the us government is trying to counter?
+questions: what is imperialism? |what has imperialism allowed for rapid spread of technologies and ideas?|in what century was imperialism applied to the
+questions: what is imperialism?|what is a policy of extending a countrys power through diplomacy or military force?|what
+questions: what hasn't been finalized for centuries?|what did some writers confuse imperialism with? |what does imperialism stand for?
+questions: what is the most significant difference in an empire from other countries?|which part of the economy is most likely to be located in an empire?
+questions: what is imperialism sometimes paired with?|what is colonialism a term for?|when did Robert Young write about imperialism
+questions: what do both colonialism and imperialism stand for?|what is an example of a government dominating an area?|what is
+questions: which writer argued that imperialism was necessary to survive?|which writer believed that imperialism was necessary to survive for a state to survive
+questions: what is one society that was able to fund travelers who would come back with tales of their discoveries?|what did the geographical societies fund
+questions: according to geographer Ellen Churchill semple, where were human beings born?|according to semple, where were humans born?
+questions: what is a common generalizable reference to the policies of the British Empire?|what concept does British imperialism use in its argument
+questions: who theorized Orientalism?|what does Orientalism refer to?|what does the Orientalism use to create distance between
+questions: what did Bassett study the role of nineteenth-century maps during?|what did Bassett say the maps contributed to?|what
+questions: the empires of the past have included what type of architecture?|the empires of the past have included what type of architecture?|the
+questions: what is it called when a country's influence is felt in social and cultural circles?|what did cultural imperialism change for a
+questions: when did the age of imperialism begin?|what did the age of imperialism see industrializing nations doing in order to gain political power?
+questions: what historians constructed a framework for understanding European imperialism?|what did the two Gallaghers claim that european imperialism was influential?
+questions: what was the major goal of colonialism?|what "potential" problem did the colonization of india exploit?|how did european
+questions: who made deadly explosives that could be used in combat?|in what decade did the machine gun become an effective battlefield weapon?|what war
+questions: what is the foundation of many theories of imperialism?|what was the first term for imperialism, or imperialism at its most simplistic?
+questions: who began the debate on imperialism?|when was the time span of the debate between capitalism, aristocracy, and imperi
+questions: what term served as a moral justification for domination of certain territories and peoples?|what were people living in tropical environments seen as
+questions: how did geographical scholars believe the world could be split into climatic zones?|which type of climate produced a hard-working, moral
+questions: when was the British east india company established?|who chartered the British east india company?|when did the east india company go bankrupt
+questions: when did France take control of Algeria?|when did Germany begin rebuilding its worldwide empire?|which were the key areas of concentration in the
+questions: what was the moral justification for raising the world to french standards?|who was the leading exponent of colonialism?|in what
+questions: in what war did Charles de Gaulle use the overseas colonies to fight for independence?|in what year did approximately all of frances
+questions: what tribes formed the Holy Roman Empire, the first german empire?|when did the holy roman empire form?|what was germany'
+questions: how much did germany participate in western imperialism?|in what century was the participation of Austria negligible?|which country enjoyed the
+questions: when did germany begin colonizing the continents?|where did the german empire that was to become the colonies form?|what have people
+questions: when was the First Sino-Japanese War?|when did Japan absorb Taiwan?|when did Japan take part of Sakhalin
+questions: by 1921, the polity of the same extent as the empire was established.|what did lenin assert the right to?
+questions: where did Trotsky believe the revolution could only succeed?|what did Lenin famously declare was the highest stage of capitalism? |
+questions: what was the basis of the First British Empire?|when did the First British Empire lose its first empire?|by what policy did the first
+questions: what caused a resurgence in the late 19th century?|which two important people were part of the British spirit of imperialism
+questions: what policy did the early united states express opposition to?|what was the policy of theodore Roosevelt?|what was the mission of wood
+questions: what was the name of the geographer who was key to the creation of the american empire?|what position did Isiah Bow
+questions: what is the name of the internal strife between various people groups?|what is the internal form of imperialism distinct from?|what
+questions: when did the Ottoman Empire begin?|when did the Ottoman Empire end?|who was the highest ranking citizen in the ottoman
+questions: what was the capital of the ottoman empire?|what empire controlled lands contributed to the centre of transactions between east and west ?|when
+questions: what country is warsaw the capital of?|what river does warsaw border?|what mountains does warsaw border?|what is the
+questions: in 2012, what liveable city in the world did the economist intelligence unit rank warsaw as?|when did the e
+questions: what was the Polish capital city in 1313?|which King moved his court from Kraków to Warsaw in 1596?|in
+questions: what roman Catholic archdiocese is in wroclaw?|what university is in wroclaw?|when was the city-
+questions: what is the slavic origin of the name Warszawa?|to what does the name Warszawa translate to in english?
+questions: in what settlement did the first fortified settlements live on the site of today's warsaw?|in what settlement was the former
+questions: in what year was warsaw the capital of the Commonwealth and the Crown of the Kingdom of Poland?|what was the name of the warsaw
+questions: what year did warsaw become the capital of the Prussian-Lithuanian Commonwealth?|what occurred in 1806 after
+questions: until what year was warsaw occupied by germany?|when did warsaw become occupied by germany?|who was the underground
+questions: what year did the germans invade Poland?|what month did the second world war begin?|what was the top percentage of the roman population
+questions: on 1 August 1944, as the Red Army was nearing the city, what began the warsaw Uprising began?|how long did
+questions: who funded the "Bricks for Warsaw" campaign?|when was the Palace of Culture and Science built?|in what year was
+questions: where did John Paul II visit in 1979 and 1983?|what movement did the visits of John Paul II support?|when did John Paul II
+questions: what mountain range does warsaw border?|what river does warsaw straddle?|what is the average elevation of warsaw?|
+questions: on what two geological formations is warsaw located? |what divides the city into two parts, left and right?|the Vis
+questions: the plateau that is located on the plain moraine plateau has few natural and artificial ponds and clay pits?|the pattern of the
+questions: what was responsible for the destruction of most of the buildings in warsaw?|by what year were most of the buildings from the 19th century
+questions: when was St. John's Cathedral constructed?|what style does the facade at the sainte genevieve cathedral reflect?|when was
+questions: during what time period did the rohs palace build?|when was the rohs palace built?|when was
+questions: during what period was the biggest achievement in architecture from the late 19th century?|which structural engineers worked on the warsaw university of technology building
+questions: what famous german prison is located in downtown |what was the warsaw Citadel built for |what famous monument is located at the ramparts
+questions: which garden was originally considered a royal garden?|how many different species of trees are in the Saxon Garden?|where is the Tom
+questions: where is the first horse racetrack located? |what park is close to the sejm and John lennon street?|what
+questions: what location within the border region of several big floral regions means that there is richness in the city's flora?|which
+questions: how many natural reserves are in warsaw?|what is one of the main natural reserves in warsaw?|how far away from warsaw
+questions: in the late 19th century, what percentage of the population in the city of 638,000 were jews?|in the late 19
+questions: in 1939 how many people lived in warsaw?|in 1945 how many people lived in warsaw?|what was the population growth rate
+questions: what percentage of the population in 1901 were catholics?|what percentage of the population in 1901 was Protestant?|what percentage of the population
+questions: what is the basic unit of territorial division in Poland?|what is a commune?|what is a city called in Poland?|
+questions: how many members are in the warsaw city council?|how often are council members elected?|what is the name of the majority of the
+questions: what is the other name for the mayor of warsaw? |in the past have the presidents of the warsaw govt been elected
+questions: in what year were 304,016 companies registered in the city of warsaw?|what did the MasterCard Emerging Market Index rank war
+questions: in which year was the first stock exchange established in the city of warsaw?|when was the first stock exchange established in the city of war
+questions: in what year was the FSO Car Factory established?|what were the last two models of the FSO car factory assembled in?|which
+questions: in what year was the university of warsaw founded?|from where did warsaw get its academic center?|how many professors work at
+questions: when was the university library founded?|how many items are contained in the university library?|who designed the university library building?|when was
+questions: what did the infrastructure of warsaw suffer from during its time as an eastern bloc city?|what was the initial plan to rebuild Poland called?
+questions: what is the highest-reference hospital in all of Poland?|what is the name of the largest oncology hospital in Europe?|
+questions: what key key key event is held held held held key key key key key event:: the Piano Competition, the Jazz Jamboree,
+questions: where is the Saxon Garden?|what was the Summer Theatre in operation from 1870 to 1939??? Wojciech Bog
+questions: what commemorative events take place in the summer?|what is the name of the festival held on the banks of the vistula?|
+questions: what is the most impressive collection of art posters in the world?|how many museums are in poland?|which one of the most
+questions: what was the name of the stereoscopic theatre that is located at the warsaw uprising museum?|when was the warsaw
+questions: where is the Centre for Contemporary Art located?|how many projects does the Centre for Contemporary Art execute each year?|what is the oldest ex
+questions: who is Polonia's local rival?|when did they win the Ekstraklasa Championship?|was they relegated
+questions: what is the name of the ship that is on the coat of arms of warsaw?|in what year did the mermaid start
+questions: where did one of titons daughters go on a journey through the depths of the seas and oceans?|the second
+questions: what was the first woman to win the Nobel prize?|what was the first woman to win the Nobel prize?|which actress is from war
+questions: who was a famous artist born in Warsaw?|which artist married Tadeusz  ⁇ empicka?|who was
+questions: when was the french and Indian War?|during the seven years' war, what war was waged between the colonies of British America and
+questions: where was Virginia in the south?|where was Nova Scotia in the north?|what did the dispute start with?|what was the result
+questions: in what year was general Edward Braddocks plan to attack the french?|who did the colonial governors in north america
+questions: when did the great depression begin?|what happened in 1757 britain?|when did the great depression end?|what was
+questions: what did France cede its territory east of the Mississippi to?|what did France cede to ally Spain?|what was the result
+questions: who was King Williams war named after?|what was the name of queen Anne's war?|the french and Indian War was named
+questions: in what year was the seven years' war declared?|in what year was the seven years' war signed?|how long did the fighting
+questions: what did the french population number about 75,000?|in what area were the french population concentrated?|what was the current name of Cape Bre
+questions: how many people lived in the northern portions of north carolina?|how many people lived in the southern portions of north carolina?
+questions: between the Franco and the British, large areas areas were dominated by native tribes. between the Franco and the British, what groups dominated
+questions: what tribes were southern north the Southeast interior was dominated by Cherokee tribes?|when conflict broke out, the french used their trading connections
+questions: what troops were not stationed in north america at the start of the war?|how many troupes de la marine defended new
+questions: how many Indians were in the expedition force?|what time period did the expedition cover 3,000 miles?|what river did the expedition follow
+questions: where did "Old Briton" live?|where was "Old Briton" born?|who was a Miami
+questions: who was the expansionist governor of the Province of Massachusetts Bay?|who was the expansionist governor of the Province of Massachusetts Bay?|which
+questions: in what year did the British government give land to the Ohio Company of Virginia for the purpose of developing trade and settlements in the Ohio Country?
+questions: when did the war of the Austrian Succession formally end?|what was the north american theater known as?|the war of
+questions: on what date did the Governor-General of New France die? He was permanently replaced by Charles le Moyne de Longueuil?
+questions: who was given command of the invasion of the Ohio Valley?|who were the english protectors from?|what did the french build?|
+questions: who was the manor of William Johnson?|in 1746, who was made a colonel of the Iroquiis
+questions: why did the governor believe that the Ohio company was worth investing in?|what was the name of the wealthy investor that backed the Ohio company
+questions: who became commander of the french forces after he died?|who succeeded Marin as commander of the french forces?|which letter did the president
+questions: how many men did Trent send to Fort Venango?|when did Contreciur lead the french troops south from Fort Venango?
+questions: where did Washington go after returning to Williamsburg?|who ordered dinwiddie to order eisenhower to lead a large
+questions: when did news of the battles reach England?|who did the government of the Duke of Newcastle send to dislodge the french
+questions: what was the goal of the Albany Congress?|in what month and year did the Albany Congress take place?|what did the Albany Congress hope
+questions: what was the name of the expedition led by archibald Braddock to take in 1755?|what troops did Braddock lead
+questions: what did the french acquire a copy of?|who was planning an attack on Fort Niagara?|what garrisons did Shirley leave?
+questions: who noticed that Johnsons expedition was better organized than Shirley's?|who did Vaudreuil send to lead the defenses at
+questions: what did Colonel Monckton capture?|what month and year did Fort Beausejour fall?|what did the french french for
+questions: who assumed command of the British forces in north america after the death of Braddock?|who laid out his plans for 1756?
+questions: when did Newcastle succeed him?|in January 1756, who was Lord Loudoun?|in May 1756, what country did
+questions: what year did louis ii of france surrender?|what did the french destroy in 1756?|what was the general opinion
+questions: what was the date that the new British command was put into place?|according to official figures, how many soldiers were killed in the battle
+questions: what was the major operation loudoun commanded in 1757?|what was the general purpose of loudoun's operation
+questions: who harassed Fort William Henry?|what did french irregular forces ambushed near Ticonderoga?|when did the french assault
+questions: what two people were minimally resupplied in 1758?|why was the french shipping greatly reduced in 1758?|what happened
+questions: what led to the fall of power of Newcastle and his military advisor, the Duke of Cumberland?|who led the rebellion against the 12
+questions: what was the final straw that ended the third invasion?|how did the french win the battle of carillon?|what was the final straw
+questions: what was the general goal of frances new foreign minister in 1758?|what locations did the french navy fail in 1759?|
+questions: what stopped the french expansion of the north?|in what battle did the french take control of the north?|what advantage did the french have
+questions: in what year did amherst grant the capitulation of the french people?|what was the final result of the capitulation
+questions: what year did the war in north america officially end?|what year was the treaty of Paris?|what year was the war in
+questions: what did the British lose control of in 1755?|when did the deportation of Acadians begin?|where did most
+questions: what issued the royal proclamation of 1763 on October 7, 1763?|what was included in the royal proclamation of 1763
+questions: the build of military roads in the Ohio Country contributed to illegal settlement?|did the spanish takeover of the Louisiana territory have a positive
+questions: Aristotle and Archimedes retained fundamental errors in understanding what?|who eventually corrected most of the previous misunderstandings about motion and
+questions: what did particle physics devise to describe forces between particles smaller than atoms?|the Standard Model predicted that exchanged particles called gauge
+questions: who believed that motionless objects on earth, composed mostly of the elements earth and water, would be in their natural place on the ground?|
+questions: whose work corrected the failings of Aristotelian physics?|who influenced the work of Galileo Galilei
+questions: whose insight did galileo believe caused unbalance in the movement of objects?|who proposed that every object with mass has an 
+questions: how can the laws of physics not change while traveling in a moving vehicle at a constant velocity?|how can a person throw
+questions: what is the rotational inertia of planet earth?|who extended the principle of inertia further?|when
+questions: what is the name of Newton's second law?|in what way does Newton's Second Law say acceleration to force is equal to mass
+questions: what Newton law applies symmetry to situations where forces can be attributed to the presence of different objects?|the third law means that all forces
+questions: answer:
+questions: what is a physical concept that can provide an intuitive understanding of forces?|how are forces quantified?|what are some physical concepts that
+questions: what are forces classified as?|what is the term for physical quantities that do not have direction? |what is the term for forces that cannot
+questions: what are the essential properties of forces?|what is another term for the net force?|what addtional rules are used to calculate the
+questions: how many forces are in a horizontal force that points northeast? |what two forces are in a horizontal force that points east?|when
+questions: what is the difference between the applied force and the table surface?|what is the static friction generated between the object and the table surface?|
+questions: what is the most common way of measuring forces?|weighing scales and spring balances are examples of what?|what caused archimedes
+questions: who discovered that some assumptions of Aristotelian physics were contradictory?|what did Galileo realize that simple velocity addition
+questions: what is dynamic equilibrium?|what is applied in the direction of motion?|what does the kinetic friction force oppose?|what caused
+questions: where does the notion of force keep its meaning?|what is the consequence that the results of a measurement are now sometimes "quantized"
+questions: what is a discrete intrinsic angular momentum-like variable called?|in what theory are identical particles split into two different classes?
+questions: in modern particle physics, what is explained as a mathematical by-product of exchange of momentum-carrying gauge bosons?|
+questions: what interacts with nucleons and compound nuclei?|what acts between electric charges?|what acts between masses?|all
+questions: who unified the force responsible for the objects falling at the surface of the earth with the force responsible for the orbits of celestial mechanic
+questions: until what work did gravity become identified as a universal force?|avant Newton, the tendency for objects to fall towards the Earth was not understood
+questions: Newton realized that at lesser distances, the effects of what might be observed?|what did Newton discover that the acceleration of the Moon around the
+questions: in the equation for a dimensional constant, what is used to describe the strength of gravity?|what is the dimensional constant known as
+questions: what did Albert Einstein find about Mercurys orbit?|what was a correction in Albert Einsteins theory causing a discre
+questions: what is the theory that best describes gravity?|in GR, what is gravitation not viewed as?|what is the curva
+questions: what is the rule that combined the definition of electric current as the time rate of change of electric charge?|what describes the force on a
+questions: when were the origin of electric and magnetic fields finally explained?|who unified many earlier theories into a set of 20 scalar
+questions: what was the name of the theory that re-established electromagnetism?|by what method was the theory of electromagnet
+questions: what is the name of the theory that says solid matter is based on repulsion of like charges under the impact of the electromagnetic force?
+questions: answer:
+questions: what is the weak force caused by?|what does beta decay have an effect of?|field strength is how much less than that of the
+questions: what is the normal force responsible for?|what is the normal force responsible for?|what is an example of the normal force in action?
+questions: what do ideal strings have in common?|what do pulleys allow in a set?|what connects two objects with an
+questions: what did Newtons laws and Newtonian mechanics describe how forces affect idealized point particles?|what theory described how forces affect forces in
+questions: what includes pressure terms associated with forces that act normal to the cross-sectional area?|what is another term for forces that act parallel to
+questions: what is the rotation equivalent of force?|what is the rotational equivalent of position?|what is the rotational equivalent of velocity?|
+questions: what is always directed toward the center of the circular path?|who does this force always act perpendicular to?|what is the
+questions: when does a conservative force act on a closed system?|what is the force related to?|what map can be considered an art
+questions: what can't be modelled as being caused by gradient of potentials?|what are some nonconservative forces other than friction?
+questions: how are nonconservative forces able to interact with microscopic conservative forces?|what is one of the main ways nonconserv
+questions: what is a less commonly used metric counterpart to the newton?|what is the force exerted by standard gravity on one
