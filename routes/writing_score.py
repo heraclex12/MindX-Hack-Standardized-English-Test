@@ -7,7 +7,7 @@ import tensorflow as tf
 import json
 from models.database import EnglishMongoDB
 from flask_restful import Resource, reqparse
-from writing import compute_spell_grammar_score
+from writing.compute_spell_grammar_score import compute_spell_grammar_score
 
 
 class WritingScoring(Resource):
