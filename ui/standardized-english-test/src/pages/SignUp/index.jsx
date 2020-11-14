@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { Form, Input, Button, Radio } from 'antd';
 import { withRouter } from 'react-router';
 
@@ -35,20 +36,13 @@ const SignUp = (props) => {
       email,
       gender
     };
-    const url = 'https://35.208.221.249:27019/register_user';
-    const response = await fetch(url, {
-      method: 'POST', // *GET, POST, PUT, DELETE, etc.
-      mode: 'cors', // no-cors, *cors, same-origin
-      cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: 'same-origin', // include, *same-origin, omit
-      headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      // redirect: 'follow', // manual, *follow, error
-      // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify(data) // body data type must match "Content-Type" header
-    });
+    const url = 'http://35.208.221.249:5000/api/register_user';
+    const res = await axios.post(url, data);
+    const { status } = res;
+
+    if (status === 200) {
+      history.push('/login');
+    }
   };
 
   return (
@@ -139,20 +133,14 @@ const SignUp = (props) => {
             <Input.Password />
           </Item>
 
-          {/* <Form.Item {...tailLayout}> */}
           <button className='submit-btn' onClick={onFinish}>
             Submit
           </button>
-          {/* </Form.Item> */}
         </Form>
 
         <p className='ask'>
           Already have account?
-          <span
-            className='link'
-            style={{ color: 'violet' }}
-            onClick={redirectToLogin}
-          >
+          <span className='link' onClick={redirectToLogin}>
             Login
           </span>
         </p>

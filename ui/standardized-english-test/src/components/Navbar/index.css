@@ -34,7 +34,7 @@
 .navbar li:before {
   content: '';
   height: 2px;
-  background-color: blue;
+  background-color: rgb(3, 146, 146);
   position: absolute;
   bottom: 0;
   left: 0;

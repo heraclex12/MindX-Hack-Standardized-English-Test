@@ -15,6 +15,12 @@ export default [
       text: 'NEW'
     }
   },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Writing',
+    to: '/writing',
+    icon: 'cil-book',
+  },
 
 
 

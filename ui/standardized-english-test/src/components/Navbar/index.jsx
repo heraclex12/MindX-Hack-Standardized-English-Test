@@ -10,6 +10,8 @@ const Navbar = (props) => {
   //   }
   // } = props;
 
+  const valid = localStorage.getItem('logged-in');
+
   return (
     <div className='navbar'>
       <header>
@@ -21,8 +23,14 @@ const Navbar = (props) => {
             </Link>
 
             <Link to='/dashboard'>
-              <li>dash board</li>
+              <li>dashboard</li>
             </Link>
+
+            {valid && (
+              <Link to='/user-profile'>
+                <li>profile</li>
+              </Link>
+            )}
 
             <Link to='/sign-up'>
               <li>sign up</li>
