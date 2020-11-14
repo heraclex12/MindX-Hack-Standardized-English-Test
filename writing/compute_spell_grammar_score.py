@@ -1,7 +1,6 @@
 from grammarbot import GrammarBotClient
 
 
-
 def compute_spell_grammar_score(text):
         client = GrammarBotClient(api_key='KS9C5N3Y')
         text = text.strip("\n\t\r .,?!;")
@@ -25,6 +24,8 @@ def compute_spell_grammar_score(text):
                 error = {}
                 error['id'] = cnt_error
                 error['id2'] = cnt_error * 1000
+                error['offset'] = messeage['offset']
+                error['length'] = messeage['length']
                 error['msg'] = messeage['message']
                 try:
                     error['dst'] = messeage['description']
@@ -46,6 +47,8 @@ def compute_spell_grammar_score(text):
                 error = {}
                 error['id'] = cnt_error
                 error['id2'] = cnt_error * 1000
+                error['offset'] = messeage['offset']
+                error['length'] = messeage['length']
                 error['msg'] = messeage['message']
                 try:
                     error['dst'] = messeage['description']
@@ -54,7 +57,13 @@ def compute_spell_grammar_score(text):
                 error['rep'] = messeage['replacements']
                 cnt_error += 1
                 result.append(error)
-            point = {'grammar': (1 - (cnt_grammar / sens)) * 100, 'spelling': (1 - (cnt_spelling / tokens)) * 100,
-                     'total': int((1 - 0.5 * (cnt_grammar / sens) + 0.5 * (cnt_spelling / tokens)) * 100)}
+
+        point = {'grammar': (1 - (cnt_grammar / sens)) * 100, 'spelling': (1 - (cnt_spelling / tokens)) * 100,
+                     'total': int((1 - 0.5 * (cnt_grammar / sens) - 0.5 * (cnt_spelling / tokens)) * 100)}
 
         return point, result
+
+
+if __name__ == '__main__':
+    text = 'I is supperman'
+    print(compute_spell_grammar_score(text))
