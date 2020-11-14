@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { withRouter } from 'react-router';
 import './index.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const {
+    history: {
+      location: { pathname }
+    }
+  } = props;
+
+  let isSignUp = pathname === '/sign-up';
+
   return (
     <div className='navbar'>
       <header>
@@ -16,9 +24,15 @@ const Navbar = () => {
             <Link to='/dashboard'>
               <li>dash board</li>
             </Link>
-            <Link to='/sign-up'>
-              <li>sign up</li>
-            </Link>
+            {isSignUp ? (
+              <Link to='/log-in'>
+                <li>log in</li>
+              </Link>
+            ) : (
+              <Link to='/sign-up'>
+                <li>sign up</li>
+              </Link>
+            )}
           </ul>
         </nav>
       </header>
@@ -26,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
