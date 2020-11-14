@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Radio } from 'antd';
+import { withRouter } from 'react-router';
 
 import './index.css';
 
@@ -18,6 +19,11 @@ const onGenderChange = () => {};
 
 const SignUp = (props) => {
   const [form] = Form.useForm();
+  const { history } = props;
+
+  const redirectToLogin = () => {
+    history.push('/login');
+  };
 
   const onFinish = async (values) => {
     console.log(values);
@@ -133,15 +139,26 @@ const SignUp = (props) => {
             <Input.Password />
           </Item>
 
-          <Form.Item {...tailLayout}>
-            <Button type='primary' htmlType='submit'>
-              Submit
-            </Button>
-          </Form.Item>
+          {/* <Form.Item {...tailLayout}> */}
+          <button className='submit-btn' onClick={onFinish}>
+            Submit
+          </button>
+          {/* </Form.Item> */}
         </Form>
+
+        <p className='ask'>
+          Already have account?
+          <span
+            className='link'
+            style={{ color: 'violet' }}
+            onClick={redirectToLogin}
+          >
+            Login
+          </span>
+        </p>
       </div>
     </div>
   );
 };
 
-export default SignUp;
+export default withRouter(SignUp);

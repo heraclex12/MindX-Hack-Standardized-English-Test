@@ -24,14 +24,30 @@
 .navbar li {
   color: black;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: capitalize;
   margin: 10px;
+  transition: 0.2s ease-in;
+  position: relative;
+}
+
+.navbar li:before {
+  content: '';
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
   transition: 0.2s ease-in;
 }
 
 .navbar li:hover {
   cursor: pointer;
-  color: blue;
-  text-decoration: underline;
+  color: rgb(3, 146, 146);
+  /* text-decoration: underline; */
+}
+
+.navbar li:hover:before {
+  width: 100%;
 }
