@@ -2,7 +2,7 @@ import tensorflow as tf
 from writing.fupugecscore.bert import tokenization, modeling
 import numpy as np
 from writing.fupugecscore.util import *
-from encode_doc import encode_doc
+from writing.encode_doc import encode_doc
 
 
 
@@ -67,7 +67,7 @@ class CoherenceScore:
           self.logit = tf.squeeze(tf.sigmoid(tf.matmul(last_state, w) + b))
 
 
-init_checkpoint = 'fupugecscore/data/output/basic_score/model.ckpt-1946'
+init_checkpoint = 'writing/fupugecscore/data/output/coherence_score/model.ckpt-3892'
 coherence_score = CoherenceScore(init_checkpoint)
 
 

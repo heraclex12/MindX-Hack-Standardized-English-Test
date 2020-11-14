@@ -13,6 +13,14 @@ from writing.BasicScoring import basic_score
 from writing.CoherenceScoring import coherence_score
 
 
+def get_score(logit):
+    min_value = 0
+    max_value = 10
+    overall_score = round(logit * (max_value - min_value) + min_value)
+    return overall_score
+
+
+
 class WritingScoring(Resource):
     def post(self):
         json_data = request.get_json(force=True)
@@ -23,6 +31,7 @@ class WritingScoring(Resource):
         spellmar_score, errors = compute_spell_grammar_score(anwser_content)
 
         embeddings = encode_doc(anwser_content, question_id)
+        embeddings = np.expand_dims(embeddings, 0)
         co_score = coherence_score.predict(embeddings)
         se_score = basic_score.predict(embeddings)
-        return {'score': spellmar_score, 'coherence_score': co_score, 'semantic_score': se_score, 'error': errors}, 200
+        return {'score': spellmar_score, 'coherence_score': get_score(co_score), 'semantic_score': get_score(se_score), 'error': errors}, 200

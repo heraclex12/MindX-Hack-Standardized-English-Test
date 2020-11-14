@@ -2,7 +2,7 @@ from writing.fupugecscore.util import *
 from writing.fupugecscore.score import *
 import tensorflow as tf
 from writing.fupugecscore.bert.extract_features import convert_lst_to_features
-from BertEmbedding import be, tokenizer
+from writing.BertEmbedding import be, tokenizer
 
 
 def encode_doc(doc, aricle_set):
