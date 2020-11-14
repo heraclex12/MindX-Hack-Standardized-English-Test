@@ -102,9 +102,12 @@ class BasicScorePredictor:
                 self.logit = tf.squeeze(tf.sigmoid(tf.matmul(mean_time_output, w) + b))
 
 
+init_checkpoint = 'fupugecscore/data/output/basic_score/model.ckpt-1946'
+basic_score = BasicScorePredictor(init_checkpoint)
+
+
 if __name__ == '__main__':
-    init_checkpoint = 'fupugecscore/data/output/basic_score/model.ckpt-1946'
-    basic_score = BasicScorePredictor(init_checkpoint)
+
     doc = """
         Well computers can be a good or a good thing. I don'@CAPS1 realy see @CAPS2 computers can be a bad thing for me. I also know @CAPS2 computers can or will help people all around the world. I think computers has positive effects on people like me. Computers teaches hand-eye coordination. It can help if you need to find out reasearch for a school project. You can create lots of things on computers like music, desiner @CAPS1-shirts, logos, banners and lots of other creative things. With computer you can look up available homes and apartments. You can even go online and fill out a job application and save trips to stores @CAPS2 cool is that!!
         """

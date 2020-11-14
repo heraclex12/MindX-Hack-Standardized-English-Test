@@ -8,6 +8,9 @@ import json
 from models.database import EnglishMongoDB
 from flask_restful import Resource, reqparse
 from writing.compute_spell_grammar_score import compute_spell_grammar_score
+from writing.encode_doc import encode_doc
+from writing.BasicScoring import basic_score
+from writing.CoherenceScoring import coherence_score
 
 
 class WritingScoring(Resource):
@@ -17,5 +20,9 @@ class WritingScoring(Resource):
         question_content = json_data['question_content']
         anwser_content = json_data['answer_content']
 
-        point, _ = compute_spell_grammar_score(anwser_content)
-        return point, 200
+        spellmar_score, errors = compute_spell_grammar_score(anwser_content)
+
+        embeddings = encode_doc(anwser_content, question_id)
+        co_score = coherence_score.predict(embeddings)
+        se_score = basic_score.predict(embeddings)
+        return {'score': spellmar_score, 'coherence_score': co_score, 'semantic_score': se_score, 'error': errors}, 200
