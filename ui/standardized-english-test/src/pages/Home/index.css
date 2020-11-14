@@ -85,7 +85,8 @@ a {
 
 .cards-select {
   display: flex;
-  max-width: 55%;
+  max-width: 700px;
+  min-width: 600px;
   justify-content: space-around;
   align-items: center;
   overflow-y: hidden;

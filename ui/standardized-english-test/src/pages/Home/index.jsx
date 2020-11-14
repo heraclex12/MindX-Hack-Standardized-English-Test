@@ -102,29 +102,29 @@ const Home = (props) => {
       />
 
       <div className='info'>
-        <Row gutter={16}>
-          <Col span={6}>
+        <Row gutter={{ xs: 4, sm: 8, md: 16, xl: 16 }}>
+          <Col xs={12} sm={12} md={6}>
             <CardInfo
               title='9900+ Topics'
               content='learn anything'
               imgSrc={IMG_SRC_CARD_INFO[0]}
             />
           </Col>
-          <Col span={6}>
+          <Col xs={12} sm={12} md={6}>
             <CardInfo
               title='3000+ Student'
               content='future genius'
               imgSrc={IMG_SRC_CARD_INFO[1]}
             />
           </Col>
-          <Col span={6}>
+          <Col xs={12} sm={12} md={6}>
             <CardInfo
               title='48000+ Test Taken'
               content={`that's a lot`}
               imgSrc={IMG_SRC_CARD_INFO[2]}
             />
           </Col>
-          <Col span={6}>
+          <Col xs={12} sm={12} md={6}>
             <CardInfo
               title='750+ Instructors'
               content='all trained professionals'

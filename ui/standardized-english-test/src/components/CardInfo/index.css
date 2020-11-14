@@ -33,6 +33,7 @@
   margin-top: 10px;
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1.7rem;
   /* transition: 0.2s ease-in; */
 }
 
@@ -41,4 +42,14 @@
   font-weight: 300;
   text-transform: uppercase;
   /* transition: 0.2s ease-in; */
+}
+
+@media (max-width: 900px) {
+  .card-container h4 {
+    font-size: 1.1rem;
+  }
+
+  .card-container p {
+    font-size: 0.7rem;
+  }
 }

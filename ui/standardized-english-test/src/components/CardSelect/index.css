@@ -45,12 +45,13 @@
 }
 
 .card-select:hover .card-select-body h2 {
-  transform: translateY(-150%);
+  transform: translateY(-80%);
   font-size: 1.5rem;
 }
 
 .card-select:hover .card-select-body p {
   opacity: 1;
+  transform: translateY(20%);
 }
 
 /* End Hover */
