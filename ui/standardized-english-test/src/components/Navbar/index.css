@@ -1,0 +1,37 @@
+.navbar header {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar nav {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.navbar h1 {
+  flex-basis: 40%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  flex-basis: 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style: none;
+}
+.navbar li {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  margin: 10px;
+  transition: 0.2s ease-in;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}

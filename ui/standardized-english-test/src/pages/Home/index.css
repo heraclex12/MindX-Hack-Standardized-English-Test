@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* $blue: blue; */
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.carousel-container h3 {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 64px;
+  color: white;
+}
+
+.carousel-container .description {
+  color: rgb(236, 236, 236);
+}
+
+.carousel-content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* .carousel-content h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: 500;
+} */
+
+.carousel1 {
+  background-image: url(../../images/img1.jpg);
+}
+.carousel2 {
+  background-image: url(../../images/img2.jpg);
+}
+.carousel3 {
+  background-image: url(../../images/img3.png);
+}
+
+.carousel-content:after {
+  content: '';
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.info {
+  padding: 0 40px;
+}
+
+.cards-select {
+  display: flex;
+  max-width: 55%;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: hidden;
+  margin: 60px auto;
+  height: 450px;
+}
+
+.cards-select:hover .card-select {
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: 0.2s ease-in;
+}
+
+.cards-select .card-select:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
