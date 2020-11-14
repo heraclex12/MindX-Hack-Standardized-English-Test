@@ -11,7 +11,7 @@ const Navbar = (props) => {
   // } = props;
 
   const valid = localStorage.getItem('logged-in');
-
+  console.log(valid);
   return (
     <div className='navbar'>
       <header>
