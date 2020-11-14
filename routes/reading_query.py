@@ -11,6 +11,9 @@ class AtlanticReadingData(Resource):
 
         cursor = db.find()
         list_cur = list(cursor)
+        for idx, doc in enumerate(list_cur):
+            doc['_id'] = str(doc['_id'])
+            list_cur[idx] = doc
         json_data = json.dumps(list_cur, indent=2)
         return json_data
 
@@ -21,6 +24,9 @@ class IELTSReadingData(Resource):
 
         cursor = db.find()
         list_cur = list(cursor)
+        for idx, doc in enumerate(list_cur):
+            doc['_id'] = str(doc['_id'])
+            list_cur[idx] = doc
         json_data = json.dumps(list_cur, indent=2)
         return json_data
 
@@ -31,6 +37,9 @@ class ReutersReadingData(Resource):
 
         cursor = db.find()
         list_cur = list(cursor)
+        for idx, doc in enumerate(list_cur):
+            doc['_id'] = str(doc['_id'])
+            list_cur[idx] = doc
         json_data = json.dumps(list_cur, indent=2)
         return json_data
 
@@ -41,6 +50,9 @@ class NYTimesReadingData(Resource):
 
         cursor = db.find()
         list_cur = list(cursor)
+        for idx, doc in enumerate(list_cur):
+            doc['_id'] = str(doc['_id'])
+            list_cur[idx] = doc
         json_data = json.dumps(list_cur, indent=2)
         return json_data
 

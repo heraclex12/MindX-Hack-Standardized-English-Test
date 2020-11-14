@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import { withRouter } from 'react-router';
-import { Form, Input, Button, Radio } from 'antd';
+import { Form, Input, Button, Radio, Modal } from 'antd';
+import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 import './index.css';
 
@@ -20,7 +21,8 @@ const onGenderChange = () => {};
 
 const Login = (props) => {
   const [form] = Form.useForm();
-
+  // const [modal, contextHolder] = Modal.useModal();
+  const [openModal, setOpenModal] = useState(false);
   const { history } = props;
 
   const onFinish = async (values) => {
@@ -36,13 +38,25 @@ const Login = (props) => {
     console.log(res);
     if (status === 200) {
       history.push('/dashboard');
+      localStorage.setItem('logged-in', true);
+      return;
     }
+    console.log('HERE');
+    setOpenModal(true);
   };
+
+  const closeModal = () => {
+    setOpenModal(false);
+  };
+
+  // modal.error({ title: 'title', content: 'content' });
 
   return (
     <div className='login-container'>
       <div className='login-wrapper'>
         <h1>Login</h1>
+
+        {/* {true && modal.error({ title: 'title', content: 'content' })} */}
 
         <Form
           form={form}
@@ -82,6 +96,13 @@ const Login = (props) => {
             Submit
           </button>
         </Form>
+
+        <Modal
+          title='Login failed!'
+          visible={openModal}
+          onOk={closeModal}
+          onCancel={closeModal}
+        />
       </div>
     </div>
   );
