@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { withRouter } from 'react-router';
 import { Form, Input, Button, Radio } from 'antd';
 
 import './index.css';
@@ -20,18 +21,22 @@ const onGenderChange = () => {};
 const Login = (props) => {
   const [form] = Form.useForm();
 
+  const { history } = props;
+
   const onFinish = async (values) => {
     console.log(values);
-    const { fullName, password, phone, email, gender } = values;
+    const { password, email } = values;
     const data = {
       email,
       password
     };
     const url = 'http://35.208.221.249:5000/api/login';
-    axios.post(url, data).then((res) => {
-      console.log(res);
-      console.log(res.data);
-    });
+    const res = await axios.post(url, data);
+    const { status } = res;
+    console.log(res);
+    if (status === 200) {
+      history.push('/dashboard');
+    }
   };
 
   return (
@@ -73,15 +78,13 @@ const Login = (props) => {
             <Input.Password />
           </Item>
 
-          <Form.Item {...tailLayout}>
-            <Button type='primary' htmlType='submit'>
-              Submit
-            </Button>
-          </Form.Item>
+          <button className='submit-btn' onClick={onFinish}>
+            Submit
+          </button>
         </Form>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default withRouter(Login);

@@ -1,17 +1,30 @@
 .login-container {
   width: 100%;
   padding: 50px;
+  height: calc(100vh - 71px);
+  background-image: linear-gradient(
+    112.9deg,
+    rgba(112, 255, 151, 1) 6.2%,
+    rgba(70, 195, 255, 1) 99.7%
+  );
+  display: flex;
+  align-items: center;
 }
 
 .login-wrapper {
-  width: 400px;
+  width: 460px;
   margin: 0 auto;
+  /* background-color: khaki; */
+  background-color: white;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
 .login-wrapper h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #00e000;
+  color: blueviolet;
   position: relative;
   font-weight: bold;
 }
@@ -21,7 +34,7 @@
   content: '';
   width: 35%;
   height: 3px;
-  background-color: #00e000;
+  background-color: blueviolet;
   position: absolute;
   top: 50%;
   border-radius: 10px;
@@ -33,4 +46,47 @@
 
 .login-wrapper h1:after {
   right: 0;
+}
+
+.submit-btn {
+  width: 100%;
+  background-image: linear-gradient(
+    112.9deg,
+    rgb(89, 201, 119) 6.2%,
+    rgb(59, 165, 214) 99.7%
+  );
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 6px 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease-in;
+}
+
+.submit-btn:hover {
+  background-image: linear-gradient(
+    292.9deg,
+    rgb(180, 75, 171) 28.8%,
+    rgb(124, 32, 167) 70.4%
+  );
+}
+
+.ask {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.link {
+  margin-left: 6px;
+  cursor: pointer;
+  color: violet;
+  transition: 0.2s ease-in;
+}
+
+.link:hover {
+  color: rgb(182, 74, 182);
 }

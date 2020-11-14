@@ -37,10 +37,12 @@ const SignUp = (props) => {
       gender
     };
     const url = 'http://35.208.221.249:5000/api/register_user';
-    axios.post(url, data).then((res) => {
-      console.log(res);
-      console.log(res.data);
-    });
+    const res = await axios.post(url, data);
+    const { status } = res;
+
+    if (status === 200) {
+      history.push('/login');
+    }
   };
 
   return (
@@ -131,11 +133,9 @@ const SignUp = (props) => {
             <Input.Password />
           </Item>
 
-          {/* <Form.Item {...tailLayout}> */}
           <button className='submit-btn' onClick={onFinish}>
             Submit
           </button>
-          {/* </Form.Item> */}
         </Form>
 
         <p className='ask'>
