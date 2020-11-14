@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import './index.css';
 
 const Navbar = (props) => {
-  const {
-    history: {
-      location: { pathname }
-    }
-  } = props;
-
-  let isSignUp = pathname === '/sign-up';
+  // const {
+  //   history: {
+  //     location: { pathname }
+  //   }
+  // } = props;
 
   return (
     <div className='navbar'>
@@ -21,18 +19,18 @@ const Navbar = (props) => {
             <Link to='/'>
               <li>home</li>
             </Link>
+
             <Link to='/dashboard'>
               <li>dash board</li>
             </Link>
-            {isSignUp ? (
-              <Link to='/log-in'>
-                <li>log in</li>
-              </Link>
-            ) : (
-              <Link to='/sign-up'>
-                <li>sign up</li>
-              </Link>
-            )}
+
+            <Link to='/sign-up'>
+              <li>sign up</li>
+            </Link>
+
+            <Link to='/login'>
+              <li>log in</li>
+            </Link>
           </ul>
         </nav>
       </header>

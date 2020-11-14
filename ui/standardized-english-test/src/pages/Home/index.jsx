@@ -1,8 +1,5 @@
 import React from 'react';
 import { Carousel, Row, Col } from 'antd';
-import img1 from '../../images/img1.jpg';
-import img2 from '../../images/img2.jpg';
-import img3 from '../../images/img3.png';
 import BodyContent from '../../components/BodyContent';
 import CardInfo from '../../components/CardInfo';
 import CardSelect from '../../components/CardSelect';
@@ -35,17 +32,6 @@ const Home = (props) => {
 
   return (
     <div className='home'>
-      {/* <header>
-        <nav>
-          <h1>AppName</h1>
-          <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contact</li>
-          </ul>
-        </nav>
-      </header> */}
-
       <div className='carousel-container'>
         <div className='content'>
           <h3>Standardized English Test</h3>

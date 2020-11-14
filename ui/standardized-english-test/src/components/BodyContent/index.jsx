@@ -9,7 +9,7 @@ const BodyContent = (props) => {
     <>
       {reverse ? (
         <>
-          <div class='body-content reverse'>
+          <div className='body-content reverse'>
             <Row
               className='body-content-row'
               gutter={{ xs: 4, sm: 8, md: 12, lg: 22 }}
