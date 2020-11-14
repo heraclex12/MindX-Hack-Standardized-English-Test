@@ -8,12 +8,13 @@ import Navbar from './components/Navbar';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Footer from './components/Footer';
-import DashBoard from './pages/DashBoard'
+import DashBoard from './pages/DashBoard';
 import Profile from './pages/Profile';
 
 function App() {
   useEffect(() => {
     return () => {
+      console.log('HERE');
       localStorage.removeItem('logged-in');
     };
   });
