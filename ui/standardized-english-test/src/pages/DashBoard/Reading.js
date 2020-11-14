@@ -16,7 +16,6 @@ import {
 } from '@coreui/react';
 import CIcon from '@coreui/icons-react';
 import { Button } from 'antd';
-// import 'bootstrap/dist/css/bootstrap.css';
 import './index-reading.css'
 import './index-reading.scss'
 // import {ReactComponent as BBC} from '../../assets/icons/bbc.svg'
