@@ -34,7 +34,8 @@ const Home = (props) => {
     <div className='home'>
       <div className='carousel-container'>
         <div className='content'>
-          <h3>Standardized English Test</h3>
+          {/* <h3>Standardized English Test</h3> */}
+          <h3>Hackeng</h3>
           <p className='description'>
             An Robustness Automated Test Generating and Scoring system will help
             you improve English skills quickly. We offer a trusted system, which

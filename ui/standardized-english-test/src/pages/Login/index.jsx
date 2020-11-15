@@ -44,7 +44,6 @@ const Login = (props) => {
       localStorage.setItem('email', email);
       return;
     }
-    console.log('RIGHT');
     setOpenModal(true);
   };
 
