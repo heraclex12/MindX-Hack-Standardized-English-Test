@@ -16,13 +16,15 @@ const AnswerPanel = (props) => {
   };
 
   useEffect(() => {
+    setText('');
+    setDisplay(false);
     console.log('HERE');
-  }, []);
+  }, [answer]);
 
   return (
     <>
       <span>Answer: </span>
-      <Input onChange={onChange} onPressEnter={onPressEnter} />
+      <Input onChange={onChange} value={text} onPressEnter={onPressEnter} />
       {display && (
         <CBadge
           color={

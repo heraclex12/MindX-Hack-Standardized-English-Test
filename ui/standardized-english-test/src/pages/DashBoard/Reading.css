@@ -29,3 +29,7 @@
 .big-card .badge-success {
   background-color: rgb(49 230 49) !important;
 }
+
+.big-card .ant-collapse {
+  font-size: 16px;
+}
