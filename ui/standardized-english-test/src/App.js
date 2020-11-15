@@ -31,9 +31,6 @@ function App() {
             <DashBoard />
             <Footer />
           </Route>
-          <Route path='/dashboard/reading'>
-            <Reading />
-          </Route>
 
           <Route path='/sign-up'>
             <SignUp />
