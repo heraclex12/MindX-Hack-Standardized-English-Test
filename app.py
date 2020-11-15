@@ -10,7 +10,7 @@ flask_bcrypt = Bcrypt(app)
 
 @app.route('/')
 def hello_world():
-   return 'Hello World'
+   return 'Please site to port 3000 for interact with web interface.'
 
 
 app.register_blueprint(api_bp, url_prefix='/api')

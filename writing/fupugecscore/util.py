@@ -20,23 +20,10 @@ from writing.fupugecscore.bert import tokenization, modeling
 from writing.fupugecscore.bert.extract_features import model_fn_builder, convert_lst_to_features, PoolingStrategy
 from bert_serving.client import BertClient
 
-# 加载打分系统配置， 主要是系列模型文件的路径
+
 with open(os.path.join(os.getcwd(), "writing/fupugecscore/config/sys_conf.yaml"), encoding="utf-8") as conf_reader:
     sys_conf = yaml.load(conf_reader.read())
 
-# do_train: Whether to run training.
-# do_eval: Whether to run eval on the dev set.
-# do_predict: Whether to run the model in inference mode on the test set.
-# train_batch_size: Total batch size for training.
-# eval_batch_size: Total batch size for eval.
-# predict_batch_size: Total batch size for predict.
-# learning_rate: The initial learning rate for Adam.
-# num_train_epochs: Total number of training epochs to perform.
-# warmup_proportion: Proportion of training to perform linear learning rate warmup for.
-# save_checkpoints_step: How often to save the model checkpoint.
-# iterations_per_loop: How many steps to make in each estimator call.
-# prompt_id: the id of the prompt
-# train_set_prob: the Proportion examples from dataset chosen to be the train set
 with open(os.path.join(os.getcwd(), "writing/fupugecscore/config/train_conf.json"), "r") as cr:
     train_conf = json.load(cr)
 
@@ -45,8 +32,7 @@ with open(os.path.join(os.getcwd(), "writing/fupugecscore/config/doc_conf.json")
 
 spacynlp = spacy.load("en_core_web_sm")
 
-# 目前所有数据集的统计数据， key代表了prompt的id, 目前1-8是asap数据集的id, 9代表雅思，
-# 之后积累数据后，会把雅思的每个prompt都用一个id表示，id当初后面的三元组(最低分，最高分，该prompt下的范文总数)
+
 dataset_score_range = {
     1: (2, 12, 1783),
     2: (1, 6, 1800),
@@ -61,27 +47,11 @@ dataset_score_range = {
 
 
 class ScoreResource:
-    """ 整个score系统需要
-
-    Attributes:
-        advanced_vocabulary_name:
-
-    """
-
     def __init__(self):
         self.advanced_vocabulary_name = ["5.5", "5.5-6.5", "6.5-7.5"]
         self.advanced_words = self.__load_ad_words(sys_conf["advanced_word_path"])
 
     def __load_ad_words(self, ad_word_path):
-        """ 加载高级词汇，5.5-7分的词汇等，之后会进行一定修改
-
-        Args:
-            ad_word_path: 存放高级词汇文件的路径
-
-        Returns:
-            ad_word_dict: 字典对象，key: 单词，value:单词所属的分数段
-
-        """
         assert os.path.exists(ad_word_path), "advance words file path is not exists, please check score_conf.yaml"
         ad_word_dict = dict()
         for dirpath, dirnames, filenames in os.walk(ad_word_path):
@@ -108,22 +78,7 @@ sr = ScoreResource()
 
 
 class Document:
-    """ 输入给score系统的打分的对象，会根据gec传入的结果计算一篇文章的handmarked的特征
-
-    Attributes:
-        __title: 作文题目， 用spacy包装的对象
-        __essay: 作文正文， list对象，其中每个元素都是对应sentence的spacy封装的对象
-        __gec_output: gec的结果
-
-    """
-
     def __init__(self, gec_output):
-        """
-
-        Args:
-            gec_output: 由json.loads起来的对象，fupugec-server项目中传过来的对象。
-
-        """
         self.__title = spacynlp(gec_output["title"].lower())
         self.__essay = [spacynlp(gec_output["sentence_" + str(index)]["orig_sent"].lower()) for index in
                         range(int(gec_output["sent_nums"]))]
@@ -133,11 +88,6 @@ class Document:
         self.doc_result = self.__doc_result()
 
     def __doc_info(self):
-        """ 文章总体的一些指标，
-
-        Returns: list对象， 包括[总词数，总字符数，平均词长，词汇数，词长方差，介词数，句数，平均句长，句长方差]
-
-        """
         process_sent = lambda sent: [(token.text, token.lemma_) for token in sent if
                                      not (token.is_punct or token.is_space)]
         doc_token_and_lemma = []
@@ -171,13 +121,12 @@ class Document:
         doc_num_prepositions = len(prepositions)
 
         # sent level
-        self.__doc_num_sents = len(doc_sent_word_leng)  # 句子数目
-        doc_average_sent_leng = np.mean(doc_sent_word_leng)  # 句子平均单词数目
-        doc_var_sent_leng = np.var(doc_sent_word_leng)  # 句子单词数的方差
+        self.__doc_num_sents = len(doc_sent_word_leng)
+        doc_average_sent_leng = np.mean(doc_sent_word_leng)
+        doc_var_sent_leng = np.var(doc_sent_word_leng)
         clause_sent_num = 0
         for sentence_index in range(int(self.__gec_output['sent_nums'])):
             sentence = self.__gec_output["sentence_" + str(sentence_index)]
-            # -1 表示不是从句， 7表示there be句型
             if not sentence["sent_type"] in [-1, 7]:
                 clause_sent_num += 1
 
@@ -190,11 +139,6 @@ class Document:
                 self.__doc_num_sents, doc_average_sent_leng, doc_var_sent_leng]
 
     def __error_info(self):
-        """ 文章的错误信息，主要是错词率和错句率，这里没有使用具体数量，因为长文章倾向于错词数肯定要大于短文章。
-
-        Returns: list对象，[ 错词率，错句率]
-
-        """
         self.__err_word = list()
         doc_num_err = 0
         self.__doc_num_err_sentence = 0
@@ -221,11 +165,6 @@ class Document:
         return [doc_num_err / self.__doc_num_words, self.__doc_num_err_sentence / self.__doc_num_sents]
 
     def __advanced_vocab(self):
-        """ 统计文章高级词汇
-
-        Returns: 文章高级词汇字典，key->分数段，value->单词列表
-
-        """
         ad_vocab = dict()
         for key in sr.advanced_vocabulary_name:
             ad_vocab[key] = list()
@@ -235,44 +174,34 @@ class Document:
         return ad_vocab
 
     def __features(self):
-        """ 文章所有的
-
-        Returns: 一篇文章的handmarked的特征集合
-
-        """
         feature_list = self.__doc_info()
         feature_list.extend(self.__error_info())
         return feature_list
 
     def __doc_result(self):
-        """ 生成需要输出报告的文章属性字典
-
-        Returns: dict, document需要输出的属性
-
-        """
         result = dict()
         result["num_word"] = self.__doc_num_words
         result["num_sentence"] = self.__doc_num_sents
-        result['num_short_sentence'] = self.__doc_num_short_sents  # 短句数
-        result['num_long_sentence'] = self.__doc_num_long_sents  # 长句数
-        result['num_paragraph'] = self.__doc_num_paras  # 段落数
+        result['num_short_sentence'] = self.__doc_num_short_sents
+        result['num_long_sentence'] = self.__doc_num_long_sents
+        result['num_paragraph'] = self.__doc_num_paras
 
         result["err_word"] = self.__err_word
         result["num_err_word"] = len(self.__err_word)
-        result['num_err_sentence'] = self.__doc_num_err_sentence  # 出现错误的句数
+        result['num_err_sentence'] = self.__doc_num_err_sentence
 
         result[
-            'ratio_short_sentence'] = self.__doc_num_short_sents * 1.0 / self.__doc_num_sents if self.__doc_num_sents != 0 else 0  # 短句占比
+            'ratio_short_sentence'] = self.__doc_num_short_sents * 1.0 / self.__doc_num_sents if self.__doc_num_sents != 0 else 0
         result[
-            'ratio_long_sentence'] = self.__doc_num_long_sents * 1.0 / self.__doc_num_sents if self.__doc_num_sents != 0 else 0  # 长句占比
+            'ratio_long_sentence'] = self.__doc_num_long_sents * 1.0 / self.__doc_num_sents if self.__doc_num_sents != 0 else 0
         result['err_rate_word'] = len(
-            self.__err_word) * 1.0 / self.__doc_num_vocab if self.__doc_num_vocab != 0 else 0  # 错词占比
+            self.__err_word) * 1.0 / self.__doc_num_vocab if self.__doc_num_vocab != 0 else 0
         result[
-            'err_rate_sentence'] = self.__doc_num_err_sentence * 1.0 / self.__doc_num_sents if self.__doc_num_sents != 0 else 0  # 错句占比
+            'err_rate_sentence'] = self.__doc_num_err_sentence * 1.0 / self.__doc_num_sents if self.__doc_num_sents != 0 else 0
 
-        result['word_5.5'] = self.__ad_vocab['5.5']  # 文中属于5.5分的词汇列表
-        result['word_5.5-6.5'] = self.__ad_vocab['5.5-6.5']  # 文中属于5.5-6.5分的词汇列表
-        result['word_6.5-7.5'] = self.__ad_vocab['6.5-7.5']  # 文中属于5.5分的词汇列表
+        result['word_5.5'] = self.__ad_vocab['5.5']
+        result['word_5.5-6.5'] = self.__ad_vocab['5.5-6.5']
+        result['word_6.5-7.5'] = self.__ad_vocab['6.5-7.5']
 
         return result
 
@@ -427,7 +356,6 @@ def read_dataset_into_tfrecord(dataset_path, bw: BertWorker):
     dataset_positive_path = os.path.join(dataset_path, "training_set_rel3.tsv")
     tf_record_path = os.path.join(dataset_path, "asap_dataset.tfrecord")
 
-    # TODO(Jiawei):提取公共代码
     with tf.python_io.TFRecordWriter(tf_record_path) as tfrecord_writer:
         for i, item in enumerate(bw.inference_from_path_with_permfile(dataset_positive_path)):
             if i % 100 == 0:
@@ -472,30 +400,11 @@ def read_ielts_into_tfrecord(dataset_path, bw: BertWorker):
 
 
 def create_initializer(initializer_range=0.02):
-    """ 创建tensorflow初始化器
 
-    Args:
-        initializer_range: 初始化的范围设置
-
-    Returns:
-
-    """
     return tf.truncated_normal_initializer(stddev=initializer_range)
 
 
 def create_rnn_cell(hidden_size, dropout_prob, layers_num, isbidirectional, is_training):
-    """ 创建rnn cell, 包括多层和单双向的控制。
-
-    Args:
-        hidden_size: rnn cell 隐层的宽度
-        dropout_prob: dropout的比例
-        layers_num: rnn 网络的层数
-        isbidirectional: 是否使用双向的cell
-        is_training: 是否为训练时间段，训练时间段，cell需要使用dropout包裹
-
-    Returns: cell实例
-
-    """
 
     def single_rnn_cell():
         single_cell = tf.nn.rnn_cell.LSTMCell(hidden_size)
@@ -548,11 +457,6 @@ def input_fn_from_client(bw: BertWorker):
 
 
 def serving_input_receiver_fn():
-    """ tensorflow serving的一个输入流函数
-
-    Returns: 略过，自己看
-
-    """
     features = {
         "doc_encodes": tf.placeholder(tf.float32, [1, None, int(sys_conf["bert_emb_dim"])]),
         "prompt_encodes": tf.placeholder(tf.float32, [1, None, int(sys_conf["bert_emb_dim"])]),
@@ -565,17 +469,7 @@ def serving_input_receiver_fn():
 
 
 def input_fn_from_tfrecord(tfrecord_path, batch_size, is_training, element_ids):
-    """ 以tfrecord为输入，构建该模型需要的input的io
 
-    Args:
-        tfrecord_path: tfrecord文件的路径
-        batch_size: 模型使用的batch_size,
-        is_training: boolean类型标致是否处于训练阶段
-        element_ids: 从tfrecord按照element_ids取出对应的所有元素
-
-    Returns: input_fn的handle
-
-    """
     prompts_embedding_path = os.path.join(sys_conf["data_dir"], "prompt.npz")
     if os.path.exists(prompts_embedding_path):
         prompts_embedding = np.load(prompts_embedding_path, allow_pickle=True)["features"][()]
@@ -600,7 +494,6 @@ def input_fn_from_tfrecord(tfrecord_path, batch_size, is_training, element_ids):
         temp_example["doc_sent_num"] = tf.to_int32(example["doc_sent_num"])
         temp_example["domain1_score"] = example["domain1_score"]
         temp_example["article_id"] = tf.to_int32(example["article_id"])
-        # 只在计算prompt-relevant score的时候有用， 因为在训练prompt-relevant模型的时候是按prompt来训练的，所以把所有sample（包含正负样本）的prompt_encode都赋值一样的
         temp_example["prompt_encodes"] = tf.convert_to_tensor(prompts_embedding[train_conf["prompt_id"]])
         if shuffle:
             if is_training:
@@ -637,7 +530,6 @@ def input_fn_from_tfrecord(tfrecord_path, batch_size, is_training, element_ids):
 
 
 def read_asap_dataset():
-    # asap数据集的相关参数，配置，这里做全局变量使用，方便下面三个score predictor调用
     asap_csv_file_path = os.path.join(sys_conf["data_dir"], "training_set_rel3.tsv")
     if not os.path.exists(asap_csv_file_path):
         raise ValueError("asap_file_path is invalid.")
@@ -667,18 +559,7 @@ def generate_xgboost_train_set(articles_id,
                                domain1_scores,
                                train_set_gec_result_path,
                                train_set_saved_path):
-    """ 根据训练集gec的结果生成xgboost的训练数据集
 
-    Args:
-        articles_id: 训练集文章的id组成的list
-        articles_set: 训练集文章的set组成的list
-        domain1_scores: 训练集文章的手工标注的分数，因为asap数据集把这个分数称为domain1_scores
-        train_set_gec_result_path: 训练集文章过了gec引擎所产生的结果文件的路径，文件形式为一行对应一个文章的gec结果。
-        train_set_saved_path: 保存成npz文件类型，npz文件的保存路径
-
-    Returns: 无
-
-    """
     dataset_gec_path = train_set_gec_result_path
     dataset_xgboost_train_file = train_set_saved_path
 
@@ -702,7 +583,6 @@ def generate_xgboost_train_set(articles_id,
             gec_output = json.loads(line_split[1].strip())
             features[id] = Document(gec_output).features
 
-    # TODO(Jiawei): may have bugs if basic_scores的key和features的key不一样
     for key, value in handmark_normalized_scores.items():
         if key in features:
             features[key].append(value)
@@ -711,15 +591,6 @@ def generate_xgboost_train_set(articles_id,
 
 
 def sentence_tokenize(documents):
-    """分句函数，将一整段文本进行分句
-
-    Args:
-        documents: 待分句的document, string类型
-
-    Returns: 句子组成的list
-
-    """
-    # 查看
     locations = [-1]
     locations.extend([item.start() for item in re.finditer(r'[\.\?\!](?=[^ \W\d])', documents)])
     locations.append(len(documents))
@@ -731,7 +602,6 @@ def sentence_tokenize(documents):
 
 
 if __name__ == "__main__":
-    # 使用bert对prompt进行encode
     # bc = BertClient()
     # result = {}
     # prompt_npz = "data/train_data/prompt.npz"

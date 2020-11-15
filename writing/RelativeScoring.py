@@ -6,7 +6,11 @@ from encode_doc import encode_doc
 
 
 class PromptRelevantScore:
+    """"
+        **Scoring Prompt Relevant Model**
 
+        how much the user answer match with the question
+    """
     def __init__(self, init_checkpoint):
         self.init_checkpoint = init_checkpoint
         self.bert_emb_dim = 768

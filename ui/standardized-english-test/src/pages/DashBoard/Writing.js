@@ -30,22 +30,21 @@ export default function Writing(props) {
 
   const clickPage = (p, s) => {
     fetch(`http://35.208.221.249:5000/api/get_writing_question/${p}`)
-      .then(
-        function (response) {
-          if (response.status !== 200) {
-            console.log('Looks like there was a problem. Status Code: ' +
-              response.status);
-            return;
-          }
-
-          // Examine the text in the response
-          response.json().then(function (data) {
-            console.log(data)
-            setPrompt(data.question)
-            setPromptID(data.id)
-          });
+      .then(function (response) {
+        if (response.status !== 200) {
+          console.log(
+            'Looks like there was a problem. Status Code: ' + response.status
+          );
+          return;
         }
-      )
+
+        // Examine the text in the response
+        response.json().then(function (data) {
+          console.log(data);
+          setPrompt(data.question);
+          setPromptID(data.id);
+        });
+      })
       .catch(function (err) {
         console.log('Fetch Error :-S', err);
       });
@@ -63,17 +62,18 @@ export default function Writing(props) {
         question_content: prompt,
         answer_content: answer
       })
-    }).then(
-      function (response) {
+    })
+      .then(function (response) {
         if (response.status !== 200) {
-          console.log('Looks like there was a problem. Status Code: ' +
-            response.status);
+          console.log(
+            'Looks like there was a problem. Status Code: ' + response.status
+          );
           return;
         }
 
         // Examine the text in the response
         response.json().then(function (data) {
-          console.log(data)
+          console.log(data);
           // const { data } = res;
           const {
             coherence_score = 1,
@@ -102,17 +102,24 @@ export default function Writing(props) {
           }
           setAnnotation(annotation_html)
         });
-      }
-    )
+      })
       .catch(function (err) {
         console.log('Fetch Error :-S', err);
       });
-  }
-
+  };
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'center', margin: '10px 0 30px 0' }}>
-        <Pagination defaultCurrent={0} total={8} defaultPageSize={1}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '10px 0 30px 0'
+        }}
+      >
+        <Pagination
+          defaultCurrent={0}
+          total={8}
+          defaultPageSize={1}
           onChange={clickPage}
         />
       </div>
@@ -142,5 +149,5 @@ export default function Writing(props) {
           ))}
       </div>
     </div>
-  )
+  );
 }

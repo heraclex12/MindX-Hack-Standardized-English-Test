@@ -30,7 +30,6 @@ const Login = (props) => {
   }, []);
 
   const onFinish = async (values) => {
-    console.log(values);
     const { password, email } = values;
     const data = {
       email,
@@ -38,15 +37,13 @@ const Login = (props) => {
     };
     const url = 'http://35.208.221.249:5000/api/login';
     const res = await axios.post(url, data);
-    console.log(res);
     const { status = 401 } = res;
-    console.log(res);
     if (status === 200 || status === 'SUCCESS') {
       history.push('/dashboard');
       localStorage.setItem('logged-in', true);
+      localStorage.setItem('email', email);
       return;
     }
-    console.log('HERE');
     setOpenModal(true);
   };
 

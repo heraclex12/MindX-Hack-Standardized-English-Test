@@ -6,6 +6,13 @@ from writing.BertEmbedding import be, tokenizer
 
 
 def encode_doc(doc, aricle_set):
+    """
+    Encode document-based answer to feature embeddings
+
+    :param doc: an answer for the writing question id
+    :param aricle_set: a writing question id
+    :return: embeddings: context vectors of this answer
+    """
     sentences = sentence_tokenize(doc)
 
     tmp_f = list(convert_lst_to_features(sentences, 128, tokenizer))

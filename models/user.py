@@ -1,6 +1,9 @@
 import base64
 
 class UserProfile:
+    """
+        User Information Template.
+    """
     def __init__(self, username, password, gender, email, phone):
         self.username = username
         self.password = password

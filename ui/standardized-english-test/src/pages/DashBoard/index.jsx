@@ -32,7 +32,8 @@ const DashBoard = (props) => {
           <Sider className='site-layout-background' width={200}>
             <Menu
               mode='inline'
-              defaultOpenKeys={['sub1']}
+              defaultOpenKeys={['1']}
+              defaultSelectedKeys={['1']}
               style={{ height: '100%' }}
             >
               <Menu.Item key='1'>
