@@ -14,12 +14,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* left: -100%; */
-  /* transform: translateX(100%); */
   content: '';
   width: 100%;
   height: 100%;
-  /* border-radius: 50% 50% 60% 60%; */
   transition: 0.2s ease-in;
 }
 
@@ -28,7 +25,6 @@
 }
 
 .card-select.reading .background {
-  /* background: linear-gradient(-45deg, #ff6e7f, #bfe9ff); */
   background: linear-gradient(-45deg, #e65c00, #f9d423);
 }
 
@@ -38,10 +34,6 @@
   width: 120%;
   height: 120%;
   border-radius: 50% 50% 70% 70%;
-}
-
-.card-select:hover .card-select-body {
-  /* transform: translate(-50%, -70%); */
 }
 
 .card-select:hover .card-select-body h2 {
@@ -80,5 +72,4 @@
 .card-select-body p {
   opacity: 0;
   transition: 0.2s ease-in;
-  /* transform: translateY(50%); */
 }

@@ -9,22 +9,14 @@ const BodyContent = (props) => {
     <>
       {reverse ? (
         <>
-          <div className='body-content reverse'>
-            <Row
-              className='body-content-row'
-              gutter={{ xs: 4, sm: 8, md: 12, lg: 22 }}
-            >
-              {/* <Col md={24} span={12}> */}
-              <Col xs={2} sm={4} md={10} lg={10} xl={12}>
+          <div class='body-content reverse'>
+            <Row className='body-content-row' gutter={[12, 22]}>
+              <Col span={12}>
                 <div className='img-container'>
-                  <img
-                    src={imgSrc}
-                    //   src='https://ouch-cdn.icons8.com/preview/706/5edf5dc1-a4f1-4a7f-ba51-1ffa3ba997ba.png'
-                    alt='illustration'
-                  />
+                  <img src={imgSrc} alt='illustration' />
                 </div>
               </Col>
-              <Col xs={2} sm={4} md={6} lg={10} xl={12}>
+              <Col span={12}>
                 <h2>{title}</h2>
                 <p>{content}</p>
               </Col>
@@ -41,11 +33,7 @@ const BodyContent = (props) => {
               </Col>
               <Col span={12}>
                 <div className='img-container'>
-                  <img
-                    src={imgSrc}
-                    //   src='https://ouch-cdn.icons8.com/preview/706/5edf5dc1-a4f1-4a7f-ba51-1ffa3ba997ba.png'
-                    alt='illustration'
-                  />
+                  <img src={imgSrc} alt='illustration' />
                 </div>
               </Col>
             </Row>

@@ -8,12 +8,15 @@ import Navbar from './components/Navbar';
 import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import Footer from './components/Footer';
-import DashBoard from './pages/DashBoard'
+import DashBoard from './pages/DashBoard';
 import Profile from './pages/Profile';
+import ReadingPage from './pages/DashBoard/ReadingPage';
+import Reading from './pages/DashBoard/Reading';
 
 function App() {
   useEffect(() => {
     return () => {
+      console.log('HERE');
       localStorage.removeItem('logged-in');
     };
   });
@@ -22,6 +25,16 @@ function App() {
       <div className='App'>
         <Navbar />
         <Switch>
+          {/* <Route path="/dashboard/reading/:id" children={<ReadingPage />} /> */}
+
+          <Route path='/dashboard'>
+            <DashBoard />
+            <Footer />
+          </Route>
+          <Route path='/dashboard/reading'>
+            <Reading />
+          </Route>
+
           <Route path='/sign-up'>
             <SignUp />
           </Route>
@@ -32,17 +45,14 @@ function App() {
 
           <Route path='/user-profile'>
             <Profile />
-          </Route>
-
-          <Route path='/dashboard'>
-            <DashBoard />
+            <Footer />
           </Route>
 
           <Route path='/'>
             <Home />
+            <Footer />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

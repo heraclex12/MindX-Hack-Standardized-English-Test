@@ -24,6 +24,8 @@ def compute_spell_grammar_score(text):
                 error = {}
                 error['id'] = cnt_error
                 error['id2'] = cnt_error * 1000
+                error['offset'] = messeage['offset']
+                error['length'] = messeage['length']
                 error['msg'] = messeage['message']
                 try:
                     error['dst'] = messeage['description']
@@ -45,6 +47,8 @@ def compute_spell_grammar_score(text):
                 error = {}
                 error['id'] = cnt_error
                 error['id2'] = cnt_error * 1000
+                error['offset'] = messeage['offset']
+                error['length'] = messeage['length']
                 error['msg'] = messeage['message']
                 try:
                     error['dst'] = messeage['description']

@@ -48,9 +48,27 @@
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 810px) {
   /* .body-content-row {
     display: flex;
     flex-direction: column;
   } */
+  .body-content {
+    padding: 120px 60px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .body-content h2 {
+    font-size: 1.8rem;
+  }
+  .body-content p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .body-content {
+    padding: 120px 10px !important;
+  }
 }

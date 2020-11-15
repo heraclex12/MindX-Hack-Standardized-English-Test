@@ -10,8 +10,10 @@
 }
 .navbar h1 {
   flex-basis: 40%;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .navbar ul {
@@ -50,4 +52,18 @@
 
 .navbar li:hover:before {
   width: 100%;
+}
+
+@media (max-width: 650px) {
+  nav {
+    width: 95% !important;
+  }
+
+  .navbar h1 {
+    flex-basis: 30%;
+  }
+
+  .navbar ul {
+    flex-basis: 70%;
+  }
 }

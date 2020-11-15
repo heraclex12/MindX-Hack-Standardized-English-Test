@@ -1,6 +1,7 @@
 from writing.fupugecscore.bert import tokenization, modeling
 import tensorflow as tf
-from writing.fupugecscore.bert.extract_features import convert_lst_to_features, PoolingStrategy
+import os
+from writing.fupugecscore.bert.extract_features import PoolingStrategy
 
 
 class BertEmbedding(object):
@@ -76,15 +77,19 @@ class BertEmbedding(object):
     self.predictions = pooled
 
 
-if __name__ == '__main__':
-    vocab_file = 'fupugecscore/data/uncased_L-12_H-768_A-12/vocab.txt'
-    config_file = 'fupugecscore/data/uncased_L-12_H-768_A-12/bert_config.json'
-    ckpt_file = 'fupugecscore/data/uncased_L-12_H-768_A-12/bert_model.ckpt'
 
-    pooling_layer = [-2]
-    pooling_strategy = PoolingStrategy.REDUCE_MEAN
 
-    be = BertEmbedding(bert_config=modeling.BertConfig.from_json_file(config_file),
-    init_checkpoint=ckpt_file,
-    pooling_strategy=pooling_strategy,
-    pooling_layer=pooling_layer)
+
+vocab_file = os.path.join(os.getcwd(), 'writing/fupugecscore/data/uncased_L-12_H-768_A-12/vocab.txt')
+config_file =  os.path.join(os.getcwd(), 'writing/fupugecscore/data/uncased_L-12_H-768_A-12/bert_config.json')
+ckpt_file =  os.path.join(os.getcwd(), 'writing/fupugecscore/data/uncased_L-12_H-768_A-12/bert_model.ckpt')
+
+pooling_layer = [-2]
+pooling_strategy = PoolingStrategy.REDUCE_MEAN
+
+tokenizer = tokenization.FullTokenizer(vocab_file=vocab_file)
+
+be = BertEmbedding(bert_config=modeling.BertConfig.from_json_file(config_file),
+init_checkpoint=ckpt_file,
+pooling_strategy=pooling_strategy,
+pooling_layer=pooling_layer)

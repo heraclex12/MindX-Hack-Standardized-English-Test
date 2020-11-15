@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { withRouter } from 'react-router';
 import { Form, Input, Button, Radio, Modal } from 'antd';
@@ -25,6 +25,10 @@ const Login = (props) => {
   const [openModal, setOpenModal] = useState(false);
   const { history } = props;
 
+  useEffect(() => {
+    localStorage.removeItem('logged-in');
+  }, []);
+
   const onFinish = async (values) => {
     console.log(values);
     const { password, email } = values;
@@ -34,9 +38,10 @@ const Login = (props) => {
     };
     const url = 'http://35.208.221.249:5000/api/login';
     const res = await axios.post(url, data);
-    const { status } = res;
     console.log(res);
-    if (status === 200) {
+    const { status = 401 } = res;
+    console.log(res);
+    if (status === 200 || status === 'SUCCESS') {
       history.push('/dashboard');
       localStorage.setItem('logged-in', true);
       return;

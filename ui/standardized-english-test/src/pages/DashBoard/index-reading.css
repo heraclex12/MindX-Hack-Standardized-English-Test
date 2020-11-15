@@ -7,13 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ant-btn-primary a {
+  color: white !important;
+}
 
+.collapse-custom .ant-collapse-header {
+  text-align: left !important;
+}
 .transfermarkt_profile_pic {
   width: 30px;
   height: 35px;
   margin-right: 1%;
 }
 
+.profile-header__icon {
+  width: 15;
+  height: 15;
+  margin-left: 2%;
+}
 .transfermarkt_id_tags {
   margin-left: 1%;
 }
