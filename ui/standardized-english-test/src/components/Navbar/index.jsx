@@ -12,7 +12,7 @@ const Navbar = (props) => {
     <div className='navbar'>
       <header>
         <nav>
-          <h1 onClick={() => history.push('/')}>Hackeng</h1>
+          <h1 onClick={() => history.push('/')}>HackEng</h1>
 
           <ul>
             <Link to='/'>
