@@ -44,6 +44,7 @@ const Login = (props) => {
       localStorage.setItem('email', email);
       return;
     }
+    console.log('RIGHT');
     setOpenModal(true);
   };
 
@@ -99,12 +100,9 @@ const Login = (props) => {
           </button>
         </Form>
 
-        <Modal
-          title='Login failed!'
-          visible={openModal}
-          onOk={closeModal}
-          onCancel={closeModal}
-        />
+        <Modal visible={openModal} onOk={closeModal} onCancel={closeModal}>
+          <h3>Login failed!</h3>
+        </Modal>
       </div>
     </div>
   );

@@ -25,9 +25,7 @@ const CardSelect = (props) => {
       <div className='background'></div>
       <div className='card-select-body'>
         <h2>{title}</h2>
-        <p>
-          Click here to develop your future!
-        </p>
+        <p style={{ textAlign: 'center' }}>Let's create the future</p>
       </div>
     </div>
   );
