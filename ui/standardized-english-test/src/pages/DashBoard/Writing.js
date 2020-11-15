@@ -56,7 +56,7 @@ export default function Writing(props) {
         relative_score +
         semantic_score +
         parseInt(total / 10),
-      sematic: semantic_score,
+      semantic: semantic_score,
       grammar: parseInt(total / 10)
     });
     // console.log(res);

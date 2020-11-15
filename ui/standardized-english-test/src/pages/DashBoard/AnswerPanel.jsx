@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Collapse, Input } from 'antd';
 import { CBadge } from '@coreui/react';
 const AnswerPanel = (props) => {
@@ -14,6 +14,10 @@ const AnswerPanel = (props) => {
     // console.log(text)
     setText(s.target.value);
   };
+
+  useEffect(() => {
+    console.log('HERE');
+  }, []);
 
   return (
     <>
