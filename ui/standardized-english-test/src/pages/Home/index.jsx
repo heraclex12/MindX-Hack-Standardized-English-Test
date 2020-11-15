@@ -36,9 +36,9 @@ const Home = (props) => {
         <div className='content'>
           <h3>Standardized English Test</h3>
           <p className='description'>
-            An Robustness Automated Test Generating and Scoring system will help you improve English skills quickly.
-            We offer a trusted system, which can correctly generate questions and answer from a given topic.
-
+            An Robustness Automated Test Generating and Scoring system will help
+            you improve English skills quickly. We offer a trusted system, which
+            can correctly generate questions and answer from a given topic.
           </p>
         </div>
         <Carousel afterChange={onChange} autoplay autoplaySpeed='16' infinite>
@@ -83,7 +83,7 @@ const Home = (props) => {
         <Row gutter={{ xs: 4, sm: 8, md: 16, xl: 16 }}>
           <Col xs={12} sm={12} md={6}>
             <CardInfo
-              title='9900+ Topics'
+              title='500+ Topics'
               content='learn anything'
               imgSrc={IMG_SRC_CARD_INFO[0]}
             />
@@ -104,8 +104,8 @@ const Home = (props) => {
           </Col>
           <Col xs={12} sm={12} md={6}>
             <CardInfo
-              title='750+ Instructors'
-              content='all trained professionals'
+              title='750+ Question Set'
+              content='generated from various sources'
               imgSrc={IMG_SRC_CARD_INFO[3]}
             />
           </Col>

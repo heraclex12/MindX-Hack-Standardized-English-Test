@@ -37,7 +37,7 @@
 }
 
 .card-select:hover .card-select-body h2 {
-  transform: translateY(-80%);
+  transform: translateY(-180%);
   font-size: 1.5rem;
 }
 
