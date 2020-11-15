@@ -5,12 +5,5 @@ osp_output_dir: writing/fupugecscore/data/output/overall_score  # The output dir
 data_dir: writing/fupugecscore/data/train_data # The input data dir for train and eval.
 bert_dir: writing/fupugecscore/data/uncased_L-12_H-768_A-12  # The pre-trained bert-original model dir
 bert_emb_dim: 768  # the embedding dim of bert model
-bsp_docker_port: 8500 # the port of the docker of basic score model
-csp_docker_port: 8600 # the port of the docker of coherence score model
-psp_docker_port: 8700 # the port of the docker of prompt-relevant score model
-
-rpc_config:
-  host: 47.98.204.76
-  port: 9002
 
 advanced_word_path: writing/fupugecscore/resources/advanced_words

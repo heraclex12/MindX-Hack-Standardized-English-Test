@@ -4,6 +4,7 @@ import numpy as np
 import json
 from flask_restful import Resource, reqparse
 
+
 class AtlanticReadingData(Resource):
     def get(self):
         mongo_instance = EnglishMongoDB().get_instance()
@@ -16,6 +17,7 @@ class AtlanticReadingData(Resource):
             list_cur[idx] = doc
         json_data = json.dumps(list_cur, indent=2)
         return json_data
+
 
 class IELTSReadingData(Resource):
     def get(self):
@@ -30,6 +32,7 @@ class IELTSReadingData(Resource):
         json_data = json.dumps(list_cur, indent=2)
         return json_data
 
+
 class ReutersReadingData(Resource):
     def get(self):
         mongo_instance = EnglishMongoDB().get_instance()
@@ -42,6 +45,7 @@ class ReutersReadingData(Resource):
             list_cur[idx] = doc
         json_data = json.dumps(list_cur, indent=2)
         return json_data
+
 
 class NYTimesReadingData(Resource):
     def get(self):

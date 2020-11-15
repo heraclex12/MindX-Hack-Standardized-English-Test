@@ -6,6 +6,9 @@ from writing.encode_doc import encode_doc
 
 
 class BasicScorePredictor:
+    """
+        Semantic Scoring Model.
+    """
     def __init__(self, init_checkpoint):
         self.init_checkpoint = init_checkpoint
         self.bert_emb_dim = 768

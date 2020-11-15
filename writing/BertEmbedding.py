@@ -5,6 +5,7 @@ from writing.fupugecscore.bert.extract_features import PoolingStrategy
 
 
 class BertEmbedding(object):
+
   def __init__(self, bert_config, init_checkpoint, use_one_hot_embeddings=False,
                      pooling_strategy=PoolingStrategy.REDUCE_MEAN,
                      pooling_layer=-2):
