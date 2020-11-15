@@ -13,10 +13,16 @@ import { Button } from 'antd';
 import axios from 'axios';
 import './index-reading.css';
 import './index-reading.scss';
-import { CheckCircleTwoTone } from '@ant-design/icons';
+import {
+  CheckCircleTwoTone,
+  DownloadOutlined,
+  CaretLeftOutlined,
+  CaretRightOutlined
+} from '@ant-design/icons';
 import { withRouter } from 'react-router';
 import { Collapse } from 'antd';
 import AnswerPanel from './AnswerPanel';
+import './Reading.css';
 
 class Reading extends Component {
   constructor(props) {
@@ -181,60 +187,75 @@ class Reading extends Component {
 
         {selectedIndex != undefined && (
           <CCard className='big-card'>
-            <CCardHeader>
-              <h1>
-                <img
-                  className='transfermarkt_profile_pic'
-                  src={news_info[selectedIndex][0]}
-                />{' '}
-                <b>{news_info[selectedIndex][1]}</b>
-                <CheckCircleTwoTone
-                  style={{ marginLeft: '2%' }}
-                  twoToneColor='#FF0000'
-                />
-              </h1>
-              <CIcon
-                name='cilCheck'
-                color='danger'
-                style={{ marginLeft: '2%' }}
-              />
-              {readings && readings[news_info[selectedIndex][3]] && (
-                <Button
-                  style={{ marginBottom: '10%' }}
-                  className='float-right'
-                  onClick={() => {
-                    let read0 = this.state.readings;
-                    let read1 = this.state.readings[
-                      news_info[selectedIndex][3]
-                    ];
-                    read1.shift();
-                    read0[news_info[selectedIndex][3]] = read1;
-                    this.setState({ readings: read0 });
-                  }}
-                >
-                  Next
-                </Button>
-              )}
-
-              <Button
-                style={{ marginBottom: '10%' }}
-                className='float-right'
-                danger
-                onClick={() => this.setState({ selectedIndex: undefined })}
-              >
-                Back
-              </Button>
-            </CCardHeader>
             <CCardBody>
-              <CCard>
+              <CCard className='paragraph-container'>
                 <CCardHeader>
                   {/* {console.log()} */}
                   {/* {readings && readings[news_info[selectedIndex][3]] && console.log(readings[news_info[selectedIndex][3][0]])} */}
-                  {readings &&
-                    readings[news_info[selectedIndex][3]] &&
-                    readings[news_info[selectedIndex][3]][0].context}
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      margin: '10px 0 20px'
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center'
+                      }}
+                    >
+                      <img
+                        className='transfermarkt_profile_pic'
+                        src={news_info[selectedIndex][0]}
+                        style={{ marginLeft: '10px' }}
+                      />
+                      <h3 style={{ fontSize: '18px', whiteSpace: 'nowrap' }}>
+                        {news_info[selectedIndex][1]}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className='img-container'>
+                    <img src='https://picsum.photos/600/400' alt='article' />
+                  </div>
+
+                  <div className='paragraph'>
+                    {readings &&
+                      readings[news_info[selectedIndex][3]] &&
+                      readings[news_info[selectedIndex][3]][0].context}
+                  </div>
                 </CCardHeader>
               </CCard>
+
+              <div style={{ textAlign: 'right', marginTop: '20px' }}>
+                <Button
+                  type='primary'
+                  size={20}
+                  style={{ outline: 'none', marginRight: '15px' }}
+                  onClick={() => this.setState({ selectedIndex: undefined })}
+                >
+                  Back
+                </Button>
+                {readings && readings[news_info[selectedIndex][3]] && (
+                  <Button
+                    type='primary'
+                    onClick={() => {
+                      let read0 = this.state.readings;
+                      let read1 = this.state.readings[
+                        news_info[selectedIndex][3]
+                      ];
+                      read1.shift();
+                      read0[news_info[selectedIndex][3]] = read1;
+                      this.setState({ readings: read0 });
+                    }}
+                  >
+                    Next
+                  </Button>
+                )}
+              </div>
 
               <p className='question'>Questions :</p>
               <Collapse className='collapse-custom'>

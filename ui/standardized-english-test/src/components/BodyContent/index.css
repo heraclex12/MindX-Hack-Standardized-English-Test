@@ -25,13 +25,13 @@
   margin-top: 20px;
 }
 
-.img-container img {
+.body-content .img-container img {
   max-width: 100%;
   height: auto;
   /* transition: 0.2s ease-in; */
 }
 
-.img-container img:hover {
+.body-content .img-container img:hover {
   /* transform: rotate(10deg); */
   animation: rotate-img 4s ease-in infinite;
 }
