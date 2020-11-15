@@ -93,13 +93,19 @@ export default function Writing(props) {
             grammar: parseInt(total / 10)
           });
 
-          let annotation_html = answer
-          let subStrList=[]
-          console.log(annotation_html)
+          let annotation_html = ''
           let i=0
           for (const err of data.error) {
-            annotation_html=addAnnotation(annotation_html,err.offset,err.length,err.msg)
+            annotation_html+= answer.substr(i,err.offset-i)
+            i=err.offset+err.length
+            let message=err.msg
+            if ('rep' in err) {
+              message+=`. Suggestion: ${err.rep[0].value}`
+            }
+            annotation_html+= `<span title='${message}' class="highlight">` + answer.substr(err.offset,err.length) +'</span>'
+            // annotation_html=addAnnotation(annotation_html,err.offset,err.length,err.msg)
           }
+          annotation_html+=answer.substr(i)
           setAnnotation(annotation_html)
         });
       })
