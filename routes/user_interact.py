@@ -48,8 +48,8 @@ class UserInfo(Resource):
             user_info = {}
             user_info['email'] = user['email']
             user_info['gender'] = user['gender']
-            user_info['fullname'] = user['fullname']
-            user_info['email'] = user['email']
+            user_info['fullname'] = user['fullName']
+            user_info['phone'] = user['phone']
             return user_info, 200
         else:
             return {"status" : "FAILED", "description" : "user not found!"}, 400
