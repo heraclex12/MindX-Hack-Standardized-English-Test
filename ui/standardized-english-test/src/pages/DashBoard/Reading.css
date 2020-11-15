@@ -22,3 +22,10 @@
 .ant-layout-footer {
   display: none !important;
 }
+
+.big-card .badge-danger {
+  background-color: rgb(255 62 62) !important;
+}
+.big-card .badge-success {
+  background-color: rgb(49 230 49) !important;
+}

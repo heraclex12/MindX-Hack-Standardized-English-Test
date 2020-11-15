@@ -8,7 +8,7 @@ import {
 import Reading from './Reading';
 import Writing from './Writing';
 import './index.css';
-import { Link,Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import {
   BrowserRouter as Router,
@@ -29,12 +29,12 @@ const DashBoard = (props) => {
           className='site-layout-background'
           style={{ padding: '24px 0' }}
         >
-          <Sider className='site-layout-background' width={200}>
+          <Sider className='site-layout-background' width={110}>
             <Menu
               mode='inline'
               defaultOpenKeys={['1']}
               defaultSelectedKeys={['1']}
-              style={{ height: '100%' }}
+              style={{ height: '100%', width: '120px' }}
             >
               <Menu.Item key='1'>
                 <Link to={`${url}/reading`}>Reading</Link>
