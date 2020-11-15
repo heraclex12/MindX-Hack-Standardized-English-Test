@@ -18,3 +18,7 @@
   width: 100%;
   height: auto;
 }
+
+.ant-layout-footer {
+  display: none !important;
+}
