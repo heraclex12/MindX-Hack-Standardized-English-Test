@@ -2,6 +2,9 @@ from pymongo import MongoClient
 
 
 class EnglishMongoDB:
+    """
+        The singleton English Database Instance.
+    """
     def __init__(self):
         self._instance = None
 
