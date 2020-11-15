@@ -23,13 +23,16 @@ const { Title } = Typography;
 export default function Writing(props) {
   let { path, url } = useRouteMatch();
   const [prompt, setPrompt] = useState('');
-  const [promptID, setPromptID] = useState('0');
+  const [promptID, setPromptID] = useState(1);
   const [answer, setAnswer] = useState('');
   const [scores, setScores] = useState({})
   const [annotation, setAnnotation] = useState('');
 
   const clickPage = (p, s) => {
-    fetch(`http://35.208.221.249:5000/api/get_writing_question/${p}`)
+    setPromptID(p);
+  }
+  useEffect(()=> {
+    fetch(`http://35.208.221.249:5000/api/get_writing_question/${promptID}`)
       .then(function (response) {
         if (response.status !== 200) {
           console.log(
@@ -41,15 +44,17 @@ export default function Writing(props) {
         // Examine the text in the response
         response.json().then(function (data) {
           console.log(data);
+          // var decoder = new TextDecoder('utf-8'), decodedMessage;
+
+          // decodedMessage = decoder.decode(data.question);
           setPrompt(data.question);
-          setPromptID(data.id);
+          // setPromptID(data.id);
         });
       })
       .catch(function (err) {
         console.log('Fetch Error :-S', err);
       });
-  }
-
+  },[promptID]);
   const addAnnotation = (s, offset,length, message) => (
     s.substr(0, offset) + `<span title="${message}" class="highlight" >`+s.substr(offset,length)+'</span>' + s.substr(offset+length)
   )
@@ -74,7 +79,6 @@ export default function Writing(props) {
         // Examine the text in the response
         response.json().then(function (data) {
           console.log(data);
-          // const { data } = res;
           const {
             coherence_score = 1,
             relative_score = 1,
@@ -99,11 +103,10 @@ export default function Writing(props) {
             annotation_html+= answer.substr(i,err.offset-i)
             i=err.offset+err.length
             let message=err.msg
-            if ('rep' in err) {
+            if ('rep' in err && err.rep.length>0) {
               message+=`. Suggestion: ${err.rep[0].value}`
             }
             annotation_html+= `<span title='${message}' class="highlight">` + answer.substr(err.offset,err.length) +'</span>'
-            // annotation_html=addAnnotation(annotation_html,err.offset,err.length,err.msg)
           }
           annotation_html+=answer.substr(i)
           setAnnotation(annotation_html)
@@ -123,10 +126,11 @@ export default function Writing(props) {
         }}
       >
         <Pagination
-          defaultCurrent={0}
+          // defaultCurrent={0}
           total={8}
           defaultPageSize={1}
           onChange={clickPage}
+          current={promptID}
         />
       </div>
       <Title level={3} style={{ textAlign: 'center' }}>

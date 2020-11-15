@@ -8,7 +8,7 @@ import {
 import Reading from './Reading';
 import Writing from './Writing';
 import './index.css';
-import { Link } from 'react-router-dom';
+import { Link,Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import {
   BrowserRouter as Router,
@@ -53,6 +53,11 @@ const DashBoard = (props) => {
                   </Route>
 
                   <Route path={`${path}/writing`}>
+                    <Writing />
+                  </Route>
+                  <Route path={`${path}/`}>
+                    <Redirect to={`${url}/reading`} />
+
                     <Writing />
                   </Route>
                 </Switch>
