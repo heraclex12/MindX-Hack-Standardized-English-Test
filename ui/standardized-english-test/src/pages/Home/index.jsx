@@ -36,11 +36,9 @@ const Home = (props) => {
         <div className='content'>
           <h3>Standardized English Test</h3>
           <p className='description'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            sagittis molestie ex ut aliquet. Morbi aliquam finibus diam eget
-            aliquet. Vivamus eu posuere libero. In luctus vehicula tristique.
-            Mauris convallis mattis rutrum. Sed a semper dolor. Integer quis
-            turpis arcu. Sed bibendum accumsan vehicula
+            An Robustness Automated Test Generating and Scoring system will help you improve English skills quickly.
+            We offer a trusted system, which can correctly generate questions and answer from a given topic.
+
           </p>
         </div>
         <Carousel afterChange={onChange} autoplay autoplaySpeed='16' infinite>
@@ -64,26 +62,20 @@ const Home = (props) => {
 
       <BodyContent
         title='The trusted source for learning English'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-        sagittis molestie ex ut aliquet. Morbi aliquam finibus diam eget
-        aliquet.'
+        content='We offer diverse questions in multiple levels and fields to help you improve English skills.'
         imgSrc={IMG_SRC[0]}
       />
 
       <BodyContent
         title='Integrate with machine learning'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            sagittis molestie ex ut aliquet. Morbi aliquam finibus diam eget
-            aliquet.'
+        content='We want to bring the state-of-the-art AI applications into the world, more specifically in learning English language.'
         imgSrc={IMG_SRC[1]}
         reverse
       />
 
       <BodyContent
-        title='Header 3'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            sagittis molestie ex ut aliquet. Morbi aliquam finibus diam eget
-            aliquet.'
+        title='Easy to use'
+        content='We aim to customer experiment and based on that, we develop an beautiful and simple web interface.'
         imgSrc={IMG_SRC[2]}
       />
 
