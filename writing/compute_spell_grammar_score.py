@@ -2,7 +2,7 @@ from grammarbot import GrammarBotClient
 
 
 def compute_spell_grammar_score(text):
-        client = GrammarBotClient(api_key='KS9C5N3Y')
+        client = GrammarBotClient(api_key='PLEASE_INSERT_API_KEY_TO_HERE')
         text = text.strip("\n\t\r .,?!;")
         res_js = client.check(text).raw_json
         tokens = text.count(" ") + 1
